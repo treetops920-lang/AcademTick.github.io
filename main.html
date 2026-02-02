@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,296 +8,325 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    <div class="brand">
-  <img
-    src="image/AcademTick_-_logo-removebg-preview.png"
-    alt="Academtick"
-    class="logo"
-  />
-</div>
  
-  <div class="app">
+    <header class="topbar">
+         <div class="brand">
+        <img src="image/AcademTick_-_logo-removebg-preview.png" alt="Academtick" class="logo" />
+    </div>
 
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <div class="brand">
-        <div class="brand-badge" aria-hidden="true"></div>
-        <div>
-          <h1>District Helpdesk</h1>
-          <div class="kicker">Ticketing System</div>
+        <!-- Profile / Login area -->
+        <div class="profile">
+            <span class="profile-name" id="profileName">Jessica</span>
+
+            <button class="avatar-btn" id="avatarBtn" type="button" aria-haspopup="menu" aria-expanded="false">
+                <img class="avatar-img" src="images/pfp-example.jpg" alt="Profile" />
+            </button>
+
+            <!-- Dropdown -->
+            <div class="profile-menu" id="profileMenu" role="menu" aria-label="Profile menu">
+                <div class="profile-menu-head">
+                    <div class="profile-mini">
+                        <img class="avatar-img" src="assets/default-avatar.png" alt="" />
+                        <div>
+                            <div class="profile-menu-name">Jessica</div>
+                            <div class="profile-menu-email">jessica@example.com</div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="menu-item" href="#" role="menuitem">My Profile</a>
+                <a class="menu-item" href="#" role="menuitem">Settings</a>
+                <div class="menu-divider"></div>
+                <a class="menu-item danger" href="#" role="menuitem">Sign out</a>
+            </div>
         </div>
-      </div>
+    </header>
 
-      <nav class="nav" aria-label="Primary">
-        <a class="active" href="#">Dashboard</a>
-        <a href="#">Create Ticket</a>
-        <a href="#">My Tickets</a>
-        <a href="#">All Tickets</a>
-        <a href="#">Knowledge Base</a>
-        <a href="#">Settings</a>
-      </nav>
+    <div class="app">
 
-      <div class="spacer"></div>
-
-      <div class="card">
-        <div class="kicker">Quick Status</div>
-        <div class="divider"></div>
-        <div class="stack" style="gap:10px;">
-          <div class="row" style="justify-content:space-between;">
-            <span class="muted">Open</span>
-            <span class="badge orange">12</span>
-          </div>
-          <div class="row" style="justify-content:space-between;">
-            <span class="muted">In Progress</span>
-            <span class="badge teal">5</span>
-          </div>
-          <div class="row" style="justify-content:space-between;">
-            <span class="muted">Resolved</span>
-            <span class="badge">38</span>
-          </div>
-        </div>
-      </div>
-    </aside>
-
-    <!-- Main content -->
-    <main class="main">
-
-      <!-- Topbar -->
-      <header class="topbar">
-        <div>
-          <div class="kicker">Welcome back</div>
-          <h2>Dashboard</h2>
-          <p class="lead">Track tickets, create new ones, and see what needs attention.</p>
-        </div>
-
-        <div class="row">
-          <button class="btn btn-ghost" type="button">Search</button>
-          <button class="btn btn-accent" type="button">+ Create Ticket</button>
-          <button class="btn btn-primary" type="button">Admin View</button>
-        </div>
-      </header>
-
-      <div class="spacer"></div>
-
-      <!-- Summary cards -->
-      <section class="grid grid-3" aria-label="Summary">
-        <article class="card">
-          <div class="card-header">
-            <div>
-              <div class="kicker">Your tickets</div>
-              <h2 style="font-size:28px;">7</h2>
-              <p class="lead">Assigned to you right now</p>
-            </div>
-            <span class="badge teal">Active</span>
-          </div>
-          <div class="divider"></div>
-          <div class="row" style="justify-content:space-between;">
-            <span class="muted">High priority</span>
-            <span class="badge orange">2</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-header">
-            <div>
-              <div class="kicker">Avg response</div>
-              <h2 style="font-size:28px;">2h 14m</h2>
-              <p class="lead">Last 7 days</p>
-            </div>
-            <span class="badge">SLA</span>
-          </div>
-          <div class="divider"></div>
-          <div class="muted">Goal: under 4 hours for new tickets.</div>
-        </article>
-
-        <article class="card">
-          <div class="card-header">
-            <div>
-              <div class="kicker">Open queue</div>
-              <h2 style="font-size:28px;">12</h2>
-              <p class="lead">Needs triage</p>
-            </div>
-            <span class="badge orange">Hot</span>
-          </div>
-          <div class="divider"></div>
-          <div class="muted">Prioritize urgent classroom outages first.</div>
-        </article>
-      </section>
-
-      <div class="spacer"></div>
-
-      <!-- Create Ticket + Recent Activity -->
-      <section class="grid grid-2" aria-label="Ticket actions">
-        <!-- Create Ticket card -->
-        <article class="card">
-          <div class="card-header">
-            <div>
-              <h2 style="font-size:18px;">Create a Ticket</h2>
-              <p class="lead">Give enough detail so IT doesn’t have to summon you twice.</p>
-            </div>
-            <span class="badge teal">New</span>
-          </div>
-
-          <form class="stack" style="gap:12px;">
-            <div class="grid grid-2">
-              <div class="field">
-                <label for="category">Category</label>
-                <select id="category" name="category">
-                  <option>Hardware</option>
-                  <option>Software</option>
-                  <option>Network / Wi-Fi</option>
-                  <option>Account / Login</option>
-                  <option>Classroom Tech</option>
-                </select>
-              </div>
-
-              <div class="field">
-                <label for="priority">Priority</label>
-                <select id="priority" name="priority">
-                  <option>Low</option>
-                  <option>Medium</option>
-                  <option>High</option>
-                  <option>Urgent</option>
-                </select>
-              </div>
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-badge" aria-hidden="true"></div>
+                <div>
+                    <h1>District Helpdesk</h1>
+                    <div class="kicker">Ticketing System</div>
+                </div>
             </div>
 
-            <div class="field">
-              <label for="title">Title</label>
-              <input class="input" id="title" name="title" placeholder="e.g., Smartboard won’t turn on" />
-              <div class="help">Short + descriptive helps triage faster.</div>
+            <nav class="nav" aria-label="Primary">
+                <a class="active" href="#">Dashboard</a>
+                <a href="#">Create Ticket</a>
+                <a href="#">My Tickets</a>
+                <a href="#">All Tickets</a>
+                <a href="#">Knowledge Base</a>
+                <a href="#">Settings</a>
+            </nav>
+
+            <div class="spacer"></div>
+
+            <div class="card">
+                <div class="kicker">Quick Status</div>
+                <div class="divider"></div>
+                <div class="stack" style="gap:10px;">
+                    <div class="row" style="justify-content:space-between;">
+                        <span class="muted">Open</span>
+                        <span class="badge orange">12</span>
+                    </div>
+                    <div class="row" style="justify-content:space-between;">
+                        <span class="muted">In Progress</span>
+                        <span class="badge teal">5</span>
+                    </div>
+                    <div class="row" style="justify-content:space-between;">
+                        <span class="muted">Resolved</span>
+                        <span class="badge">38</span>
+                    </div>
+                </div>
             </div>
+        </aside>
 
-            <div class="field">
-              <label for="details">Details</label>
-              <textarea id="details" name="details" placeholder="What happened? What have you tried? Room #, device tag, screenshots, etc."></textarea>
-            </div>
+        <!-- Main content -->
+        <main class="main">
 
-            <div class="row" style="justify-content:space-between;">
-              <span class="muted">Attachments: (placeholder)</span>
-              <div class="row">
-                <button class="btn btn-ghost" type="reset">Clear</button>
-                <button class="btn btn-accent" type="button">Submit Ticket</button>
-              </div>
-            </div>
-          </form>
-        </article>
+            <!-- Topbar -->
+            <header class="topbar">
+                <div>
+                    <div class="kicker">Welcome back</div>
+                    <h2>Dashboard</h2>
+                    <p class="lead">Track tickets, create new ones, and see what needs attention.</p>
+                </div>
 
-        <!-- Recent Activity card -->
-        <article class="card">
-          <div class="card-header">
-            <div>
-              <h2 style="font-size:18px;">Recent Activity</h2>
-              <p class="lead">Latest updates across tickets you touched.</p>
-            </div>
-            <span class="badge">Live</span>
-          </div>
+                <div class="row">
+                    <button class="btn btn-ghost" type="button">Search</button>
+                    <button class="btn btn-accent" type="button">+ Create Ticket</button>
+                    <button class="btn btn-primary" type="button">Admin View</button>
+                </div>
+            </header>
 
-          <div class="stack" style="gap:12px;">
-            <div class="alert success">
-              <div><strong>Ticket #1042</strong> was marked resolved.</div>
-            </div>
-            <div class="alert warning">
-              <div><strong>Ticket #1048</strong> needs more info (room number missing).</div>
-            </div>
-            <div class="alert">
-              <div><strong>Ticket #1051</strong> assigned to you (Wi-Fi outage, MS wing).</div>
-            </div>
-          </div>
+            <div class="spacer"></div>
 
-          <div class="divider"></div>
+            <!-- Summary cards -->
+            <section class="grid grid-3" aria-label="Summary">
+                <article class="card">
+                    <div class="card-header">
+                        <div>
+                            <div class="kicker">Your tickets</div>
+                            <h2 style="font-size:28px;">7</h2>
+                            <p class="lead">Assigned to you right now</p>
+                        </div>
+                        <span class="badge teal">Active</span>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="row" style="justify-content:space-between;">
+                        <span class="muted">High priority</span>
+                        <span class="badge orange">2</span>
+                    </div>
+                </article>
 
-          <div class="row" style="justify-content:flex-end;">
-            <button class="btn btn-primary" type="button">View All Activity</button>
-          </div>
-        </article>
-      </section>
+                <article class="card">
+                    <div class="card-header">
+                        <div>
+                            <div class="kicker">Avg response</div>
+                            <h2 style="font-size:28px;">2h 14m</h2>
+                            <p class="lead">Last 7 days</p>
+                        </div>
+                        <span class="badge">SLA</span>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="muted">Goal: under 4 hours for new tickets.</div>
+                </article>
 
-      <div class="spacer"></div>
+                <article class="card">
+                    <div class="card-header">
+                        <div>
+                            <div class="kicker">Open queue</div>
+                            <h2 style="font-size:28px;">12</h2>
+                            <p class="lead">Needs triage</p>
+                        </div>
+                        <span class="badge orange">Hot</span>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="muted">Prioritize urgent classroom outages first.</div>
+                </article>
+            </section>
 
-      <!-- Ticket table -->
-      <section class="card" aria-label="Ticket list">
-        <div class="card-header">
-          <div>
-            <h2 style="font-size:18px;">Open Tickets</h2>
-            <p class="lead">Sorted by priority → newest updates.</p>
-          </div>
-          <div class="row">
-            <span class="badge orange">Open</span>
-            <button class="btn btn-ghost" type="button">Filter</button>
-            <button class="btn btn-ghost" type="button">Export</button>
-          </div>
-        </div>
+            <div class="spacer"></div>
 
-        <table class="table">
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Title</th>
-              <th>Category</th>
-              <th>Priority</th>
-              <th>Status</th>
-              <th>Updated</th>
-              <th style="text-align:right;">Action</th>
-            </tr>
-          </thead>
+            <!-- Create Ticket + Recent Activity -->
+            <section class="grid grid-2" aria-label="Ticket actions">
+                <!-- Create Ticket card -->
+                <article class="card">
+                    <div class="card-header">
+                        <div>
+                            <h2 style="font-size:18px;">Create a Ticket</h2>
+                            <p class="lead">Give enough detail so IT doesn’t have to summon you twice.</p>
+                        </div>
+                        <span class="badge teal">New</span>
+                    </div>
 
-          <tbody>
-            <tr>
-              <td class="mono">#1051</td>
-              <td>Wi-Fi dropping in MS wing</td>
-              <td>Network</td>
-              <td><span class="badge orange">High</span></td>
-              <td><span class="badge teal">In Progress</span></td>
-              <td>Today 10:12</td>
-              <td style="text-align:right;">
-                <button class="btn btn-ghost" type="button">Open</button>
-              </td>
-            </tr>
+                    <form class="stack" style="gap:12px;">
+                        <div class="grid grid-2">
+                            <div class="field">
+                                <label for="category">Category</label>
+                                <select id="category" name="category">
+                                    <option>Hardware</option>
+                                    <option>Software</option>
+                                    <option>Network / Wi-Fi</option>
+                                    <option>Account / Login</option>
+                                    <option>Classroom Tech</option>
+                                </select>
+                            </div>
 
-            <tr>
-              <td class="mono">#1049</td>
-              <td>Chromebook won’t charge</td>
-              <td>Hardware</td>
-              <td><span class="badge">Medium</span></td>
-              <td><span class="badge orange">Open</span></td>
-              <td>Yesterday 3:47</td>
-              <td style="text-align:right;">
-                <button class="btn btn-ghost" type="button">Open</button>
-              </td>
-            </tr>
+                            <div class="field">
+                                <label for="priority">Priority</label>
+                                <select id="priority" name="priority">
+                                    <option>Low</option>
+                                    <option>Medium</option>
+                                    <option>High</option>
+                                    <option>Urgent</option>
+                                </select>
+                            </div>
+                        </div>
 
-            <tr>
-              <td class="mono">#1048</td>
-              <td>Smartboard not displaying HDMI</td>
-              <td>Classroom Tech</td>
-              <td><span class="badge orange">High</span></td>
-              <td><span class="badge">Waiting</span></td>
-              <td>Yesterday 1:09</td>
-              <td style="text-align:right;">
-                <button class="btn btn-ghost" type="button">Open</button>
-              </td>
-            </tr>
+                        <div class="field">
+                            <label for="title">Title</label>
+                            <input class="input" id="title" name="title" placeholder="e.g., Smartboard won’t turn on" />
+                            <div class="help">Short + descriptive helps triage faster.</div>
+                        </div>
 
-            <tr>
-              <td class="mono">#1042</td>
-              <td>Password reset for teacher account</td>
-              <td>Account</td>
-              <td><span class="badge">Low</span></td>
-              <td><span class="badge teal">Resolved</span></td>
-              <td>Jan 31</td>
-              <td style="text-align:right;">
-                <button class="btn btn-ghost" type="button">View</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+                        <div class="field">
+                            <label for="details">Details</label>
+                            <textarea id="details" name="details"
+                                placeholder="What happened? What have you tried? Room #, device tag, screenshots, etc."></textarea>
+                        </div>
 
-    </main>
-  </div>
+                        <div class="row" style="justify-content:space-between;">
+                            <span class="muted">Attachments: (placeholder)</span>
+                            <div class="row">
+                                <button class="btn btn-ghost" type="reset">Clear</button>
+                                <button class="btn btn-accent" type="button">Submit Ticket</button>
+                            </div>
+                        </div>
+                    </form>
+                </article>
+
+                <!-- Recent Activity card -->
+                <article class="card">
+                    <div class="card-header">
+                        <div>
+                            <h2 style="font-size:18px;">Recent Activity</h2>
+                            <p class="lead">Latest updates across tickets you touched.</p>
+                        </div>
+                        <span class="badge">Live</span>
+                    </div>
+
+                    <div class="stack" style="gap:12px;">
+                        <div class="alert success">
+                            <div><strong>Ticket #1042</strong> was marked resolved.</div>
+                        </div>
+                        <div class="alert warning">
+                            <div><strong>Ticket #1048</strong> needs more info (room number missing).</div>
+                        </div>
+                        <div class="alert">
+                            <div><strong>Ticket #1051</strong> assigned to you (Wi-Fi outage, MS wing).</div>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="row" style="justify-content:flex-end;">
+                        <button class="btn btn-primary" type="button">View All Activity</button>
+                    </div>
+                </article>
+            </section>
+
+            <div class="spacer"></div>
+
+            <!-- Ticket table -->
+            <section class="card" aria-label="Ticket list">
+                <div class="card-header">
+                    <div>
+                        <h2 style="font-size:18px;">Open Tickets</h2>
+                        <p class="lead">Sorted by priority → newest updates.</p>
+                    </div>
+                    <div class="row">
+                        <span class="badge orange">Open</span>
+                        <button class="btn btn-ghost" type="button">Filter</button>
+                        <button class="btn btn-ghost" type="button">Export</button>
+                    </div>
+                </div>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Priority</th>
+                            <th>Status</th>
+                            <th>Updated</th>
+                            <th style="text-align:right;">Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="mono">#1051</td>
+                            <td>Wi-Fi dropping in MS wing</td>
+                            <td>Network</td>
+                            <td><span class="badge orange">High</span></td>
+                            <td><span class="badge teal">In Progress</span></td>
+                            <td>Today 10:12</td>
+                            <td style="text-align:right;">
+                                <button class="btn btn-ghost" type="button">Open</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="mono">#1049</td>
+                            <td>Chromebook won’t charge</td>
+                            <td>Hardware</td>
+                            <td><span class="badge">Medium</span></td>
+                            <td><span class="badge orange">Open</span></td>
+                            <td>Yesterday 3:47</td>
+                            <td style="text-align:right;">
+                                <button class="btn btn-ghost" type="button">Open</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="mono">#1048</td>
+                            <td>Smartboard not displaying HDMI</td>
+                            <td>Classroom Tech</td>
+                            <td><span class="badge orange">High</span></td>
+                            <td><span class="badge">Waiting</span></td>
+                            <td>Yesterday 1:09</td>
+                            <td style="text-align:right;">
+                                <button class="btn btn-ghost" type="button">Open</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="mono">#1042</td>
+                            <td>Password reset for teacher account</td>
+                            <td>Account</td>
+                            <td><span class="badge">Low</span></td>
+                            <td><span class="badge teal">Resolved</span></td>
+                            <td>Jan 31</td>
+                            <td style="text-align:right;">
+                                <button class="btn btn-ghost" type="button">View</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+    </div>
 
 
 </body>
+
 </html>
