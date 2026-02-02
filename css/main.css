@@ -1,0 +1,20 @@
+/* Logo base */
+.logo{
+  height: 80px;     /* adjust size */
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* Sidebar brand row */
+.brand{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo{
+  image-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  transform: translateZ(0);
+}
