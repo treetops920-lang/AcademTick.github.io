@@ -1,0 +1,178 @@
+[
+  {
+    "_id": {
+      "$oid": "2000"
+    },
+    "name": "Sean Combs",
+    "age": 48,
+    "role": "principal",
+    "building": "Elementary",
+    "email": "sean.combs@schoolstaff.org",
+    "address": {
+      "street": "9644 Bridlewood Trl",
+      "city": "Centerville",
+      "state": "OH",
+      "zip": "45458"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2001"
+    },
+    "name": "Ellen Degeners",
+    "age": 39,
+    "role": "principal",
+    "building": "Middle School",
+    "email": "ellen.degeners@schoolstaff.org",
+    "address": {
+      "street": "7215 Whitetail Trl",
+      "city": "Centerville",
+      "state": "OH",
+      "zip": "45459"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2002"
+    },
+    "name": "Kaynye West",
+    "age": 37,
+    "role": "principal",
+    "building": "High School",
+    "email": "kaynye.west@schoolstaff.org",
+    "address": {
+      "street": "9048 Bedford Ct",
+      "city": "Centerville",
+      "state": "OH",
+      "zip": "45458"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2003"
+    },
+    "name": "Betty White",
+    "age": 59,
+    "role": "assistent principal",
+    "building": "Elementary",
+    "email": "betty.white@schoolstaff.org",
+    "address": {
+      "street": "1455 Ambridge Road",
+      "city": "Centerville",
+      "state": "OH",
+      "zip": "45459"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2004"
+    },
+    "name": "Danny Davito",
+    "age": 37,
+    "role": "assistent principal",
+    "building": "Middle School",
+    "email": "danny.davito@schoolstaff.org",
+    "address": {
+      "street": "489 Jenny Lane",
+      "city": "Centerville",
+      "state": "OH",
+      "zip": "45459"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2005"
+    },
+    "name": "Bob Ross",
+    "age": 68,
+    "role": "assistent principal",
+    "building": "High School",
+    "email": "bob.ross@schoolstaff.org",
+    "address": {
+      "street": "152 Cheltenham Drive",
+      "city": "Centerville",
+      "state": "OH",
+      "zip": "45459"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2006"
+    },
+    "name": "Morgan Freeman",
+    "age": 35,
+    "role": "board member",
+    "building": "School Board Office",
+    "email": "morgan.freeman@schoolstaff.org",
+    "address": {
+      "street": "9139 Indian Springs Ct",
+      "city": "Centerville",
+      "state": "OH",
+      "zip": "45458"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2007"
+    },
+    "name": "Dolly Parton",
+    "age": 49,
+    "role": "board member",
+    "building": "School Board Office",
+    "email": "dolly.parton@schoolstaff.org",
+    "address": {
+      "street": "170 Lodewood Drive",
+      "city": "Centerville",
+      "state": "OH",
+      "zip": "45458"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2008"
+    },
+    "name": "Harry Styles",
+    "age": 63,
+    "role": "board member",
+    "building": "School Board Office",
+    "email": "harry.styles@schoolstaff.org",
+    "address": {
+      "street": "9743 Rose Arbor Drive",
+      "city": "Centerville",
+      "state": "OH",
+      "zip": "45458"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2009"
+    },
+    "name": "Gordan Ramsey",
+    "age": 28,
+    "role": "board member",
+    "building": "School Board Office",
+    "email": "gordan.ramsey@schoolstaff.org",
+    "address": {
+      "street": "224 Prague Court",
+      "city": "Centerville",
+      "state": "OH",
+      "zip": "45458"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "2010"
+    },
+    "name": "Bill Clinton",
+    "age": 48,
+    "role": "board member",
+    "building": "School Board Office",
+    "email": "bill.clinton@schoolstaff.org",
+    "address": {
+      "street": "1311 Hollow Run",
+      "city": "Centerville",
+      "state": "OH",
+      "zip": "45459"
+    }
+  }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "_id": {
+      "$oid": "1001"
+    },
+    "name": "Jackie Thompson",
+    "age": 28,
+    "grade": "K",
+    "building": "Elementary",
+    "email": "jackie.thompson@schoolstaff.org",
+    "address": {
+      "street": "123 Main St",
+      "city": "Centerville",
+      "zip": "45459"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1002"
+    },
+    "name": "Matt Potter",
+    "age": 32,
+    "grade": "1",
+    "building": "Elementary",
+    "email": "matt.potter@schoolstaff.org",
+    "address": {
+      "street": "9187 Wayne Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1003"
+    },
+    "name": "Matt Grenshaw",
+    "age": 43,
+    "grade": "2",
+    "building": "Elementary",
+    "email": "matt.grenshaw@schoolstaff.org",
+    "address": {
+      "street": "368 Smith Blvd",
+      "city": "Centerville",
+      "zip": "45459"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1004"
+    },
+    "name": "Matt Hopper",
+    "age": 50,
+    "grade": "3",
+    "building": "Elementary",
+    "email": "matt.hopper@schoolstaff.org",
+    "address": {
+      "street": "196 Cross Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1005"
+    },
+    "name": "Charles Darwnine",
+    "age": 63,
+    "grade": "4",
+    "building": "Elementary",
+    "email": "charles.darwnine@schoolstaff.org",
+    "address": {
+      "street": "9278 Wayne Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1006"
+    },
+    "name": "Whoopie Goldberg",
+    "age": 29,
+    "grade": "5",
+    "building": "Elementary",
+    "email": "whoopie.goldberg@schoolstaff.org",
+    "address": {
+      "street": "349 Crown Pl",
+      "city": "Centerville",
+      "zip": "45459"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1007"
+    },
+    "name": "Alexander Hamaltion",
+    "age": 32,
+    "grade": "6",
+    "building": "Middle School",
+    "email": "alexander.hamaltion@schoolstaff.org",
+    "address": {
+      "street": "173 Round Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1008"
+    },
+    "name": "Peggy Skyler",
+    "age": 29,
+    "grade": "6",
+    "building": "Middle School",
+    "email": "peggy.skyler@schoolstaff.org",
+    "address": {
+      "street": "139 Round Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1009"
+    },
+    "name": "Billy Bob",
+    "age": 32,
+    "grade": "7",
+    "building": "Middle School",
+    "email": "billy.bob@schoolstaff.org",
+    "address": {
+      "street": "173 Plains Ave",
+      "city": "Centerville",
+      "zip": "45459"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1010"
+    },
+    "name": "Ray Nieport",
+    "age": 26,
+    "grade": "7",
+    "building": "Middle School",
+    "email": "ray.nieport@schoolstaff.org",
+    "address": {
+      "street": "1934 Crown Pl",
+      "city": "Centerville",
+      "zip": "45459"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1011"
+    },
+    "name": "Chris Hemsworth",
+    "age": 32,
+    "grade": "8",
+    "building": "Middle School",
+    "email": "chris.hemsworth@schoolstaff.org",
+    "address": {
+      "street": "3293 N Strewerd Ln",
+      "city": "Centerville",
+      "zip": "45459"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1012"
+    },
+    "name": "Tom Holland",
+    "age": 30,
+    "grade": "8",
+    "building": "Middle School",
+    "email": "tom.holland@schoolstaff.org",
+    "address": {
+      "street": "1438 Market St",
+      "city": "Centerville",
+      "zip": "45459"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1013"
+    },
+    "name": "Zac Effron",
+    "age": 32,
+    "grade": "9",
+    "building": "High School",
+    "email": "zac.effron@schoolstaff.org",
+    "address": {
+      "street": "485 Ceader St",
+      "city": "Centerville",
+      "zip": "45459"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1014"
+    },
+    "name": "Kendrick Lamar",
+    "age": 48,
+    "grade": "9",
+    "building": "High School",
+    "email": "kendrick.lamar@schoolstaff.org",
+    "address": {
+      "street": "138 Main St",
+      "city": "Centerville",
+      "zip": "45459"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1015"
+    },
+    "name": "Jaquavion Maxwell the Third",
+    "age": 68,
+    "grade": "10",
+    "building": "High School",
+    "email": "jaquavion.maxwell@schoolstaff.org",
+    "address": {
+      "street": "465 Orange Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1016"
+    },
+    "name": "Madonna Ciccone",
+    "age": 53,
+    "grade": "10",
+    "building": "High School",
+    "email": "madonna.ciccone@schoolstaff.org",
+    "address": {
+      "street": "4378 Ivy Dr",
+      "city": "Centerville",
+      "zip": "45459"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1017"
+    },
+    "name": "Keanu Reeves",
+    "age": 35,
+    "grade": "11",
+    "building": "High School",
+    "email": "keanu.reeves@schoolstaff.org",
+    "address": {
+      "street": "758 10th St",
+      "city": "Centerville",
+      "zip": "45459"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1018"
+    },
+    "name": "Mark Fishbach",
+    "age": 51,
+    "grade": "11",
+    "building": "High School",
+    "email": "mark.fishbach@schoolstaff.org",
+    "address": {
+      "street": "8464 Green Ln",
+      "city": "Centerville",
+      "zip": "45459"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1019"
+    },
+    "name": "Katty Perry",
+    "age": 31,
+    "grade": "12",
+    "building": "High School",
+    "email": "katty.perry@schoolstaff.org",
+    "address": {
+      "street": "5493 Orange Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "1020"
+    },
+    "name": "Will Byers",
+    "age": 69,
+    "grade": "12",
+    "building": "High School",
+    "email": "will.byers@schoolstaff.org",
+    "address": {
+      "street": "5493 Orange Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    }
+  }
+]
