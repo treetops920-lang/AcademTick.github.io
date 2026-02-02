@@ -1,0 +1,155 @@
+/* =========================
+   Login Page Styles
+========================= */
+
+/* Variables (can be shared with main stylesheet) */
+:root{
+  --teal-600: #289888;
+  --teal-500: #30A095;
+  --orange-600: #F05828;
+
+  --bg: #F8FAFC;
+  --surface: #FFFFFF;
+  --border: #E5E7EB;
+
+  --text: #0F172A;
+  --muted: #64748B;
+
+  --radius-lg: 18px;
+  --shadow-md: 0 18px 40px rgba(2, 6, 23, 0.14);
+  --ring: 0 0 0 4px rgba(40,152,136,0.22);
+
+  --font: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* Page background */
+.login-page{
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font);
+  background:
+    radial-gradient(900px 500px at 10% 10%, rgba(40,152,136,0.12), transparent 55%),
+    radial-gradient(800px 500px at 90% 20%, rgba(240,88,40,0.12), transparent 55%),
+    var(--bg);
+  display: grid;
+  place-items: center;
+}
+
+/* Container */
+.login-container{
+  width: 100%;
+  max-width: 800px;
+  padding: 24px;
+}
+
+/* Brand */
+.login-brand{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.login-logo{
+  height: 125px;
+  width: auto;
+}
+
+/* Card */
+.login-card{
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border);
+  padding: 26px;
+}
+
+/* Header */
+.login-header h1{
+  margin: 0;
+  font-size: 24px;
+}
+
+.login-header p{
+  margin: 6px 0 20px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Form */
+.login-form{
+  display: grid;
+  gap: 14px;
+}
+
+.field{
+  display: grid;
+  gap: 6px;
+}
+
+label{
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.input{
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  padding: 12px;
+  font-size: 14px;
+}
+
+.input:focus{
+  outline: none;
+  border-color: rgba(40,152,136,0.55);
+  box-shadow: var(--ring);
+}
+
+/* Options */
+.login-options{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+.remember{
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.link{
+  color: var(--teal-600);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link:hover{
+  text-decoration: underline;
+}
+
+/* Button */
+.login-btn{
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, var(--teal-600), var(--teal-500));
+  color: white;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.login-btn:hover{
+  opacity: 0.95;
+}
+
+/* Footer */
+.login-footer{
+  margin-top: 18px;
+  font-size: 13px;
+  text-align: center;
+  color: var(--muted);
+}
