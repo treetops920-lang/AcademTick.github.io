@@ -1,0 +1,229 @@
+/* =========================
+   Create Ticket Page Styles
+========================= */
+
+:root{
+  --teal:#289888;
+  --teal-500:#30A095;
+  --orange:#F05828;
+
+  --bg:#F8FAFC;
+  --surface:#FFFFFF;
+  --border:#E5E7EB;
+
+  --text:#0F172A;
+  --muted:#64748B;
+
+  --radius-md:14px;
+  --radius-lg:18px;
+
+  --shadow-sm: 0 2px 10px rgba(2,6,23,0.06);
+  --shadow-md: 0 14px 30px rgba(2,6,23,0.10);
+
+  --ring: 0 0 0 4px rgba(40,152,136,0.22);
+
+  --font: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+*{ box-sizing:border-box; }
+
+body{
+  margin:0;
+  font-size:18px;
+  font-family:var(--font);
+  color:var(--text);
+  background:
+    radial-gradient(1200px 500px at 15% 10%, rgba(40,152,136,0.10), transparent 55%),
+    radial-gradient(900px 450px at 90% 0%, rgba(240,88,40,0.10), transparent 50%),
+    var(--bg);
+}
+
+/* Topbar shared styles */
+.topbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  padding:14px 18px;
+  border-bottom:1px solid var(--border);
+  background: rgba(255,255,255,0.78);
+  backdrop-filter: blur(10px);
+}
+
+.logo{ height:44px; }
+
+.topnav{
+  display:flex;
+  gap:10px;
+}
+
+.topnav-link{
+  padding:8px 12px;
+  border-radius:999px;
+  font-weight:750;
+  font-size:13px;
+  color:var(--muted);
+}
+
+.topnav-link:hover{
+  background: rgba(40,152,136,0.10);
+  color:var(--text);
+}
+
+.topnav-link.active{
+  background: rgba(240,88,40,0.12);
+  border:1px solid rgba(240,88,40,0.18);
+  color:var(--text);
+}
+
+/* Profile */
+.profile{
+  position:relative;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.profile-name{
+  font-weight:800;
+  font-size:14px;
+}
+.avatar-btn{
+  width:40px;
+  height:40px;
+  border-radius:999px;
+  border:1px solid var(--border);
+  background:#fff;
+  cursor:pointer;
+}
+.avatar-initials{
+  width:100%;
+  height:100%;
+  border-radius:999px;
+  display:grid;
+  place-items:center;
+  font-weight:900;
+  color:#fff;
+  background: linear-gradient(135deg, var(--teal), var(--orange));
+}
+.profile-menu{
+  position:absolute;
+  right:0;
+  top:calc(100% + 10px);
+  width:220px;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:16px;
+  box-shadow:var(--shadow-md);
+  display:none;
+}
+.profile-menu.open{ display:block; }
+.menu-item{
+  padding:10px 12px;
+  display:block;
+  font-weight:700;
+}
+.menu-item:hover{ background: rgba(40,152,136,0.10); }
+.menu-divider{ height:1px; background:var(--border); }
+.menu-item.danger{ color:#B91C1C; }
+
+/* Layout */
+.container{
+  width:min(900px, calc(100% - 32px));
+  margin: 24px auto 40px;
+}
+
+/* Page head */
+.page-head h1{
+  margin:0;
+  font-size:30px;
+}
+.page-head p{
+  margin:6px 0 20px;
+  color:var(--muted);
+}
+
+/* Form */
+.ticket-form{
+  display:grid;
+  gap:18px;
+}
+
+.card{
+  background: rgba(255,255,255,0.88);
+  border:1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding:18px;
+  box-shadow:var(--shadow-sm);
+}
+
+.card h2{
+  margin-top:0;
+  font-size:18px;
+}
+
+.field{
+  display:grid;
+  gap:6px;
+  margin-bottom:12px;
+}
+
+label{
+  font-size:12px;
+  font-weight:800;
+  color:var(--muted);
+}
+
+.input{
+  border-radius:14px;
+  border:1px solid var(--border);
+  padding:12px;
+  font-size:14px;
+}
+
+textarea.input{
+  min-height:120px;
+  resize:vertical;
+}
+
+.input:focus{
+  outline:none;
+  border-color: rgba(40,152,136,0.55);
+  box-shadow: var(--ring);
+}
+
+/* Grid helpers */
+.row-2{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap:12px;
+}
+
+@media (max-width:600px){
+  .row-2{ grid-template-columns: 1fr; }
+}
+
+/* Actions */
+.form-actions{
+  display:flex;
+  justify-content:flex-end;
+  gap:12px;
+}
+
+.btn{
+  padding:10px 16px;
+  border-radius:14px;
+  font-weight:800;
+  cursor:pointer;
+  border:1px solid transparent;
+}
+
+.btn-accent{
+  background: linear-gradient(135deg, var(--teal), var(--teal-500));
+  color:#fff;
+  box-shadow: 0 10px 20px rgba(40,152,136,0.18);
+}
+
+.btn-ghost{
+  background:#fff;
+  border-color:var(--border);
+}

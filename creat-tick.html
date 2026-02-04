@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Academtick | Create Ticket</title>
+
+  <link rel="stylesheet" href="css/creat-tick.css" />
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <header class="topbar">
+    <a href="index.html" class="brand">
+      <img
+        src="image/AcademTick_-_logo-removebg-preview.png"
+        alt="Academtick"
+        class="logo"
+      />
+    </a>
+
+    <nav class="topnav">
+      <a href="index.html" class="topnav-link">Dashboard</a>
+      <a href="tickets.html" class="topnav-link">Tickets</a>
+      <a href="knowledge-base.html" class="topnav-link">Knowledge Base</a>
+      <a href="create-ticket.html" class="topnav-link active">Create Ticket</a>
+      <a href="settings.html" class="topnav-link">Settings</a>
+    </nav>
+
+    <div class="profile">
+      <span class="profile-name">Jessica</span>
+      <button class="avatar-btn" id="avatarBtn" type="button">
+        <span class="avatar-initials">JJ</span>
+      </button>
+
+      <div class="profile-menu" id="profileMenu">
+        <a class="menu-item" href="profile.html">My Profile</a>
+        <a class="menu-item" href="settings.html">Settings</a>
+        <div class="menu-divider"></div>
+        <a class="menu-item danger" href="login.html">Sign out</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="container">
+
+    <section class="page-head">
+      <h1>Create a Ticket</h1>
+      <p>Provide clear details so IT can help you faster.</p>
+    </section>
+
+    <!-- Ticket Form -->
+    <form class="ticket-form">
+
+      <!-- Core Info -->
+      <section class="card">
+        <h2>Issue Details</h2>
+
+        <div class="field">
+          <label for="title">Title</label>
+          <input
+            class="input"
+            id="title"
+            name="title"
+            type="text"
+            placeholder="Smartboard won’t turn on in Room 204"
+            required
+          />
+        </div>
+
+        <div class="field">
+          <label for="description">Description</label>
+          <textarea
+            class="input"
+            id="description"
+            name="description"
+            placeholder="What happened? When did it start? What have you already tried?"
+            required
+          ></textarea>
+        </div>
+
+        <div class="row-2">
+          <div class="field">
+            <label for="priority">Priority</label>
+            <select class="input" id="priority" name="priority">
+              <option>Low</option>
+              <option>Medium</option>
+              <option>High</option>
+              <option>Urgent</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="category">Category</label>
+            <select class="input" id="category" name="category">
+              <option>Hardware</option>
+              <option>Software</option>
+              <option>Network</option>
+              <option>Account / Login</option>
+              <option>Classroom Tech</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <!-- Location & Timing -->
+      <section class="card">
+        <h2>Location & Timing</h2>
+
+        <div class="row-2">
+          <div class="field">
+            <label for="building">Building</label>
+            <input
+              class="input"
+              id="building"
+              name="building"
+              type="text"
+              placeholder="Middle School"
+            />
+          </div>
+
+          <div class="field">
+            <label for="room">Room / Area</label>
+            <input
+              class="input"
+              id="room"
+              name="room"
+              type="text"
+              placeholder="Room 204 / Lab"
+            />
+          </div>
+        </div>
+
+        <div class="row-2">
+          <div class="field">
+            <label for="date">Date issue started</label>
+            <input
+              class="input"
+              id="date"
+              name="dateReported"
+              type="date"
+            />
+          </div>
+
+          <div class="field">
+            <label for="device">Device / Asset Tag</label>
+            <input
+              class="input"
+              id="device"
+              name="assetTag"
+              type="text"
+              placeholder="CB-10493"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Assignment -->
+      <section class="card">
+        <h2>Assignment</h2>
+
+        <div class="row-2">
+          <div class="field">
+            <label for="requester">Requested by</label>
+            <input
+              class="input"
+              id="requester"
+              name="requestedBy"
+              type="text"
+              value="Jessica Jolley"
+              disabled
+            />
+          </div>
+
+          <div class="field">
+            <label for="assignedTo">Assign to</label>
+            <select class="input" id="assignedTo" name="assignedTo">
+              <option>Auto-assign (recommended)</option>
+              <option>IT Helpdesk</option>
+              <option>Network Team</option>
+              <option>Classroom Support</option>
+              <option>Admin Review</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <!-- Actions -->
+      <section class="form-actions">
+        <a href="index.html" class="btn btn-ghost">Cancel</a>
+        <button type="submit" class="btn btn-accent">Submit Ticket</button>
+      </section>
+
+    </form>
+
+  </main>
+
+  <!-- Profile dropdown JS -->
+  <script>
+    const btn = document.getElementById("avatarBtn");
+    const menu = document.getElementById("profileMenu");
+
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      menu.classList.toggle("open");
+    });
+
+    document.addEventListener("click", () => {
+      menu.classList.remove("open");
+    });
+  </script>
+
+</body>
+</html>
