@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Academtick | Settings</title>
+
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/settings.css" />
+
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <header class="topbar">
+    <a href="index.html" class="brand">
+      <img
+        src="image/AcademTick_-_logo-removebg-preview.png"
+        alt="Academtick"
+        class="logo"
+      />
+    </a>
+
+    <nav class="topnav" aria-label="Top navigation">
+      <a href="index.html" class="topnav-link">Dashboard</a>
+      <a href="knowledge-base.html" class="topnav-link">Knowledge Base</a>
+      <a href="tickets.html" class="topnav-link">Tickets</a>
+      <a href="settings.html" class="topnav-link active">Settings</a>
+    </nav>
+
+    <div class="profile">
+      <span class="profile-name">Jessica</span>
+      <button class="avatar-btn" id="avatarBtn" type="button" aria-haspopup="menu" aria-expanded="false">
+        <span class="avatar-initials">JJ</span>
+      </button>
+
+      <div class="profile-menu" id="profileMenu" role="menu" aria-label="Profile menu">
+        <a class="menu-item" href="profile.html" role="menuitem">My Profile</a>
+        <a class="menu-item" href="settings.html" role="menuitem">Settings</a>
+        <div class="menu-divider"></div>
+        <a class="menu-item danger" href="login.html" role="menuitem">Sign out</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="page-head">
+      <h1>Settings</h1>
+      <p>Manage your account, notifications, and app preferences.</p>
+    </section>
+
+    <!-- SETTINGS GRID -->
+    <section class="settings-grid">
+
+      <!-- Account -->
+      <article class="card">
+        <header class="card-head">
+          <div>
+            <h2>Account</h2>
+            <p>Update your name, email, and profile picture.</p>
+          </div>
+        </header>
+
+        <form class="form">
+          <div class="row-2">
+            <div class="field">
+              <label for="firstName">First name</label>
+              <input class="input" id="firstName" type="text" value="Jessica" />
+            </div>
+
+            <div class="field">
+              <label for="lastName">Last name</label>
+              <input class="input" id="lastName" type="text" value="Jolley" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input class="input" id="email" type="email" value="jessica@example.com" />
+          </div>
+
+          <div class="row">
+            <button class="btn btn-ghost" type="reset">Cancel</button>
+            <button class="btn btn-accent" type="button">Save changes</button>
+          </div>
+        </form>
+      </article>
+
+      <!-- Notifications -->
+      <article class="card">
+        <header class="card-head">
+          <div>
+            <h2>Notifications</h2>
+            <p>Choose how you want to be notified about tickets and updates.</p>
+          </div>
+        </header>
+
+        <div class="stack">
+          <div class="setting-row">
+            <div>
+              <div class="setting-title">Email notifications</div>
+              <div class="setting-sub">Get emailed when your tickets change status.</div>
+            </div>
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <div class="setting-row">
+            <div>
+              <div class="setting-title">Ticket assignment alerts</div>
+              <div class="setting-sub">Notify you when a ticket is assigned to you.</div>
+            </div>
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <div class="setting-row">
+            <div>
+              <div class="setting-title">Daily summary</div>
+              <div class="setting-sub">One daily email with open items and updates.</div>
+            </div>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="row">
+          <button class="btn btn-primary" type="button">Update notifications</button>
+        </div>
+      </article>
+
+      <!-- Preferences -->
+      <article class="card">
+        <header class="card-head">
+          <div>
+            <h2>Preferences</h2>
+            <p>Customize how the app looks and behaves.</p>
+          </div>
+        </header>
+
+        <div class="stack">
+          <div class="field">
+            <label for="theme">Theme</label>
+            <select class="input" id="theme">
+              <option>Light</option>
+              <option>Dark</option>
+              <option>System</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="defaultView">Default landing page</label>
+            <select class="input" id="defaultView">
+              <option>Dashboard</option>
+              <option>My Tickets</option>
+              <option>Knowledge Base</option>
+            </select>
+          </div>
+
+          <div class="setting-row">
+            <div>
+              <div class="setting-title">Compact mode</div>
+              <div class="setting-sub">Tighter spacing in tables and lists.</div>
+            </div>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="row">
+          <button class="btn btn-accent" type="button">Save preferences</button>
+        </div>
+      </article>
+
+      <!-- Security -->
+      <article class="card">
+        <header class="card-head">
+          <div>
+            <h2>Security</h2>
+            <p>Change your password and sign out of other sessions.</p>
+          </div>
+        </header>
+
+        <form class="form">
+          <div class="field">
+            <label for="currentPassword">Current password</label>
+            <input class="input" id="currentPassword" type="password" placeholder="••••••••" />
+          </div>
+
+          <div class="field">
+            <label for="newPassword">New password</label>
+            <input class="input" id="newPassword" type="password" placeholder="At least 8 characters" />
+          </div>
+
+          <div class="field">
+            <label for="confirmPassword">Confirm new password</label>
+            <input class="input" id="confirmPassword" type="password" placeholder="Repeat new password" />
+          </div>
+
+          <div class="row">
+            <button class="btn btn-accent" type="button">Change password</button>
+            <button class="btn btn-ghost" type="button">Sign out other devices</button>
+          </div>
+        </form>
+      </article>
+
+      <!-- Danger Zone -->
+      <article class="card danger-zone">
+        <header class="card-head">
+          <div>
+            <h2>Danger Zone</h2>
+            <p>These actions are permanent (and dramatic).</p>
+          </div>
+        </header>
+
+        <div class="setting-row">
+          <div>
+            <div class="setting-title">Delete account</div>
+            <div class="setting-sub">Removes your profile and ticket history.</div>
+          </div>
+          <button class="btn btn-danger" type="button">Delete</button>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- Dropdown JS -->
+  <script>
+    const btn = document.getElementById("avatarBtn");
+    const menu = document.getElementById("profileMenu");
+
+    function closeMenu(){
+      menu.classList.remove("open");
+      btn.setAttribute("aria-expanded", "false");
+    }
+
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const isOpen = menu.classList.toggle("open");
+      btn.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    document.addEventListener("click", closeMenu);
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeMenu();
+    });
+  </script>
+
+</body>
+</html>
