@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Academtick | Dashboard</title>
+
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/kids.css" />
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <header class="topbar">
+    <a href="dashboard.html" class="brand">
+      <img src="image/AcademTick_-_logo-removebg-preview.png" alt="Academtick" class="logo" />
+    </a>
+
+    <nav class="topnav">
+      <a href="dashboard.html" class="topnav-link active">Home</a>
+      <a href="create-ticket.html" class="topnav-link">Make a Ticket</a>
+      <a href="my-tickets.html" class="topnav-link">My Tickets</a>
+      <a href="knowledge-base.html" class="topnav-link">Help</a>
+      <a href="settings.html" class="topnav-link">Settings</a>
+    </nav>
+
+    <div class="profile">
+      <span class="profile-name">Jessica</span>
+      <button class="avatar-btn" id="avatarBtn" type="button" aria-haspopup="menu" aria-expanded="false">
+        <span class="avatar-initials">JJ</span>
+      </button>
+
+      <div class="profile-menu" id="profileMenu" role="menu" aria-label="Profile menu">
+        <a class="menu-item" href="my-tickets.html" role="menuitem">My Tickets</a>
+        <a class="menu-item" href="settings.html" role="menuitem">Settings</a>
+        <div class="menu-divider"></div>
+        <a class="menu-item danger" href="login.html" role="menuitem">Sign out</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Friendly greeting -->
+    <section class="kid-head card">
+      <h1>Hi! What do you need help with?</h1>
+      <p>Pick one big button. If you’re not sure, tap <strong>Help</strong>.</p>
+    </section>
+
+    <!-- BIG BUTTONS -->
+    <section class="kid-grid">
+      <a class="kid-card" href="create-ticket.html">
+        <div class="kid-icon" aria-hidden="true">📝</div>
+        <div class="kid-title">Make a Ticket</div>
+        <div class="kid-sub">Something is broken or not working</div>
+      </a>
+
+      <a class="kid-card" href="my-tickets.html">
+        <div class="kid-icon" aria-hidden="true">📬</div>
+        <div class="kid-title">My Tickets</div>
+        <div class="kid-sub">See what you already asked for</div>
+      </a>
+
+      <a class="kid-card" href="knowledge-base.html">
+        <div class="kid-icon" aria-hidden="true">🛟</div>
+        <div class="kid-title">Help</div>
+        <div class="kid-sub">Try easy fixes (Wi-Fi, Chromebook, Smartboard)</div>
+      </a>
+
+      <a class="kid-card" href="tickets.html">
+        <div class="kid-icon" aria-hidden="true">👩‍💻</div>
+        <div class="kid-title">All Tickets</div>
+        <div class="kid-sub">For staff / helpers (teachers & IT)</div>
+      </a>
+    </section>
+
+    <!-- Simple "quick help" strip -->
+    <section class="kid-quick card">
+      <h2>Quick Help</h2>
+      <div class="quick-grid">
+        <a class="quick-pill" href="knowledge-base.html">📶 Wi-Fi</a>
+        <a class="quick-pill" href="knowledge-base.html">💻 Chromebook</a>
+        <a class="quick-pill" href="knowledge-base.html">📺 Smartboard</a>
+        <a class="quick-pill" href="knowledge-base.html">🔑 Password</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Dropdown JS -->
+  <script>
+    const btn = document.getElementById("avatarBtn");
+    const menu = document.getElementById("profileMenu");
+
+    function closeMenu(){
+      menu.classList.remove("open");
+      btn.setAttribute("aria-expanded", "false");
+    }
+
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const isOpen = menu.classList.toggle("open");
+      btn.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    document.addEventListener("click", closeMenu);
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeMenu();
+    });
+  </script>
+
+</body>
+</html>

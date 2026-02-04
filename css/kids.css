@@ -1,0 +1,125 @@
+/* =========================
+   dashboard.css (K-5 friendly)
+========================= */
+
+.kid-head {
+    text-align: center;
+    padding: 22px;
+}
+
+.kid-head h1 {
+    margin: 0;
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+.kid-head p {
+    margin: 10px 0 0;
+    color: var(--muted);
+    font-size: 16px;
+}
+
+.topnav-link {
+    padding: 10px 16px;
+
+    /* 🔼 bigger text */
+    font-size: 16px;
+    font-weight: 900;
+
+    border-radius: 14px;
+    border: 2px solid transparent;
+
+    color: var(--text);
+    background: rgba(241, 245, 249, 0.7);
+
+    transition: background 140ms ease,
+        border-color 140ms ease,
+        transform 120ms ease;
+}
+
+
+
+/* Big button grid */
+.kid-grid {
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+@media (max-width: 760px) {
+    .kid-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Big "card buttons" */
+.kid-card {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.90);
+    box-shadow: var(--shadow-sm);
+    transition: transform 120ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.kid-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(40, 152, 136, 0.35);
+}
+
+.kid-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 18px;
+    display: grid;
+    place-items: center;
+    font-size: 34px;
+    background: linear-gradient(135deg, rgba(40, 152, 136, 0.14), rgba(240, 88, 40, 0.10));
+}
+
+.kid-title {
+    font-size: 20px;
+    font-weight: 950;
+    letter-spacing: 0.2px;
+}
+
+.kid-sub {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.35;
+}
+
+/* Quick help strip */
+.kid-quick {
+    margin-top: 18px;
+}
+
+.kid-quick h2 {
+    margin: 0 0 12px;
+    font-size: 18px;
+}
+
+.quick-grid {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.quick-pill {
+    padding: 10px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: rgba(241, 245, 249, 0.7);
+    font-weight: 850;
+    transition: background 140ms ease, border-color 140ms ease, transform 120ms ease;
+}
+
+.quick-pill:hover {
+    background: rgba(40, 152, 136, 0.12);
+    border-color: rgba(40, 152, 136, 0.30);
+    transform: translateY(-1px);
+}

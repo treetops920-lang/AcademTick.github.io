@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Academtick | Settings</title>
 
-  <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/settings.css" />
 
 </head>
@@ -13,36 +12,45 @@
 <body>
 
   <!-- Top Bar -->
-  <header class="topbar">
-    <a href="index.html" class="brand">
-      <img
-        src="image/AcademTick_-_logo-removebg-preview.png"
-        alt="Academtick"
-        class="logo"
-      />
-    </a>
+ <header class="topbar">
+  <!-- Brand / Logo -->
+  <a href="index.html" class="brand">
+    <img src="image/AcademTick_-_logo-removebg-preview.png" alt="Academtick" class="logo" />
+  </a>
 
-    <nav class="topnav" aria-label="Top navigation">
-      <a href="index.html" class="topnav-link">Dashboard</a>
+  <!-- Optional: middle nav links (remove if you don't want it) -->
+  <nav class="topnav">
+      <a href="main.html" class="topnav-link">Dashboard</a>
+      <a href="all-tick.html" class="topnav-link">All Tickets</a>
+      <a href="my-tick.html" class="topnav-link active">My Tickets</a>
       <a href="knowledge-base.html" class="topnav-link">Knowledge Base</a>
-      <a href="tickets.html" class="topnav-link">Tickets</a>
-      <a href="settings.html" class="topnav-link active">Settings</a>
+      <a href="creat-tick.html" class="topnav-link">Create Ticket</a>
+      <a href="settings.html" class="topnav-link">Settings</a>
     </nav>
 
-    <div class="profile">
-      <span class="profile-name">Jessica</span>
-      <button class="avatar-btn" id="avatarBtn" type="button" aria-haspopup="menu" aria-expanded="false">
-        <span class="avatar-initials">JJ</span>
-      </button>
+  <!-- Profile / Login area -->
+  <div class="profile">
+    <span class="profile-name">Jessica</span>
 
-      <div class="profile-menu" id="profileMenu" role="menu" aria-label="Profile menu">
-        <a class="menu-item" href="profile.html" role="menuitem">My Profile</a>
-        <a class="menu-item" href="settings.html" role="menuitem">Settings</a>
-        <div class="menu-divider"></div>
-        <a class="menu-item danger" href="login.html" role="menuitem">Sign out</a>
-      </div>
+    <button
+      class="avatar-btn"
+      id="avatarBtn"
+      type="button"
+      aria-haspopup="menu"
+      aria-expanded="false"
+    >
+      <span class="avatar-initials">JJ</span>
+    </button>
+
+    <div class="profile-menu" id="profileMenu" role="menu" aria-label="Profile menu">
+      <a class="menu-item" href="profile.html" role="menuitem">My Profile</a>
+      <a class="menu-item" href="settings.html" role="menuitem">Settings</a>
+      <div class="menu-divider"></div>
+      <a class="menu-item danger" href="login.html" role="menuitem">Sign out</a>
     </div>
-  </header>
+  </div>
+</header>
+
 
   <main class="container">
 
@@ -236,26 +244,29 @@
   </main>
 
   <!-- Dropdown JS -->
-  <script>
-    const btn = document.getElementById("avatarBtn");
-    const menu = document.getElementById("profileMenu");
+ <script>
+  const btn = document.getElementById("avatarBtn");
+  const menu = document.getElementById("profileMenu");
 
-    function closeMenu(){
-      menu.classList.remove("open");
-      btn.setAttribute("aria-expanded", "false");
-    }
+  function closeMenu(){
+    menu.classList.remove("open");
+    btn.setAttribute("aria-expanded", "false");
+  }
 
-    btn.addEventListener("click", (e) => {
-      e.stopPropagation();
-      const isOpen = menu.classList.toggle("open");
-      btn.setAttribute("aria-expanded", String(isOpen));
-    });
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const isOpen = menu.classList.toggle("open");
+    btn.setAttribute("aria-expanded", String(isOpen));
+  });
 
-    document.addEventListener("click", closeMenu);
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") closeMenu();
-    });
-  </script>
+  document.addEventListener("click", closeMenu);
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeMenu();
+  });
+</script>
+
+
+
 
 </body>
 </html>

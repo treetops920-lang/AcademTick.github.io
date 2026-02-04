@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Academtick | My Tickets</title>
+
+  <link rel="stylesheet" href="css/my-tick.css" />
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <header class="topbar">
+    <a href="index.html" class="brand">
+      <img
+        src="image/AcademTick_-_logo-removebg-preview.png"
+        alt="Academtick"
+        class="logo"
+      />
+    </a>
+
+    <nav class="topnav">
+      <a href="main.html" class="topnav-link">Dashboard</a>
+      <a href="all-tick.html" class="topnav-link">All Tickets</a>
+      <a href="my-tick.html" class="topnav-link active">My Tickets</a>
+      <a href="knowledge-base.html" class="topnav-link">Knowledge Base</a>
+      <a href="creat-tick.html" class="topnav-link">Create Ticket</a>
+      <a href="settings.html" class="topnav-link">Settings</a>
+    </nav>
+
+    <div class="profile">
+      <span class="profile-name">Jessica</span>
+      <button class="avatar-btn" id="avatarBtn" type="button">
+        <span class="avatar-initials">JJ</span>
+      </button>
+
+      <div class="profile-menu" id="profileMenu">
+        <a class="menu-item" href="profile.html">My Profile</a>
+        <a class="menu-item" href="settings.html">Settings</a>
+        <div class="menu-divider"></div>
+        <a class="menu-item danger" href="login.html">Sign out</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Header -->
+    <section class="page-head">
+      <div>
+        <h1>My Tickets</h1>
+        <p>All tickets you have submitted (open, in progress, waiting, and resolved).</p>
+      </div>
+
+      <a href="create-ticket.html" class="btn btn-accent">+ Create Ticket</a>
+    </section>
+
+    <!-- Summary cards -->
+    <section class="summary-grid">
+      <article class="card summary">
+        <div class="kicker">Open</div>
+        <div class="big">3</div>
+        <div class="muted">Needs attention</div>
+      </article>
+
+      <article class="card summary">
+        <div class="kicker">In Progress</div>
+        <div class="big">2</div>
+        <div class="muted">Being worked</div>
+      </article>
+
+      <article class="card summary">
+        <div class="kicker">Resolved</div>
+        <div class="big">7</div>
+        <div class="muted">Closed out</div>
+      </article>
+    </section>
+
+    <!-- Filters -->
+    <section class="card filters">
+      <div class="field">
+        <label for="search">Search</label>
+        <input class="input" id="search" type="search" placeholder="Search by title, ID, room, or status..." />
+      </div>
+
+      <div class="grid-3">
+        <div class="field">
+          <label for="status">Status</label>
+          <select class="input" id="status">
+            <option>All</option>
+            <option>Open</option>
+            <option>In Progress</option>
+            <option>Waiting</option>
+            <option>Resolved</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="priority">Priority</label>
+          <select class="input" id="priority">
+            <option>All</option>
+            <option>Low</option>
+            <option>Medium</option>
+            <option>High</option>
+            <option>Urgent</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="category">Category</label>
+          <select class="input" id="category">
+            <option>All</option>
+            <option>Hardware</option>
+            <option>Software</option>
+            <option>Network</option>
+            <option>Account / Login</option>
+            <option>Classroom Tech</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="filters-actions">
+        <button class="btn btn-ghost" type="button">Clear</button>
+        <button class="btn btn-primary" type="button">Apply</button>
+      </div>
+    </section>
+
+    <!-- Table -->
+    <section class="card">
+      <div class="table-head">
+        <h2>Your Ticket History</h2>
+        <span class="muted">Newest first</span>
+      </div>
+
+      <div class="table-wrap">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Title</th>
+              <th>Category</th>
+              <th>Priority</th>
+              <th>Status</th>
+              <th>Where</th>
+              <th>Assigned To</th>
+              <th>Updated</th>
+              <th style="text-align:right;">Action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td class="mono">#1062</td>
+              <td>Printer jam + error code 59</td>
+              <td>Hardware</td>
+              <td><span class="badge priority-med">Medium</span></td>
+              <td><span class="badge status-open">Open</span></td>
+              <td>High School • Office</td>
+              <td>IT Helpdesk</td>
+              <td>Today 9:02</td>
+              <td style="text-align:right;"><a class="btn btn-ghost btn-sm" href="ticket-detail.html">View</a></td>
+            </tr>
+
+            <tr>
+              <td class="mono">#1058</td>
+              <td>Smartboard randomly disconnects</td>
+              <td>Classroom Tech</td>
+              <td><span class="badge priority-high">High</span></td>
+              <td><span class="badge status-progress">In Progress</span></td>
+              <td>Middle School • Room 204</td>
+              <td>Classroom Support</td>
+              <td>Yesterday 4:11</td>
+              <td style="text-align:right;"><a class="btn btn-ghost btn-sm" href="ticket-detail.html">View</a></td>
+            </tr>
+
+            <tr>
+              <td class="mono">#1042</td>
+              <td>Password reset request</td>
+              <td>Account / Login</td>
+              <td><span class="badge priority-low">Low</span></td>
+              <td><span class="badge status-resolved">Resolved</span></td>
+              <td>Elementary • Room 103</td>
+              <td>IT Helpdesk</td>
+              <td>Jan 31</td>
+              <td style="text-align:right;"><a class="btn btn-ghost btn-sm" href="ticket-detail.html">View</a></td>
+            </tr>
+
+            <tr>
+              <td class="mono">#1039</td>
+              <td>Wi-Fi weak signal near library</td>
+              <td>Network</td>
+              <td><span class="badge priority-med">Medium</span></td>
+              <td><span class="badge status-wait">Waiting</span></td>
+              <td>Middle School • Library</td>
+              <td>Network Team</td>
+              <td>Jan 29</td>
+              <td style="text-align:right;"><a class="btn btn-ghost btn-sm" href="ticket-detail.html">View</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Profile dropdown JS -->
+  <script>
+    const btn = document.getElementById("avatarBtn");
+    const menu = document.getElementById("profileMenu");
+
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      menu.classList.toggle("open");
+    });
+
+    document.addEventListener("click", () => {
+      menu.classList.remove("open");
+    });
+  </script>
+
+</body>
+</html>
