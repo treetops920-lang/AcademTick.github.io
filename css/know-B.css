@@ -75,6 +75,8 @@ body{
   font-size: 32px;
 }
 
+/* parragraph */
+
 .kb-header p{
   margin: 8px 0 20px;
   color: var(--muted);
