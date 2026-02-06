@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Academtick | Login</title>
 
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body class="login-page">
@@ -16,11 +16,7 @@
 
     <!-- Brand -->
     <div class="login-brand">
-      <img
-        src="image/TickBot-login.png"
-        alt="Academtick"
-        class="login-logo"
-      />
+      <img src="image/TickBot-login.png" alt="Academtick" class="login-logo" />
     </div>
 
     <!-- Login Card -->
@@ -32,27 +28,14 @@
 
       <form class="login-form" method="post" action="#">
         <div class="field">
-          <label for="email">Email</label>
-          <input
-            class="input"
-            id="email"
-            name="email"
-            type="email"
-            placeholder="name@school.edu"
-            required
-          />
+          <label for="email">Username</label>
+          <input class="input" id="email" name="username" type="text" placeholder="Username" required />
         </div>
+
 
         <div class="field">
           <label for="password">Password</label>
-          <input
-            class="input"
-            id="password"
-            name="password"
-            type="password"
-            placeholder="••••••••"
-            required
-          />
+          <input class="input" id="password" name="password" type="password" placeholder="••••••••" required />
         </div>
 
         <div class="login-options">
@@ -67,7 +50,10 @@
         <button type="submit" class="btn btn-accent login-btn">
           Sign in
         </button>
+        <script src="js/login.js"></script>
       </form>
+
+
 
       <footer class="login-footer">
         <span>Don’t have an account?</span>
@@ -78,4 +64,5 @@
   </main>
 
 </body>
+
 </html>
