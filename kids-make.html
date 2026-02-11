@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Academtick | Make a Ticket</title>
+
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/kids.css" />
+  <link rel="stylesheet" href="css/kids-make.css" />
+</head>
+
+<body>
+
+  <!-- Top Bar (same pattern as your kids dash) -->
+  <header class="topbar">
+    <a href="kids-dash.html" class="brand">
+      <img src="image/AcademTick_-_logo-removebg-preview.png" alt="Academtick" class="logo" />
+    </a>
+
+    <nav class="topnav">
+      <a href="kids-dash.html" class="topnav-link">Home</a>
+      <a href="kids-create-ticket.html" class="topnav-link active">Make a Ticket</a>
+      <a href="my-tick.html" class="topnav-link">My Tickets</a>
+      <a href="knowledge-base.html" class="topnav-link">TickBot Tips</a>
+      <a href="settings.html" class="topnav-link">Settings</a>
+    </nav>
+
+    <div class="profile">
+      <span class="profile-name">Jessica</span>
+      <button class="avatar-btn" type="button">
+        <span class="avatar-initials">JJ</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="kid-head">
+      <h1>Make a Ticket 📝</h1>
+      <p>Pick what you can. If you’re not sure, that’s okay.</p>
+    </section>
+
+    <section class="kid-ticket card">
+      <form class="kid-form">
+
+        <!-- What’s wrong? -->
+        <div class="block">
+          <h2 class="block-title">1) What do you need help with?</h2>
+
+          <div class="pick-grid">
+            <label class="pick">
+              <input type="radio" name="category" value="Chromebook" required />
+              <span class="pick-icon">💻</span>
+              <span class="pick-text">Chromebook</span>
+            </label>
+
+            <label class="pick">
+              <input type="radio" name="category" value="WiFi" />
+              <span class="pick-icon">📶</span>
+              <span class="pick-text">Wi-Fi / Internet</span>
+            </label>
+
+            <label class="pick">
+              <input type="radio" name="category" value="Smartboard" />
+              <span class="pick-icon">🖥️</span>
+              <span class="pick-text">Smartboard</span>
+            </label>
+
+            <label class="pick">
+              <input type="radio" name="category" value="Password" />
+              <span class="pick-icon">🔑</span>
+              <span class="pick-text">Password</span>
+            </label>
+
+            <label class="pick">
+              <input type="radio" name="category" value="Other" />
+              <span class="pick-icon">🧩</span>
+              <span class="pick-text">Something Else</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Where -->
+        <div class="block">
+          <h2 class="block-title">2) Where are you?</h2>
+
+          <div class="row wrap">
+            <label class="field mini">
+              <span class="mini-label">Room #</span>
+              <input class="input" name="room" type="text" placeholder="ex: 203" />
+            </label>
+
+            <label class="field mini">
+              <span class="mini-label">School</span>
+              <select class="input" name="school">
+                <option value="">Pick one</option>
+                <option>Elementary</option>
+                <option>Middle</option>
+                <option>High School</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="place-pills">
+            <label class="pill">
+              <input type="radio" name="place" value="Classroom" />
+              <span>🏫 Classroom</span>
+            </label>
+            <label class="pill">
+              <input type="radio" name="place" value="Library" />
+              <span>📚 Library</span>
+            </label>
+            <label class="pill">
+              <input type="radio" name="place" value="Office" />
+              <span>🧑‍💼 Office</span>
+            </label>
+            <label class="pill">
+              <input type="radio" name="place" value="Other" />
+              <span>📍 Other</span>
+            </label>
+          </div>
+
+          <p class="helper">If you don’t know, leave it blank — we’ll still help.</p>
+        </div>
+
+        <!-- Priority (still included) -->
+        <div class="block">
+          <h2 class="block-title">3) How urgent is it?</h2>
+
+          <div class="priority">
+            <label class="prio">
+              <input type="radio" name="priority" value="Low" required />
+              <span class="prio-chip low">🙂 Not a big rush</span>
+            </label>
+
+            <label class="prio">
+              <input type="radio" name="priority" value="Normal" />
+              <span class="prio-chip normal">😅 Kinda important</span>
+            </label>
+
+            <label class="prio">
+              <input type="radio" name="priority" value="High" />
+              <span class="prio-chip high">🚨 Can’t do class</span>
+            </label>
+          </div>
+
+          <p class="helper">Tip: choose 🚨 only if you can’t do your work at all.</p>
+        </div>
+
+        <!-- Describe -->
+        <div class="block">
+          <h2 class="block-title">4) Tell us what happened (1–2 sentences)</h2>
+          <textarea class="input" name="details" placeholder="ex: My Chromebook won’t turn on. I tried charging it."></textarea>
+
+          <div class="row">
+            <label class="field mini" style="flex:1;">
+              <span class="mini-label">Teacher (optional)</span>
+              <input class="input" name="teacher" type="text" placeholder="ex: Ms. Smith" />
+            </label>
+          </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="actions">
+          <a class="btn btn-ghost" href="kids-dash.html">Cancel</a>
+          <button class="btn btn-accent" type="submit">Send Ticket ✅</button>
+        </div>
+<img src="image/TickBot-tips.png" alt="TickBot poping out from background" class="pic" />
+        <p class="tiny-note">
+          TickBot says: “You’ve got this—let’s take the next step.”
+        </p>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>

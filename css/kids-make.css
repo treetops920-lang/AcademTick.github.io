@@ -1,0 +1,223 @@
+/* =========================
+   kids-create-ticket.css
+   (Adds kid-friendly form layout)
+========================= */
+
+.kid-ticket{
+  margin-top: 16px;
+  padding: 18px;
+}
+
+.kid-form{
+  display: grid;
+  gap: 16px;
+}
+
+.block{
+  padding: 14px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.75);
+}
+
+.block-title{
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: 950;
+}
+
+.helper{
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.tiny-note{
+  margin: 10px 0 0;
+  text-align: center;
+  color: var(--muted);
+  font-weight: 800;
+}
+
+/* Pick grid (category buttons) */
+.pick-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+@media (max-width: 760px){
+  .pick-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+.pick{
+  position: relative;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  background: rgba(241,245,249,0.70);
+  padding: 14px;
+  cursor: pointer;
+
+  display: grid;
+  gap: 8px;
+  justify-items: center;
+  text-align: center;
+
+  box-shadow: var(--shadow-sm);
+  transition: transform 120ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.pick:hover{
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(40,152,136,0.30);
+}
+
+.pick input{
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.pick-icon{
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+  background: linear-gradient(135deg, rgba(40,152,136,0.14), rgba(240,88,40,0.10));
+}
+
+.pick-text{
+  font-weight: 950;
+  font-size: 15px;
+  color: var(--text);
+}
+
+/* Selected state */
+.pick input:checked + .pick-icon{
+  outline: 4px solid rgba(40,152,136,0.25);
+}
+
+.pick input:checked ~ .pick-text{
+  color: var(--text);
+}
+
+/* “Where” mini fields */
+.row.wrap{ flex-wrap: wrap; }
+
+.field.mini{
+  min-width: 200px;
+  display: grid;
+  gap: 6px;
+}
+
+.mini-label{
+  font-size: 12px;
+  color: var(--muted-2);
+  font-weight: 900;
+}
+
+/* Place pills */
+.place-pills{
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pill{
+  position: relative;
+  cursor: pointer;
+}
+
+.pill input{
+  position: absolute;
+  opacity: 0;
+}
+
+.pill span{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(241,245,249,0.70);
+  font-weight: 900;
+}
+
+.pill input:checked + span{
+  background: rgba(40,152,136,0.14);
+  border-color: rgba(40,152,136,0.35);
+}
+
+/* Priority chips */
+.priority{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 12px;
+}
+
+@media (max-width: 760px){
+  .priority{ grid-template-columns: 1fr; }
+}
+
+.prio{
+  position: relative;
+  cursor: pointer;
+}
+
+.prio input{
+  position: absolute;
+  opacity: 0;
+}
+
+.prio-chip{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  padding: 12px 14px;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  background: rgba(241,245,249,0.70);
+  font-weight: 950;
+  box-shadow: var(--shadow-sm);
+  transition: transform 120ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.prio:hover .prio-chip{
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.prio input:checked + .prio-chip{
+  border-color: rgba(40,152,136,0.35);
+  background: rgba(40,152,136,0.12);
+}
+
+.prio-chip.low{ }
+.prio-chip.normal{ }
+.prio-chip.high{
+  background: rgba(240,88,40,0.10);
+}
+
+.prio input:checked + .prio-chip.high{
+  border-color: rgba(240,88,40,0.35);
+  background: rgba(240,88,40,0.14);
+}
+
+/* Actions */
+.actions{
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-top: 8px;
+}
+
