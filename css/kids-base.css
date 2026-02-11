@@ -1,0 +1,406 @@
+/* =========================
+   kids-base.css (K–5 vibe)
+   Same class names as base.css
+   Friendlier sizing + softer look + smaller topbar
+========================= */
+
+/* ---------- CSS Variables ---------- */
+:root{
+  /* Brand */
+  --teal-600:#289888;
+  --teal-500:#30A095;
+  --teal-100:#B8E0D8;
+
+  --orange-600:#F05828;
+  --orange-500:#FF6B3D;
+  --orange-100:#F09078;
+
+  --gold-500:#E8C068;
+  --navy-700:#305098;
+  --blue-600:#4880B8;
+  --plum-800:#301840;
+
+  /* Neutrals */
+  --bg:#F8FAFC;
+  --surface:#FFFFFF;
+  --surface-2:#F1F5F9;
+  --border:#E5E7EB;
+
+  --text:#0F172A;
+  --muted:#475569;
+  --muted-2:#64748B;
+
+  /* Feedback */
+  --success: var(--teal-600);
+  --warning: var(--gold-500);
+  --danger:#E81820;
+
+  /* ✅ Kid sizing */
+  --radius-sm: 14px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+
+  --shadow-sm: 0 6px 18px rgba(2,6,23,0.08);
+  --shadow-md: 0 16px 36px rgba(2,6,23,0.14);
+
+  --container: 1120px;
+  --gap: 16px;
+
+  /* ✅ Kid typography */
+  --font: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  --ring: 0 0 0 5px rgba(40, 152, 136, 0.24);
+}
+
+/* ---------- Reset / Base ---------- */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body{
+  margin: 0;
+  font-family: var(--font);
+  font-size: 17px;
+  color: var(--text);
+  line-height: 1.6;
+
+  /* ✅ softer, playful background */
+  background:
+    radial-gradient(900px 420px at 12% 10%, rgba(40,152,136,0.14), transparent 60%),
+    radial-gradient(850px 420px at 92% 10%, rgba(240,88,40,0.14), transparent 60%),
+    radial-gradient(700px 380px at 55% 95%, rgba(232,192,104,0.14), transparent 55%),
+    var(--bg);
+}
+
+img{ max-width: 100%; display: block; }
+a{ color: inherit; text-decoration: none; }
+button, input, select, textarea{ font: inherit; }
+::selection{ background: rgba(240,88,40,0.22); }
+
+/* Accessibility helper */
+.sr-only{
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
+/* ---------- Layout Utilities ---------- */
+.container{
+  width: min(var(--container), calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.stack{ display:flex; flex-direction:column; gap: var(--gap); }
+.row{ display:flex; gap: var(--gap); align-items:center; flex-wrap:wrap; }
+.grid{ display:grid; gap: var(--gap); }
+.grid-2{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid-3{ grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+@media (max-width: 900px){
+  .grid-2, .grid-3{ grid-template-columns: 1fr; }
+}
+
+/* ---------- App Shell (still supported) ---------- */
+.app{
+  display:grid;
+  grid-template-columns: 280px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar{
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  padding: 16px;
+  background: rgba(255,255,255,0.80);
+  backdrop-filter: blur(10px);
+  border-right: 1px solid var(--border);
+  border-radius: 0;
+}
+
+.main{ padding: 18px; }
+
+@media (max-width: 980px){
+  .app{ grid-template-columns: 1fr; }
+  .sidebar{
+    position: relative;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+}
+
+/* ---------- Typography ---------- */
+h1,h2,h3{ line-height: 1.15; margin: 0; }
+h2{ font-size: 22px; }
+h3{ font-size: 16px; color: var(--muted); font-weight: 800; }
+
+.lead{ color: var(--muted); margin: 6px 0 0; }
+.kicker{
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted-2);
+}
+
+/* =========================
+   Big Kid Top Bar (1/8 screen)
+========================= */
+
+.topbar{
+  min-height: 12vh;            /* ~1/8 of viewport height */
+  padding: 16px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 0;            /* full-width banner look */
+
+  /* more playful background */
+  background:
+    radial-gradient(400px 200px at 15% 20%, rgba(255,255,255,0.4), transparent 70%),
+    linear-gradient(135deg, #B8E0D8, #F09078);
+
+  box-shadow: 0 12px 30px rgba(2,6,23,0.10);
+}
+
+
+.brand{ display:flex; align-items:center; gap: 10px; }
+
+.logo{
+  height: 90px;                       /* ✅ smaller logo */
+  width: auto;
+}
+
+/* Top nav = big friendly buttons */
+.topnav{
+  display:flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.topnav-link{
+  padding: 7px 12px;                  /* ✅ smaller bar buttons */
+  font-size: 15px;
+  font-weight: 950;
+
+  border-radius: 14px;
+  border: 2px solid transparent;
+
+  color: var(--text);
+  background: rgba(241, 245, 249, 0.75);
+
+  transition: background 140ms ease, border-color 140ms ease, transform 120ms ease, box-shadow 140ms ease;
+}
+
+.topnav-link:hover{
+  background: rgba(40,152,136,0.12);
+  border-color: rgba(40,152,136,0.22);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(2,6,23,0.06);
+}
+
+.topnav-link.active{
+  background: linear-gradient(135deg, rgba(40,152,136,0.95), rgba(240,88,40,0.92));
+  color:#fff;
+}
+
+/* ---------- Surface Components ---------- */
+.card{
+  background: rgba(255,255,255,0.92);
+  border: 1px solid rgba(229,231,235,0.95);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 16px;
+}
+
+.card-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap: var(--gap);
+  margin-bottom: 10px;
+}
+
+.divider{
+  height: 1px;
+  background: var(--border);
+  margin: 12px 0;
+}
+
+/* ---------- Buttons (✅ chunkier + kid readable) ---------- */
+.btn{
+  appearance:none;
+  border: 2px solid transparent;
+  border-radius: 18px;
+  padding: 12px 16px;
+  font-weight: 950;
+  cursor:pointer;
+  user-select:none;
+
+  transition: transform 120ms ease, box-shadow 140ms ease, background 140ms ease, border-color 140ms ease;
+}
+
+.btn:active{ transform: translateY(1px); }
+
+.btn-primary{
+  background: linear-gradient(135deg, var(--orange-600), var(--orange-500));
+  color: #fff;
+  box-shadow: 0 12px 24px rgba(240,88,40,0.22);
+}
+.btn-primary:hover{ box-shadow: 0 16px 30px rgba(240,88,40,0.26); }
+
+.btn-accent{
+  background: linear-gradient(135deg, var(--teal-600), var(--teal-500));
+  color: #fff;
+  box-shadow: 0 12px 24px rgba(40,152,136,0.20);
+}
+.btn-accent:hover{ box-shadow: 0 16px 30px rgba(40,152,136,0.24); }
+
+.btn-ghost{
+  background: rgba(255,255,255,0.86);
+  border-color: rgba(229,231,235,0.95);
+  color: var(--text);
+}
+.btn-ghost:hover{
+  border-color: rgba(40,152,136,0.30);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-danger{
+  background: rgba(232,24,32,0.12);
+  border-color: rgba(232,24,32,0.20);
+  color: #B91C1C;
+}
+.btn-danger:hover{ background: rgba(232,24,32,0.16); }
+
+/* ---------- Forms (✅ bigger + easier) ---------- */
+.field{ display:grid; gap: 6px; }
+
+label{
+  font-size: 13px;
+  color: var(--muted-2);
+  font-weight: 900;
+}
+
+.input,
+select,
+textarea{
+  width: 100%;
+  border-radius: 18px;
+  border: 2px solid rgba(229,231,235,0.95);
+  background: rgba(255,255,255,0.92);
+  padding: 12px 14px;
+  color: var(--text);
+  outline: none;
+  transition: box-shadow 140ms ease, border-color 140ms ease, background 140ms ease;
+}
+
+textarea{ min-height: 110px; resize: vertical; }
+
+.input:focus,
+select:focus,
+textarea:focus{
+  border-color: rgba(40,152,136,0.55);
+  box-shadow: var(--ring);
+  background: var(--surface);
+}
+
+.help{
+  font-size: 13px;
+  color: var(--muted-2);
+}
+
+.input-group{
+  display:flex;
+  gap: 10px;
+  align-items:center;
+}
+
+/* ---------- Pills / Badges ---------- */
+.badge{
+  display:inline-flex;
+  align-items:center;
+  gap: 8px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 900;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--muted);
+}
+
+/* ---------- Tables (still available for older kids/admin) ---------- */
+.table{
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+
+/* ---------- Small helpers ---------- */
+.mono{ font-family: var(--mono); }
+.muted{ color: var(--muted); }
+.center{ display:grid; place-items:center; }
+.spacer{ height: var(--gap); }
+
+/* ---------- Profile (smaller for kids topbar) ---------- */
+.profile{
+  position:relative;
+  display:flex;
+  align-items:center;
+  gap: 8px;
+}
+
+.profile-name{
+  font-weight: 900;
+  font-size: 14px;
+  max-width: 160px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.avatar-btn{
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  border: 1px solid rgba(229,231,235,0.95);
+  background: rgba(255,255,255,0.85);
+  display:grid;
+  place-items:center;
+  cursor:pointer;
+  transition: box-shadow 140ms ease, border-color 140ms ease, transform 120ms ease;
+}
+
+.avatar-btn:hover{
+  border-color: rgba(40,152,136,0.38);
+  box-shadow: var(--shadow-sm);
+}
+
+.avatar-btn:focus{ outline:none; box-shadow: var(--ring); }
+.avatar-btn:active{ transform: translateY(1px); }
+
+.avatar-initials{
+  width:100%;
+  height:100%;
+  border-radius:999px;
+  display:grid;
+  place-items:center;
+  font-weight: 950;
+  color:#fff;
+  background: linear-gradient(135deg, var(--teal-600), var(--orange-600));
+}
+
+/* Hide name on super small screens */
+@media (max-width: 560px){
+  .profile-name{ display:none; }
+}
