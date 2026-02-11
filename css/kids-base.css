@@ -82,7 +82,7 @@ body {
   margin: 0;
   font-family: var(--font);
   font-size: 17px;
-  color: #e2f6ff; /* softer light text */
+  color: #141414; /* softer light text */
   line-height: 1.6;
 
   /* LIGHTER space blue */
@@ -114,34 +114,13 @@ body::before{
   to   { transform: translateY(-150px); }
 }
 
-/* 🌈 Glow Layer */
-body::after{
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: -1;
 
-  background:
-    radial-gradient(circle at 25% 35%, rgba(40,152,136,0.25), transparent 50%),
-    radial-gradient(circle at 80% 30%, rgba(99,102,241,0.25), transparent 50%),
-    radial-gradient(circle at 50% 85%, rgba(240,88,40,0.18), transparent 50%);
-
-  animation: glowFloat 16s ease-in-out infinite alternate;
-}
-
-@keyframes glowFloat{
-   from { transform: translateY(-6px) scale(1); }
-  to   { transform: translateY(6px) scale(1.04); }
-}
 
 
 @keyframes starDrift{
   from { transform: translateY(0px); }
   to   { transform: translateY(-200px); }
 }
-
-
 
 img {
   max-width: 100%;

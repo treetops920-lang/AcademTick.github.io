@@ -2,6 +2,23 @@
    kids-create-ticket.css
    (Adds kid-friendly form layout)
 ========================= */
+.kid-head{
+  text-align: center;
+  margin-top: 12px;
+  padding: 18px 18px;
+}
+
+.kid-head h1{
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.15;
+}
+
+.kid-head p{
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 16px;
+}
 
 .kid-ticket{
   margin-top: 16px;
