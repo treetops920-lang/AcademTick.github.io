@@ -162,6 +162,60 @@
   gap: 12px;
 }
 
+
+/* =========================
+   Space Tech Active Nav (Kids Make Page)
+========================= */
+
+.topnav-link{
+  position: relative;
+  transition: all 140ms ease;
+}
+
+/* Default look (soft panel style) */
+.topnav-link{
+  background: rgba(255,255,255,0.75);
+  border: 2px solid rgba(255,255,255,0.6);
+}
+
+/* 🚀 ACTIVE SPACE MODE */
+.topnav-link.active{
+  color: #fff;
+
+  background: linear-gradient(
+    135deg,
+    rgba(48,160,149,0.95),
+    rgba(40,152,136,0.95)
+  );
+
+  border: 2px solid rgba(255,255,255,0.45);
+
+  box-shadow:
+    0 0 0 2px rgba(48,160,149,0.35),
+    0 0 18px rgba(48,160,149,0.55),
+    0 10px 28px rgba(2,6,23,0.25);
+}
+
+/* subtle tech underline beam */
+.topnav-link.active::after{
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 20%;
+  width: 60%;
+  height: 4px;
+  border-radius: 10px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #30A095,
+    transparent
+  );
+
+  box-shadow: 0 0 12px rgba(48,160,149,0.8);
+}
+
 @media (max-width: 760px){
   .priority{ grid-template-columns: 1fr; }
 }
