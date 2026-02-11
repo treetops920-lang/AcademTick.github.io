@@ -39,6 +39,7 @@ main.kid-page::before {
 /* ---------- Header: big, cheerful, readable ---------- */
 .kid-head {
   text-align: center;
+  margin-top: 10px;
   padding: 22px;
   border-radius: calc(var(--radius-lg) + 6px);
   background: linear-gradient(
