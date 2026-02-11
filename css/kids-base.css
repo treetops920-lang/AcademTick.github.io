@@ -145,28 +145,35 @@ h3{ font-size: 16px; color: var(--muted); font-weight: 800; }
   color: var(--muted-2);
 }
 
-/* ---------- Topbar (✅ smaller + cuter) ---------- */
+/* =========================
+   Big Kid Top Bar (1/8 screen)
+========================= */
+
 .topbar{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap: 12px;
+  min-height: 12vh;            /* ~1/8 of viewport height */
+  padding: 16px 24px;
 
-  padding: 8px 14px;                 /* ✅ smaller */
-  border-radius: 18px;
-  background: rgba(255,255,255,0.82);
-  border: 1px solid rgba(229,231,235,0.95);
-  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-  position: sticky;
-  top: 10px;                          /* keeps it off the edge */
-  z-index: 50;
+  border-radius: 0;            /* full-width banner look */
+
+  /* more playful background */
+  background: linear-gradient(
+    135deg,
+    rgba(40,152,136,0.15),
+    rgba(240,88,40,0.15)
+  );
+
+  box-shadow: 0 12px 30px rgba(2,6,23,0.10);
 }
+
 
 .brand{ display:flex; align-items:center; gap: 10px; }
 
 .logo{
-  height: 32px;                       /* ✅ smaller logo */
+  height: 90px;                       /* ✅ smaller logo */
   width: auto;
 }
 
