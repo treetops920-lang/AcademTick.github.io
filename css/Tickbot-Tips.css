@@ -1,0 +1,349 @@
+/* =========================
+   kids-help.css
+   Help page that matches your dashboard vibe
+   Desktop target: >= 1366px
+========================= */
+
+:root{
+  --max: 1200px;
+
+  --ink: #0f172a;
+  --muted: #556070;
+
+  --card: rgba(244,246,248,.96);
+  --card2: rgba(255,255,255,.92);
+
+  --border: rgba(15, 23, 42, 0.12);
+  --shadow: 0 18px 40px rgba(0,0,0,.20);
+  --shadowSoft: 0 10px 24px rgba(0,0,0,.14);
+
+  --accent: #21b3a7;  /* teal outline vibe */
+  --radius: 24px;
+}
+
+*{ box-sizing:border-box; }
+html,body{ height:100%; }
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  color: var(--ink);
+}
+
+/* =========================
+   Top gradient header (same vibe)
+========================= */
+.khelp-top{
+  background: linear-gradient(90deg,
+    rgba(151, 222, 214, 1) 0%,
+    rgba(186, 207, 196, 1) 40%,
+    rgba(245, 181, 164, 1) 100%);
+  border-bottom: 2px solid var(--border);
+  position: relative;
+  overflow:hidden;
+}
+.khelp-top::after{
+  content:"";
+  position:absolute; inset:0;
+  background-image: radial-gradient(rgba(255,255,255,.55) 2px, transparent 3px);
+  background-size: 120px 80px;
+  opacity:.55;
+  pointer-events:none;
+}
+.khelp-top__inner{
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 18px 22px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  position:relative;
+  z-index:1;
+}
+.khelp-brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.khelp-brand__logo{
+  width:44px; height:44px;
+  border-radius:14px;
+  display:grid; place-items:center;
+  background: rgba(255,255,255,.65);
+  border: 1px solid var(--border);
+  font-size:22px;
+}
+.khelp-brand__name{
+  letter-spacing: .22em;
+  font-weight: 900;
+  font-size: 14px;
+  color: rgba(15, 23, 42, 0.82);
+}
+.khelp-user{
+  font-weight: 800;
+  color: rgba(15, 23, 42, 0.82);
+}
+
+/* =========================
+   Space background
+========================= */
+.khelp-stage{
+  min-height: calc(100vh - 86px);
+  background:
+    radial-gradient(circle at 25% 20%, rgba(255,255,255,.12) 0 2px, transparent 3px) 0 0/180px 140px,
+    radial-gradient(circle at 70% 60%, rgba(255,255,255,.10) 0 2px, transparent 3px) 0 0/220px 160px,
+    linear-gradient(180deg, #203a5c 0%, #0f223d 55%, #0b162b 100%);
+}
+.khelp-wrap{
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 26px 18px 60px;
+}
+
+/* =========================
+   Hero (big rounded white bar)
+========================= */
+.khelp-hero__card{
+  background: var(--card2);
+  border: 2px solid var(--border);
+  border-radius: 22px;
+  padding: 18px 22px;
+  box-shadow: var(--shadowSoft);
+  text-align:center;
+}
+.khelp-hero__card h1{
+  margin:0;
+  font-size: 26px;
+  font-weight: 1000;
+  letter-spacing: -.02em;
+}
+.khelp-hero__card p{
+  margin: 8px 0 0;
+  color: #4b5563;
+  font-weight: 650;
+}
+
+/* =========================
+   Top row: buttons + bot
+========================= */
+.khelp-toprow{
+  margin-top: 18px;
+  display:grid;
+  gap: 18px;
+}
+
+/* category buttons */
+.khelp-buttons{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.khelp-btn{
+  padding: 16px 14px;
+  border-radius: var(--radius);
+  background: var(--card);
+  border: 2px solid rgba(15, 23, 42, 0.10);
+  box-shadow: var(--shadowSoft);
+  font-weight: 1000;
+  cursor:pointer;
+  text-align:center;
+  transition: transform .12s ease, border-color .12s ease;
+}
+.khelp-btn:hover{ transform: translateY(-2px); border-color: rgba(33,179,167,.45); }
+.khelp-btn.is-active{
+  border-color: rgba(33,179,167,.70);
+  box-shadow: 0 0 0 6px rgba(33,179,167,.18), var(--shadowSoft);
+}
+
+/* TickBot zone */
+.khelp-bot{
+  position: relative;
+  display:grid;
+  place-items:center;
+  min-height: 260px;
+}
+.khelp-bot__img{
+  width: min(360px, 85vw);
+  height:auto;
+  filter: drop-shadow(0 18px 26px rgba(0,0,0,.35));
+}
+.khelp-bot__fallback{
+  width: 220px;
+  height: 220px;
+  border-radius: 36px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.14);
+  display:grid;
+  place-items:center;
+  font-size: 90px;
+}
+.khelp-bubble{
+  position:absolute;
+  right: 6%;
+  bottom: 14%;
+  background: rgba(255,255,255,.95);
+  border: 2px solid rgba(33,179,167,.65);
+  border-radius: 18px;
+  padding: 14px 16px;
+  box-shadow: var(--shadow);
+  font-weight: 900;
+  color: #0f172a;
+  max-width: 240px;
+}
+.khelp-bubble span{ color: rgba(15, 23, 42, 0.70); font-weight: 800; }
+.khelp-bubble::after{
+  content:"";
+  position:absolute;
+  left: -10px;
+  bottom: 22px;
+  width: 18px;
+  height: 18px;
+  background: rgba(255,255,255,.95);
+  border-left: 2px solid rgba(33,179,167,.65);
+  border-bottom: 2px solid rgba(33,179,167,.65);
+  transform: rotate(45deg);
+}
+
+/* =========================
+   Help content panels
+========================= */
+.khelp-content{
+  margin-top: 18px;
+  display:grid;
+  gap: 16px;
+}
+.khelp-panel{
+  background: var(--card);
+  border: 2px solid rgba(15, 23, 42, 0.10);
+  border-radius: var(--radius);
+  box-shadow: var(--shadowSoft);
+  padding: 16px;
+}
+.khelp-panel__title{
+  margin: 2px 0 12px;
+  font-size: 18px;
+  font-weight: 1000;
+}
+
+/* steps */
+.khelp-steps{
+  display:grid;
+  gap: 10px;
+}
+.khelp-step{
+  display:grid;
+  grid-template-columns: 44px 1fr;
+  gap: 12px;
+  align-items:start;
+  padding: 12px;
+  border-radius: 18px;
+  background: rgba(255,255,255,.82);
+  border: 1px solid var(--border);
+}
+.khelp-step__num{
+  width: 44px;
+  height: 44px;
+  border-radius: 16px;
+  display:grid;
+  place-items:center;
+  background: rgba(33,179,167,.14);
+  border: 1px solid rgba(33,179,167,.30);
+  font-weight: 1000;
+}
+.khelp-step__body h3{
+  margin: 2px 0 4px;
+  font-size: 16px;
+  font-weight: 1000;
+}
+.khelp-step__body p{
+  margin:0;
+  color: var(--muted);
+  font-weight: 650;
+  line-height: 1.25;
+}
+
+/* ticket CTA */
+.khelp-ticket{
+  display:block;
+  margin-top: 12px;
+  text-decoration:none;
+  text-align:center;
+  padding: 14px 14px;
+  border-radius: 18px;
+  border: 2px solid rgba(33,179,167,.65);
+  background: rgba(33,179,167,.12);
+  font-weight: 1000;
+  color: #0f172a;
+}
+
+/* FAQ */
+.khelp-faq{
+  display:grid;
+  gap: 10px;
+}
+.khelp-faq__item{
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.82);
+  padding: 10px 12px;
+}
+.khelp-faq__item summary{
+  cursor:pointer;
+  font-weight: 1000;
+}
+.khelp-faq__body{
+  margin-top: 8px;
+  color: var(--muted);
+  font-weight: 650;
+  line-height: 1.25;
+}
+
+/* =========================
+   Mobile tweaks
+========================= */
+@media (max-width: 520px){
+  .khelp-top__inner{ padding: 14px 14px; }
+  .khelp-hero__card h1{ font-size: 20px; }
+  .khelp-buttons{ grid-template-columns: 1fr; }
+  .khelp-bubble{ right: 2%; bottom: 10%; }
+}
+
+/* =========================
+   Desktop layout (>=1366px Chromebook)
+   Matches your screenshot feel
+========================= */
+@media (min-width: 1366px){
+  .khelp-hero__card{
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 22px 26px;
+  }
+
+  .khelp-toprow{
+    grid-template-columns: 640px 1fr; /* left buttons, right TickBot */
+    align-items:start;
+  }
+
+  .khelp-buttons{
+    grid-template-columns: 1fr 1fr;   /* nice 2-up button layout */
+    gap: 16px;
+  }
+
+  .khelp-bot{
+    min-height: 430px;
+    justify-self:center;
+  }
+
+  .khelp-bot__img{ width: 420px; }
+
+  .khelp-bubble{
+    right: -4%;
+    bottom: 26%;
+    max-width: 260px;
+  }
+
+  .khelp-content{
+    grid-template-columns: 1fr 1fr; /* panels side-by-side */
+    gap: 18px;
+    margin-top: 20px;
+  }
+}

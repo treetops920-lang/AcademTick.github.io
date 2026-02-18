@@ -25,40 +25,86 @@ body{
 }
 
 /* Topbar */
-.kb-topbar{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 14px 20px;
-  background: var(--surface);
-  border-bottom: 1px solid var(--border);
+.topbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  padding:14px 18px;
+  border-bottom:1px solid var(--border);
+  background: rgba(255,255,255,0.78);
+  backdrop-filter: blur(10px);
 }
 
-.kb-logo img{
-  height: 64px;
+.logo{ height:44px; width:auto; }
+
+.topnav{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
 }
 
-.kb-profile{
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.topnav-link{
+  padding:8px 12px;
+  border-radius:999px;
+  font-weight:750;
+  font-size:13px;
+  color:var(--muted);
 }
 
-.kb-username{
-  font-weight: 700;
-  font-size: 14px;
+.topnav-link:hover{
+  background: rgba(40,152,136,0.10);
+  color:var(--text);
 }
 
-.kb-avatar{
-  width: 36px;
-  height: 36px;
-  border-radius: 999px;
+.topnav-link.active{
+  background: rgba(240,88,40,0.12);
+  border:1px solid rgba(240,88,40,0.18);
+  color:var(--text);
+}
+
+/* Profile */
+.profile{
+  position:relative;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.profile-name{ font-weight:800; font-size:14px; }
+.avatar-btn{
+  width:40px; height:40px;
+  border-radius:999px;
+  border:1px solid var(--border);
+  background:#fff;
+  cursor:pointer;
+}
+.avatar-initials{
+  width:100%; height:100%;
+  border-radius:999px;
+  display:grid;
+  place-items:center;
+  font-weight:900;
+  color:#fff;
   background: linear-gradient(135deg, var(--teal), var(--orange));
-  color: white;
-  display: grid;
-  place-items: center;
-  font-weight: 800;
 }
+.profile-menu{
+  position:absolute;
+  right:0;
+  top:calc(100% + 10px);
+  width:220px;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:16px;
+  box-shadow:var(--shadow-md);
+  display:none;
+  overflow:hidden;
+}
+.profile-menu.open{ display:block; }
+.menu-item{ padding:10px 12px; display:block; font-weight:700; }
+.menu-item:hover{ background: rgba(40,152,136,0.10); }
+.menu-divider{ height:1px; background:var(--border); }
+.menu-item.danger{ color:#B91C1C; }
+
 
 
 

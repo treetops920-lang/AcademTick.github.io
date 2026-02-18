@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Help • AcademTick Kids</title>
+
+    <!-- If you have global base files, keep them first -->
+    <!-- <link rel="stylesheet" href="kids-base.css" /> -->
+    <link rel="stylesheet" href="css/kids-base.css" />
+    <link rel="stylesheet" href="css/Tickbot-Tips.css" />
+</head>
+
+<body class="khelp-page">
+    <!-- Top gradient header (same vibe) -->
+    <header class="topbar">
+        <a href="kids-dash.html" class="brand">
+            <img src="image/AcademTick_-_logo-removebg-preview.png" alt="Academtick" class="logo" />
+        </a>
+        <nav class="topnav">
+            <a href="kids-dash.html" class="topnav-link">Home</a>
+            <a href="my-tick.html" class="topnav-link">My Tickets</a>
+            <a href="TickBot-tips.html" class="topnav-link">TickBot Tips</a>
+            <a href="settings.html" class="topnav-link">Settings</a>
+        </nav>
+        <div class="profile">
+            <span class="profile-name">Jessica</span>
+            <button class="avatar-btn" id="avatarBtn" type="button" aria-haspopup="menu" aria-expanded="false">
+                <span class="avatar-initials">JJ</span>
+            </button>
+
+        </div>
+    </header>
+
+    <!-- Space background -->
+    <main class="khelp-stage">
+        <div class="khelp-wrap">
+
+            <!-- Big rounded header card -->
+            <section class="khelp-hero">
+                <div class="khelp-hero__card">
+                    <h1>Help Time! What’s going on?</h1>
+                    <p>Tap a topic below. I’ll give you quick fixes you can try first.</p>
+                </div>
+            </section>
+
+            <!-- Top row: category buttons + TickBot -->
+            <section class="khelp-toprow">
+                <!-- category buttons (keeps your dashboard vibe) -->
+                <div class="khelp-buttons">
+                    <button class="khelp-btn is-active" type="button">Chromebook</button>
+                    <button class="khelp-btn" type="button">Wi-Fi</button>
+                    <button class="khelp-btn" type="button">Passwords</button>
+                    <button class="khelp-btn" type="button">Other</button>
+                </div>
+
+                <!-- TickBot area -->
+                <div class="khelp-bot">
+                    <!-- Replace tickbot.png with your real asset -->
+                    <img class="khelp-bot__img" src="" alt="TickBot ready to help"
+                        onerror="this.style.display='none'; document.querySelector('.khelp-bot__fallback').style.display='grid';" />
+
+                    <div class="khelp-bot__fallback" aria-hidden="true" style="display:none;">🤖</div>
+
+                    <div class="khelp-bubble">
+                        <strong>Try this first:</strong><br />
+                        Restart your Chromebook 🔁<br />
+                        <span>(Power off → wait 10 sec → on)</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Help content (still same vibe: big soft cards) -->
+            <section class="khelp-content">
+                <div class="khelp-panel">
+                    <h2 class="khelp-panel__title">Quick Fix Steps</h2>
+
+                    <div class="khelp-steps">
+                        <div class="khelp-step">
+                            <div class="khelp-step__num">1</div>
+                            <div class="khelp-step__body">
+                                <h3>Restart</h3>
+                                <p>Turn it off fully. Count to 10. Turn it back on.</p>
+                            </div>
+                        </div>
+
+                        <div class="khelp-step">
+                            <div class="khelp-step__num">2</div>
+                            <div class="khelp-step__body">
+                                <h3>Check Wi-Fi</h3>
+                                <p>Make sure you’re connected to the school Wi-Fi, not “random neighbor Wi-Fi.”</p>
+                            </div>
+                        </div>
+
+                        <div class="khelp-step">
+                            <div class="khelp-step__num">3</div>
+                            <div class="khelp-step__body">
+                                <h3>Try again</h3>
+                                <p>Open your app/site again. If it’s still broken, make a ticket.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="khelp-ticket" href="kids-make.html">
+                        🎫 Still not working? Make a Ticket
+                    </a>
+                </div>
+
+                <div class="khelp-panel">
+                    <h2 class="khelp-panel__title">Fast Answers (FAQ)</h2>
+
+                    <div class="khelp-faq">
+                        <details class="khelp-faq__item" open>
+                            <summary>My Chromebook is frozen 😵</summary>
+                            <div class="khelp-faq__body">
+                                Hold the power button for ~10 seconds to force it off. Then turn it back on.
+                            </div>
+                        </details>
+
+                        <details class="khelp-faq__item">
+                            <summary>I can’t log in 🔐</summary>
+                            <div class="khelp-faq__body">
+                                Check Caps Lock. Type slowly. If it still won’t work, use “Forgot password” or make a
+                                ticket.
+                            </div>
+                        </details>
+
+                        <details class="khelp-faq__item">
+                            <summary>Wi-Fi won’t connect 📶</summary>
+                            <div class="khelp-faq__body">
+                                Turn Wi-Fi off and on. Reconnect to the school Wi-Fi. If it keeps failing, make a
+                                ticket.
+                            </div>
+                        </details>
+
+                        <details class="khelp-faq__item">
+                            <summary>Printing won’t print 🖨️</summary>
+                            <div class="khelp-faq__body">
+                                Students do not have access to school printers, if you need something printed please ask
+                                youtr teacher or make a LOW priority ticket
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+</body>
+
+</html>
