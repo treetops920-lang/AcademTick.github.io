@@ -208,6 +208,7 @@ body{
 ========================= */
 .khelp-content{
   margin-top: 18px;
+  
   display:grid;
   gap: 16px;
 }

@@ -100,14 +100,56 @@
             <a href="https://support.google.com/chromebook/answer/6309225?hl=en">Read article →</a>
           </div>
         </article>
+        <!-- Pop Card -->
+        <article class="kb-card kb-pop-card" data-img="image/make-ticket-poster.png">
+          <div class="kb-pop-inner">
+            <h3>Info on making a ticket (This poster is aimed towards middle and high schooll students, not staff or admin)</h3>
+            <p>Click to open the full guide.</p>
+          </div>
+        </article>
+
+        <!-- Modal -->
+        <div class="img-modal" id="imgModal">
+          <div class="img-backdrop"></div>
+          <div class="img-dialog">
+            <img id="modalImage" alt="">
+          </div>
+        </div>
 
 
-          <img class="poster" src="image/make-ticket-poster.png" alt="ticket make poster" class="kb-illustration" />
-       
 
       </section>
 
   </main>
+  <script>
+    const modal = document.getElementById("imgModal");
+    const modalImage = document.getElementById("modalImage");
+
+    document.querySelectorAll(".kb-pop-card").forEach(card => {
+      card.addEventListener("click", () => {
+        const imgSrc = card.dataset.img;
+        modalImage.src = imgSrc;
+        modal.classList.add("open");
+        document.body.style.overflow = "hidden";
+      });
+    });
+
+    modal.addEventListener("click", (e) => {
+      if (e.target.classList.contains("img-backdrop")) {
+        modal.classList.remove("open");
+        modalImage.src = "";
+        document.body.style.overflow = "";
+      }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        modal.classList.remove("open");
+        modalImage.src = "";
+        document.body.style.overflow = "";
+      }
+    });
+  </script>
 
 </body>
 
