@@ -120,3 +120,25 @@
   right: 5em;
   background: linear-gradient(135deg, var(--primary), var(--secondary));
 }
+
+
+
+/* =========================
+   Responsive: Mobile + Desktop (>=1366px Chromebook)
+========================= */
+@media (max-width: 900px){
+  .brand{ padding: 14px 10px; }
+  .logo{ height: 64px; }
+  .topnav{ gap: 8px; }
+  .topnav-link{ font-size: 14px; padding: 10px 14px; }
+  .profile-name{ display: none; }
+  .avatar-btn{ width: 44px; height: 44px; }
+  .profile-menu{ width: min(92vw, 320px); }
+}
+
+@media (min-width: 1366px){
+  .logo{ height: 86px; }
+  .topnav-link{ font-size: 14px; padding: 10px 16px; }
+  .profile-name{ max-width: 240px; }
+  .profile-menu{ width: 280px; }
+}

@@ -327,3 +327,21 @@ img{ display:block; max-width:100%; }
   font-weight: 700;
   font-size: 13px;
 }
+
+
+
+/* =========================
+   Responsive: Mobile + Desktop (>=1366px Chromebook)
+========================= */
+@media (max-width: 900px){
+  .container{ width: min(var(--container, 1120px), calc(100% - 24px)); }
+  .row{ gap: 12px; }
+  .card{ padding: 14px; }
+  .table-wrap{ overflow-x: auto; -webkit-overflow-scrolling: touch; }
+}
+
+@media (min-width: 1366px){
+  :root{ --container: 1240px; }
+  .container{ width: min(var(--container), calc(100% - 48px)); }
+  .card{ padding: 18px; }
+}

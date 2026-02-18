@@ -279,3 +279,21 @@ tr:last-child td{ border-bottom:none; }
 .status-progress{ background: rgba(72,128,184,0.12); border-color: rgba(72,128,184,0.22); color:#1e3a8a; }
 .status-wait{ background: rgba(232,192,104,0.18); border-color: rgba(232,192,104,0.30); color:#5a3b00; }
 .status-closed{ background: rgba(100,116,139,0.10); border-color: rgba(100,116,139,0.20); color:#334155; }
+
+
+
+/* =========================
+   Responsive: Mobile + Desktop (>=1366px Chromebook)
+========================= */
+@media (max-width: 900px){
+  .container{ width: min(var(--container, 1120px), calc(100% - 24px)); }
+  .row{ gap: 12px; }
+  .card{ padding: 14px; }
+  .table-wrap{ overflow-x: auto; -webkit-overflow-scrolling: touch; }
+}
+
+@media (min-width: 1366px){
+  :root{ --container: 1240px; }
+  .container{ width: min(var(--container), calc(100% - 48px)); }
+  .card{ padding: 18px; }
+}

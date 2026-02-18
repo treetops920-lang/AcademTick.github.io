@@ -531,3 +531,24 @@ textarea:focus{
 @media (max-width: 560px){
   .profile-name{ display:none; }
 }
+
+
+
+/* =========================
+   Responsive: Mobile + Desktop (>=1366px Chromebook)
+========================= */
+@media (max-width: 480px){
+  .container{ width: min(var(--container), calc(100% - 20px)); }
+  .card{ padding: 14px; }
+}
+
+@media (min-width: 1366px){
+  :root{
+    --container: 1240px;
+    --gap: 18px;
+  }
+  .app{ grid-template-columns: 300px 1fr; }
+  .sidebar{ padding: 20px; }
+  .main{ padding: 22px 22px 28px; }
+  .card{ border-radius: var(--radius-lg); }
+}
