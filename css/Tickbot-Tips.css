@@ -335,10 +335,10 @@ body{
 
   .khelp-bot__img{ width: 420px; }
 
-  .khelp-bubble{
+  .khelp-poster{
     right: -4%;
     bottom: 26%;
-    max-width: 260px;
+    max-width: 350px;
   }
 
   .khelp-content{
