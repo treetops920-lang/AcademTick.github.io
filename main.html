@@ -95,28 +95,40 @@
                 <div class="row">
                     <button class="btn btn-primary" id="adminbtn" type="button">Admin View</button>
                     <script>
-                        document.addEventListener("DOMContentLoaded", function () {
+                       document.addEventListener("DOMContentLoaded", () => {
+  const adminbtn = document.getElementById("adminbtn");
+  const userField = document.getElementById("username");
+  const passField = document.getElementById("password");
 
-                            const adminbtn = document.getElementById("adminbtn");
-                            const userField = document.getElementById("username");
-                            const passField = document.getElementById("password");
+  // 1) If these are null, the IDs in your HTML don't match or script runs too early
+  console.log({ adminbtn, userField, passField });
 
-                            adminbtn.addEventListener("click", function () {
+  if (!adminbtn) {
+    console.error('No element with id="adminbtn" found.');
+    return;
+  }
 
-                                const user = userField.value.trim();
-                                const pass = passField.value.trim();
+  adminbtn.addEventListener("click", (e) => {
+    // 2) Prevent form submission / default behavior from blocking redirect
+    e.preventDefault();
 
-                                if (user.toLowerCase() === "admin" && pass === "test") {
+    // 3) Prove the click handler is firing
+    console.log("Admin button clicked");
 
-                                    console.log("authentication successful.");
-                                    window.location.href = "admin.html";
+    const user = (userField?.value ?? "").trim();
+    const pass = (passField?.value ?? "").trim();
 
-                                } else {
-                                    alert("Access Denied: Not authorized with you're account.");
-                                }
-                            });
+    // 4) Log what you're actually comparing (helps catch whitespace/case)
+    console.log("Entered:", { user, passLength: pass.length });
 
-                        });
+    if (user.toLowerCase() === "admin" && pass === "test") {
+      console.log("authentication successful -> redirecting to admin.html");
+      window.location.assign("admin.html"); // more reliable than href in some cases
+    } else {
+      alert("Access Denied: Not authorized with your account.");
+    }
+  });
+});
                     </script>
                 </div>
             </header>
