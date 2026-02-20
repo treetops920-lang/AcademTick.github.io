@@ -95,40 +95,36 @@
                 <div class="row">
                     <button class="btn btn-primary" id="adminbtn" type="button">Admin View</button>
                     <script>
-                       document.addEventListener("DOMContentLoaded", () => {
-  const adminbtn = document.getElementById("adminbtn");
-  const userField = document.getElementById("username");
-  const passField = document.getElementById("password");
+                 document.addEventListener("DOMContentLoaded", function () {
+  var adminbtn = document.getElementById("adminbtn");
+  var userField = document.getElementById("username");
+  var passField = document.getElementById("password");
 
-  // 1) If these are null, the IDs in your HTML don't match or script runs too early
-  console.log({ adminbtn, userField, passField });
-
+  console.log("adminbtn:", adminbtn);
+  console.log("userField:", userField);
+  console.log("passField:", passField);
+                 
   if (!adminbtn) {
-    console.error('No element with id="adminbtn" found.');
+    console.error('Missing element: id="adminbtn"');
     return;
   }
 
-  adminbtn.addEventListener("click", (e) => {
-    // 2) Prevent form submission / default behavior from blocking redirect
+  adminbtn.addEventListener("click", function (e) {
     e.preventDefault();
 
-    // 3) Prove the click handler is firing
     console.log("Admin button clicked");
 
-    const user = (userField?.value ?? "").trim();
-    const pass = (passField?.value ?? "").trim();
-
-    // 4) Log what you're actually comparing (helps catch whitespace/case)
-    console.log("Entered:", { user, passLength: pass.length });
+    var user = userField ? userField.value.trim() : "";
+    var pass = passField ? passField.value.trim() : "";
 
     if (user.toLowerCase() === "admin" && pass === "test") {
-      console.log("authentication successful -> redirecting to admin.html");
-      window.location.assign("admin.html"); // more reliable than href in some cases
+      console.log("authentication successful -> redirecting");
+      window.location.assign("admin.html");
     } else {
       alert("Access Denied: Not authorized with your account.");
     }
   });
-});
+                 });
                     </script>
                 </div>
             </header>
