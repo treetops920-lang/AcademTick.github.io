@@ -12,45 +12,39 @@
 </head>
 
 <body>
- 
+
     <header class="topbar">
-  <!-- Brand / Logo -->
-  <a href="index.html" class="brand">
-    <img src="image/AcademTick_-_logo-removebg-preview.png" alt="Academtick" class="logo" />
-  </a>
+        <!-- Brand / Logo -->
+        <a href="index.html" class="brand">
+            <img src="image/AcademTick_-_logo-removebg-preview.png" alt="Academtick" class="logo" />
+        </a>
 
-  <!-- Optional: middle nav links (remove if you don't want it) -->
- <nav class="topnav">
-      <a href="main.html" class="topnav-link">Dashboard</a>
-      <a href="all-tick.html" class="topnav-link">All Tickets</a>
-      <a href="my-tick.html" class="topnav-link active">My Tickets</a>
-          <a href="help.html" class="topnav-link">Help</a>
-      <a href="creat-tick.html" class="topnav-link">Create Ticket</a>
-      <a href="settings.html" class="topnav-link">Settings</a>
-    </nav>
+        <!-- Optional: middle nav links (remove if you don't want it) -->
+        <nav class="topnav">
+            <a href="main.html" class="topnav-link">Dashboard</a>
+            <a href="all-tick.html" class="topnav-link">All Tickets</a>
+            <a href="my-tick.html" class="topnav-link active">My Tickets</a>
+            <a href="help.html" class="topnav-link">Help</a>
+            <a href="creat-tick.html" class="topnav-link">Create Ticket</a>
+            <a href="settings.html" class="topnav-link">Settings</a>
+        </nav>
 
-  <!-- Profile / Login area -->
-  <div class="profile">
-    <span class="profile-name">Jessica</span>
+        <!-- Profile / Login area -->
+        <div class="profile">
+            <span class="profile-name">Jessica</span>
 
-    <button
-      class="avatar-btn"
-      id="avatarBtn"
-      type="button"
-      aria-haspopup="menu"
-      aria-expanded="false"
-    >
-      <span class="avatar-initials">JJ</span>
-    </button>
+            <button class="avatar-btn" id="avatarBtn" type="button" aria-haspopup="menu" aria-expanded="false">
+                <span class="avatar-initials">JJ</span>
+            </button>
 
-    <div class="profile-menu" id="profileMenu" role="menu" aria-label="Profile menu">
-      <a class="menu-item" href="profile.html" role="menuitem">My Profile</a>
-      <a class="menu-item" href="settings.html" role="menuitem">Settings</a>
-      <div class="menu-divider"></div>
-      <a class="menu-item danger" href="login.html" role="menuitem">Sign out</a>
-    </div>
-  </div>
-</header>
+            <div class="profile-menu" id="profileMenu" role="menu" aria-label="Profile menu">
+                <a class="menu-item" href="profile.html" role="menuitem">My Profile</a>
+                <a class="menu-item" href="settings.html" role="menuitem">Settings</a>
+                <div class="menu-divider"></div>
+                <a class="menu-item danger" href="login.html" role="menuitem">Sign out</a>
+            </div>
+        </div>
+    </header>
 
 
     <div class="app">
@@ -99,9 +93,31 @@
                 </div>
 
                 <div class="row">
-                    <button class="btn btn-ghost" type="button">Search</button>
-                    <button class="btn btn-accent" type="button">+ Create Ticket</button>
-                    <button class="btn btn-primary" type="button">Admin View</button>
+                    <button class="btn btn-primary" id="adminbtn" type="button">Admin View</button>
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function () {
+
+                            const adminbtn = document.getElementById("adminbtn");
+                            const userField = document.getElementById("username");
+                            const passField = document.getElementById("password");
+
+                            adminbtn.addEventListener("click", function () {
+
+                                const user = userField.value.trim();
+                                const pass = passField.value.trim();
+
+                                if (user.toLowerCase() === "admin" && pass === "test") {
+
+                                    console.log("Login successful.");
+                                    window.location.href = "main.html";
+
+                                } else {
+                                    alert("Access Denied: Not authorized with you're account.");
+                                }
+                            });
+
+                        });
+                    </script>
                 </div>
             </header>
 
@@ -326,26 +342,26 @@
         </main>
     </div>
 
-<script>
-  const btn = document.getElementById("avatarBtn");
-  const menu = document.getElementById("profileMenu");
+    <script>
+        const btn = document.getElementById("avatarBtn");
+        const menu = document.getElementById("profileMenu");
 
-  function closeMenu(){
-    menu.classList.remove("open");
-    btn.setAttribute("aria-expanded", "false");
-  }
+        function closeMenu() {
+            menu.classList.remove("open");
+            btn.setAttribute("aria-expanded", "false");
+        }
 
-  btn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    const isOpen = menu.classList.toggle("open");
-    btn.setAttribute("aria-expanded", String(isOpen));
-  });
+        btn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            const isOpen = menu.classList.toggle("open");
+            btn.setAttribute("aria-expanded", String(isOpen));
+        });
 
-  document.addEventListener("click", closeMenu);
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") closeMenu();
-  });
-</script>
+        document.addEventListener("click", closeMenu);
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") closeMenu();
+        });
+    </script>
 
 
 </body>
