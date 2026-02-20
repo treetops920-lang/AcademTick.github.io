@@ -1,0 +1,95 @@
+/* =========================
+   Kids Tattle Page – Sectioned Layout
+========================= */
+
+/* Bigger outer spacing */
+.kid-ticket{
+  margin-top: 24px;
+  padding: 28px;
+  border-radius: 28px;
+  background: rgba(255,255,255,0.96);
+  box-shadow: 0 20px 40px rgba(2,6,23,0.10);
+}
+
+/* Each step becomes its own visual box */
+.block{
+  padding: 26px;
+  margin-bottom: 26px;
+  border-radius: 22px;
+  background: rgba(255,255,255,0.98);
+  border: 2px solid rgba(40,152,136,0.14);
+  box-shadow: 0 10px 26px rgba(2,6,23,0.06);
+}
+
+/* Bigger section titles */
+.block-title{
+  font-size: 20px;
+  font-weight: 950;
+  margin-bottom: 18px;
+}
+
+/* Add subtle divider between sections */
+.block:not(:last-child){
+  position: relative;
+}
+
+.block:not(:last-child)::after{
+  content:"";
+  position:absolute;
+  left: 20%;
+  right: 20%;
+  bottom: -14px;
+  height: 2px;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(40,152,136,0.25),
+      transparent);
+}
+
+/* Pick grid spacing bigger */
+.pick-grid{
+  gap: 18px;
+}
+
+/* Pills spaced better */
+.place-pills{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  margin-top:10px;
+}
+
+/* Make textarea feel less cramped */
+textarea{
+  min-height: 130px;
+  padding: 16px;
+}
+
+/* Safety block more separated */
+.block.safety{
+  border-color: rgba(240,88,40,0.35);
+  background: rgba(240,88,40,0.08);
+}
+
+/* Action buttons spaced away */
+.actions{
+  display:flex;
+  justify-content:flex-end;
+  gap:16px;
+  margin-top: 30px;
+}
+
+/* Make header card bigger */
+.kid-head{
+  margin-top: 8px;
+  padding: 28px;
+  border-radius: 28px;
+  margin-bottom: 24px;
+}
+
+/* Make helper text breathe */
+.helper{
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0.8;
+}

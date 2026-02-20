@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AcademTick | Admin</title>
+
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <header class="topbar admin-topbar">
+    <a href="main.html" class="brand">
+      <img src="image/AcademTick_-_logo-removebg-preview.png" alt="Academtick" class="logo" />
+    </a>
+
+    <nav class="topnav">
+      <a href="main.html" class="topnav-link">Dashboard</a>
+      <a href="tickets.html" class="topnav-link">All Tickets</a>
+      <a href="my-tickets.html" class="topnav-link">My Tickets</a>
+      <a href="knowledge-base.html" class="topnav-link">Knowledge Base</a>
+      <a href="create-ticket.html" class="topnav-link">Create Ticket</a>
+      <a href="admin.html" class="topnav-link active">Admin</a>
+      <a href="settings.html" class="topnav-link">Settings</a>
+    </nav>
+
+    <!-- Profile -->
+    <div class="profile">
+      <span class="profile-name">Jessica</span>
+      <button class="avatar-btn" id="avatarBtn" type="button" aria-haspopup="menu" aria-expanded="false">
+        <span class="avatar-initials">JJ</span>
+      </button>
+
+      <div class="profile-menu" id="profileMenu" role="menu" aria-label="Profile menu">
+        <a class="menu-item" href="profile.html" role="menuitem">My Profile</a>
+        <a class="menu-item" href="settings.html" role="menuitem">Settings</a>
+        <div class="menu-divider"></div>
+        <a class="menu-item danger" href="login.html" role="menuitem">Sign out</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container admin-wrap">
+    <section class="admin-head">
+      <div>
+        <div class="kicker">Administration</div>
+        <h1 class="admin-title">Admin Console</h1>
+        <p class="lead">Quick controls for school-wide visibility, staff routing, and student accounts.</p>
+      </div>
+
+      <div class="admin-actions">
+        <button class="btn btn-ghost" type="button">Export</button>
+        <button class="btn btn-primary" type="button">Create Announcement</button>
+      </div>
+    </section>
+
+    <!-- KPI / Quick Stats -->
+    <section class="grid admin-kpis">
+      <article class="card kpi">
+        <div class="kpi-label">Open Tickets</div>
+        <div class="kpi-value">42</div>
+        <div class="kpi-sub muted">Across all buildings</div>
+      </article>
+
+      <article class="card kpi">
+        <div class="kpi-label">Waiting on Parts</div>
+        <div class="kpi-value">7</div>
+        <div class="kpi-sub muted">Chromebooks & chargers</div>
+      </article>
+
+      <article class="card kpi">
+        <div class="kpi-label">New Today</div>
+        <div class="kpi-value">12</div>
+        <div class="kpi-sub muted">Since 7:00 AM</div>
+      </article>
+
+      <article class="card kpi">
+        <div class="kpi-label">Students Flagged</div>
+        <div class="kpi-value">3</div>
+        <div class="kpi-sub muted">Needs review</div>
+      </article>
+    </section>
+
+    <!-- Admin Tools -->
+    <section class="grid admin-tools">
+      <article class="card tool">
+        <div class="tool-top">
+          <div class="tool-icon">🧑‍🏫</div>
+          <div>
+            <h2>Teacher Inbox</h2>
+            <p class="muted">Review student “tattle notes” & classroom reports.</p>
+          </div>
+        </div>
+        <div class="tool-actions">
+          <a class="btn btn-accent" href="teacher-inbox.html">Open Inbox</a>
+          <button class="btn btn-ghost" type="button">Rules</button>
+        </div>
+      </article>
+
+      <article class="card tool">
+        <div class="tool-top">
+          <div class="tool-icon">🏫</div>
+          <div>
+            <h2>Buildings & Routing</h2>
+            <p class="muted">Assign tech staff, default queues, and escalation rules.</p>
+          </div>
+        </div>
+        <div class="tool-actions">
+          <button class="btn btn-accent" type="button">Manage Routing</button>
+          <button class="btn btn-ghost" type="button">Escalations</button>
+        </div>
+      </article>
+
+      <article class="card tool">
+        <div class="tool-top">
+          <div class="tool-icon">👥</div>
+          <div>
+            <h2>Users</h2>
+            <p class="muted">Search students/teachers, reset access, manage roles.</p>
+          </div>
+        </div>
+        <div class="tool-actions">
+          <button class="btn btn-accent" type="button">User Directory</button>
+          <button class="btn btn-ghost" type="button">Invite</button>
+        </div>
+      </article>
+
+      <article class="card tool">
+        <div class="tool-top">
+          <div class="tool-icon">📚</div>
+          <div>
+            <h2>Knowledge Base</h2>
+            <p class="muted">Pin articles, update guides, and publish posters.</p>
+          </div>
+        </div>
+        <div class="tool-actions">
+          <a class="btn btn-accent" href="knowledge-base.html">Edit KB</a>
+          <button class="btn btn-ghost" type="button">Pin Article</button>
+        </div>
+      </article>
+    </section>
+
+    <!-- Recent Activity + Queue -->
+    <section class="grid admin-lower">
+      <article class="card admin-panel">
+        <div class="panel-head">
+          <h2>Recent Activity</h2>
+          <span class="badge orange">Live</span>
+        </div>
+
+        <div class="activity">
+          <div class="activity-item">
+            <div class="dot"></div>
+            <div>
+              <div class="activity-title">Ticket #1842 updated</div>
+              <div class="muted">Assigned to Tech • Chromebook won’t charge</div>
+            </div>
+            <div class="muted mono">2m</div>
+          </div>
+
+          <div class="activity-item">
+            <div class="dot"></div>
+            <div>
+              <div class="activity-title">Teacher note received</div>
+              <div class="muted">Ms. Smith • Playground incident review</div>
+            </div>
+            <div class="muted mono">11m</div>
+          </div>
+
+          <div class="activity-item">
+            <div class="dot"></div>
+            <div>
+              <div class="activity-title">New device request</div>
+              <div class="muted">Lab cart • 4 replacement chargers</div>
+            </div>
+            <div class="muted mono">1h</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card admin-panel">
+        <div class="panel-head">
+          <h2>Admin Queue</h2>
+          <div class="row">
+            <span class="badge teal">Priority Review</span>
+            <span class="badge">Today</span>
+          </div>
+        </div>
+
+        <table class="table admin-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Type</th>
+              <th>From</th>
+              <th>School</th>
+              <th>Status</th>
+              <th></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td class="mono">A-019</td>
+              <td>Teacher Note</td>
+              <td>Student</td>
+              <td>Elementary</td>
+              <td><span class="pill pill-warn">Review</span></td>
+              <td><button class="btn btn-ghost btn-sm" type="button">Open</button></td>
+            </tr>
+
+            <tr>
+              <td class="mono">T-842</td>
+              <td>Ticket Escalation</td>
+              <td>Teacher</td>
+              <td>Middle</td>
+              <td><span class="pill pill-ok">Assigned</span></td>
+              <td><button class="btn btn-ghost btn-sm" type="button">Open</button></td>
+            </tr>
+
+            <tr>
+              <td class="mono">U-112</td>
+              <td>Account</td>
+              <td>Staff</td>
+              <td>High</td>
+              <td><span class="pill pill-warn">Pending</span></td>
+              <td><button class="btn btn-ghost btn-sm" type="button">Open</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+  </main>
+
+  <!-- Dropdown JS -->
+  <script>
+    const btn = document.getElementById("avatarBtn");
+    const menu = document.getElementById("profileMenu");
+
+    function closeMenu(){
+      menu.classList.remove("open");
+      btn.setAttribute("aria-expanded","false");
+    }
+
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const isOpen = menu.classList.toggle("open");
+      btn.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    document.addEventListener("click", closeMenu);
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeMenu();
+    });
+  </script>
+</body>
+</html>

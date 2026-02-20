@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AcademTick | Tattle Tickets</title>
+
+  <link rel="stylesheet" href="css/kids-base.css" />
+  <link rel="stylesheet" href="css/tattle.css" />
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <header class="topbar">
+    <a href="kids-dash.html" class="brand">
+      <img src="image/AcademTick_-_logo-removebg-preview.png" alt="Academtick" class="logo" />
+    </a>
+
+    <nav class="topnav">
+      <a href="kids-dash.html" class="topnav-link">Home</a>
+      <a href="kids-tattle.html" class="topnav-link active">Tell a Teacher</a>
+      <a href="TickBot-tips.html" class="topnav-link">TickBot Tips</a>
+      <a href="settings.html" class="topnav-link">Settings</a>
+    </nav>
+
+    <div class="profile">
+      <span class="profile-name">Student</span>
+      <button class="avatar-btn" type="button">
+        <span class="avatar-initials">🙂</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="kid-head card">
+      <h1>Tell a Teacher 🗣️</h1>
+      <p>This goes to your teacher to read. Be kind and honest.</p>
+
+      <div class="tattle-note">
+        <strong>Quick rule:</strong> If someone is hurt or unsafe, tell a grown-up right now.
+      </div>
+    </section>
+
+    <section class="kid-ticket card">
+      <form class="kid-form" id="tattleForm">
+
+        <!-- Hidden + fixed priority -->
+        <input type="hidden" name="priority" value="Low" />
+
+        <!-- 1) What is this about? -->
+        <div class="block">
+          <h2 class="block-title">1) What is this about?</h2>
+
+          <div class="pick-grid pick-grid--tattle">
+            <label class="pick">
+              <input type="radio" name="type" value="Someone being mean" required />
+              <span class="pick-icon">😕</span>
+              <span class="pick-text">Someone is being mean</span>
+            </label>
+
+            <label class="pick">
+              <input type="radio" name="type" value="Problem with sharing" />
+              <span class="pick-icon">🧸</span>
+              <span class="pick-text">Sharing / taking stuff</span>
+            </label>
+
+            <label class="pick">
+              <input type="radio" name="type" value="Cutting in line / rules" />
+              <span class="pick-icon">📏</span>
+              <span class="pick-text">Rules / line / game</span>
+            </label>
+
+            <label class="pick">
+              <input type="radio" name="type" value="Online / messages" />
+              <span class="pick-icon">💬</span>
+              <span class="pick-text">Online / messages</span>
+            </label>
+
+            <label class="pick">
+              <input type="radio" name="type" value="Other" />
+              <span class="pick-icon">🧩</span>
+              <span class="pick-text">Something else</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- 2) Where did it happen? -->
+        <div class="block">
+          <h2 class="block-title">2) Where did it happen?</h2>
+
+          <div class="place-pills">
+            <label class="pill">
+              <input type="radio" name="where" value="Classroom" />
+              <span>🏫 Classroom</span>
+            </label>
+            <label class="pill">
+              <input type="radio" name="where" value="Hallway" />
+              <span>🚪 Hallway</span>
+            </label>
+            <label class="pill">
+              <input type="radio" name="where" value="Lunchroom" />
+              <span>🍎 Lunchroom</span>
+            </label>
+            <label class="pill">
+              <input type="radio" name="where" value="Playground" />
+              <span>🛝 Playground</span>
+            </label>
+            <label class="pill">
+              <input type="radio" name="where" value="Bus" />
+              <span>🚌 Bus</span>
+            </label>
+          </div>
+
+          <p class="helper">If you’re not sure, that’s okay.</p>
+        </div>
+
+        <!-- 3) Who is this about? -->
+        <div class="block">
+          <h2 class="block-title">3) Who is this about?</h2>
+
+          <div class="row wrap">
+            <label class="field mini">
+              <span class="mini-label">Student name (if you know)</span>
+              <input class="input" name="who" type="text" placeholder="ex: Sam" />
+            </label>
+
+            <label class="field mini">
+              <span class="mini-label">Teacher to send to</span>
+              <input class="input" name="teacher" type="text" placeholder="ex: Ms. Smith" required />
+            </label>
+          </div>
+
+          <p class="helper">Only share names if you know them. No last names needed.</p>
+        </div>
+
+        <!-- 4) What happened? (short) -->
+        <div class="block">
+          <h2 class="block-title">4) What happened? (1–2 sentences)</h2>
+          <textarea
+            class="input"
+            name="details"
+            placeholder="ex: They kept taking my pencil and laughing. I asked them to stop."
+            maxlength="220"
+            required
+          ></textarea>
+          <p class="helper">Keep it short. Your teacher will help.</p>
+        </div>
+
+        <!-- 5) Safety check -->
+        <div class="block safety">
+          <h2 class="block-title">5) Is anyone hurt or unsafe?</h2>
+
+          <div class="priority safety-pills">
+            <label class="prio">
+              <input type="radio" name="unsafe" value="No" required />
+              <span class="prio-chip low">🙂 No</span>
+            </label>
+
+            <label class="prio">
+              <input type="radio" name="unsafe" value="Yes" />
+              <span class="prio-chip high">🚨 Yes</span>
+            </label>
+          </div>
+
+          <p class="helper">
+            If you picked 🚨 Yes, tell a grown-up right now too.
+          </p>
+        </div>
+
+        <!-- Actions -->
+        <div class="actions">
+          <a class="btn btn-ghost" href="kids-dash.html">Cancel</a>
+          <button class="btn btn-accent" type="submit">Send to Teacher ✅</button>
+        </div>
+
+        <img src="image/TickBot-tips.png" alt="TickBot" class="pic" />
+        <p class="tiny-note">TickBot says: “You’ve got this—let’s take the next step.”</p>
+      </form>
+    </section>
+  </main>
+
+  
+</body>
+</html>
