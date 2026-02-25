@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -239,9 +240,9 @@
     const btn = document.getElementById("avatarBtn");
     const menu = document.getElementById("profileMenu");
 
-    function closeMenu(){
+    function closeMenu() {
       menu.classList.remove("open");
-      btn.setAttribute("aria-expanded","false");
+      btn.setAttribute("aria-expanded", "false");
     }
 
     btn.addEventListener("click", (e) => {
@@ -255,5 +256,17 @@
       if (e.key === "Escape") closeMenu();
     });
   </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var isLoggedIn = sessionStorage.getItem("isLoggedIn") === "true";
+      var role = sessionStorage.getItem("role");
+
+      if (!isLoggedIn || role !== "admin") {
+        window.location.replace("login.html");
+      }
+    });
+  </script>
 </body>
+
 </html>
