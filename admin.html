@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,24 +12,26 @@
 
 <body>
   <!-- Top Bar -->
-  <header class="topbar admin-topbar">
-    <a href="main.html" class="brand">
+  <header class="topbar">
+    <!-- Brand / Logo -->
+    <a href="index.html" class="brand">
       <img src="image/AcademTick_-_logo-removebg-preview.png" alt="Academtick" class="logo" />
     </a>
 
+    <!-- Optional: middle nav links (remove if you don't want it) -->
     <nav class="topnav">
       <a href="main.html" class="topnav-link">Dashboard</a>
-      <a href="tickets.html" class="topnav-link">All Tickets</a>
-      <a href="my-tickets.html" class="topnav-link">My Tickets</a>
-      <a href="knowledge-base.html" class="topnav-link">Knowledge Base</a>
-      <a href="create-ticket.html" class="topnav-link">Create Ticket</a>
-      <a href="admin.html" class="topnav-link active">Admin</a>
+      <a href="all-tick.html" class="topnav-link">All Tickets</a>
+      <a href="my-tick.html" class="topnav-link active">My Tickets</a>
+      <a href="help.html" class="topnav-link">Help</a>
+      <a href="creat-tick.html" class="topnav-link">Create Ticket</a>
       <a href="settings.html" class="topnav-link">Settings</a>
     </nav>
 
-    <!-- Profile -->
+    <!-- Profile / Login area -->
     <div class="profile">
       <span class="profile-name">Jessica</span>
+
       <button class="avatar-btn" id="avatarBtn" type="button" aria-haspopup="menu" aria-expanded="false">
         <span class="avatar-initials">JJ</span>
       </button>
@@ -60,25 +63,19 @@
     <section class="grid admin-kpis">
       <article class="card kpi">
         <div class="kpi-label">Open Tickets</div>
-        <div class="kpi-value">42</div>
+        <div class="kpi-value"></div>
         <div class="kpi-sub muted">Across all buildings</div>
       </article>
 
       <article class="card kpi">
         <div class="kpi-label">Waiting on Parts</div>
-        <div class="kpi-value">7</div>
+        <div class="kpi-value"></div>
         <div class="kpi-sub muted">Chromebooks & chargers</div>
       </article>
 
       <article class="card kpi">
-        <div class="kpi-label">New Today</div>
-        <div class="kpi-value">12</div>
-        <div class="kpi-sub muted">Since 7:00 AM</div>
-      </article>
-
-      <article class="card kpi">
         <div class="kpi-label">Students Flagged</div>
-        <div class="kpi-value">3</div>
+        <div class="kpi-value"></div>
         <div class="kpi-sub muted">Needs review</div>
       </article>
     </section>
@@ -153,31 +150,8 @@
         <div class="activity">
           <div class="activity-item">
             <div class="dot"></div>
-            <div>
-              <div class="activity-title">Ticket #1842 updated</div>
-              <div class="muted">Assigned to Tech • Chromebook won’t charge</div>
-            </div>
-            <div class="muted mono">2m</div>
-          </div>
 
-          <div class="activity-item">
-            <div class="dot"></div>
-            <div>
-              <div class="activity-title">Teacher note received</div>
-              <div class="muted">Ms. Smith • Playground incident review</div>
-            </div>
-            <div class="muted mono">11m</div>
-          </div>
 
-          <div class="activity-item">
-            <div class="dot"></div>
-            <div>
-              <div class="activity-title">New device request</div>
-              <div class="muted">Lab cart • 4 replacement chargers</div>
-            </div>
-            <div class="muted mono">1h</div>
-          </div>
-        </div>
       </article>
 
       <article class="card admin-panel">
@@ -202,32 +176,7 @@
           </thead>
 
           <tbody>
-            <tr>
-              <td class="mono">A-019</td>
-              <td>Teacher Note</td>
-              <td>Student</td>
-              <td>Elementary</td>
-              <td><span class="pill pill-warn">Review</span></td>
-              <td><button class="btn btn-ghost btn-sm" type="button">Open</button></td>
-            </tr>
-
-            <tr>
-              <td class="mono">T-842</td>
-              <td>Ticket Escalation</td>
-              <td>Teacher</td>
-              <td>Middle</td>
-              <td><span class="pill pill-ok">Assigned</span></td>
-              <td><button class="btn btn-ghost btn-sm" type="button">Open</button></td>
-            </tr>
-
-            <tr>
-              <td class="mono">U-112</td>
-              <td>Account</td>
-              <td>Staff</td>
-              <td>High</td>
-              <td><span class="pill pill-warn">Pending</span></td>
-              <td><button class="btn btn-ghost btn-sm" type="button">Open</button></td>
-            </tr>
+           
           </tbody>
         </table>
       </article>
@@ -239,9 +188,9 @@
     const btn = document.getElementById("avatarBtn");
     const menu = document.getElementById("profileMenu");
 
-    function closeMenu(){
+    function closeMenu() {
       menu.classList.remove("open");
-      btn.setAttribute("aria-expanded","false");
+      btn.setAttribute("aria-expanded", "false");
     }
 
     btn.addEventListener("click", (e) => {
@@ -255,5 +204,17 @@
       if (e.key === "Escape") closeMenu();
     });
   </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var isLoggedIn = sessionStorage.getItem("isLoggedIn") === "true";
+      var role = sessionStorage.getItem("role");
+
+      if (!isLoggedIn || role !== "admin") {
+        window.location.replace("login.html");
+      }
+    });
+  </script>
 </body>
+
 </html>

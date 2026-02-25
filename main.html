@@ -94,36 +94,24 @@
                 <div class="row">
                     <button class="btn btn-primary" id="adminbtn" type="button">Admin View</button>
                     <script>
-                 document.addEventListener("DOMContentLoaded", function () {
-  var adminbtn = document.getElementById("adminbtn");
-  var userField = document.getElementById("username");
-  var passField = document.getElementById("password");
+                        document.addEventListener("DOMContentLoaded", function () {
+                            var adminbtn = document.getElementById("adminbtn");
 
-  console.log("adminbtn:", adminbtn);
-  console.log("userField:", userField);
-  console.log("passField:", passField);
-                 
-  if (!adminbtn) {
-    console.error('Missing element: id="adminbtn"');
-    return;
-  }
+                            if (!adminbtn) return;
 
-  adminbtn.addEventListener("click", function (e) {
-    e.preventDefault();
+                            adminbtn.addEventListener("click", function (e) {
+                                e.preventDefault();
 
-    console.log("Admin button clicked");
+                                var isLoggedIn = sessionStorage.getItem("isLoggedIn") === "true";
+                                var role = sessionStorage.getItem("role");
 
-    var user = userField ? userField.value.trim() : "";
-    var pass = passField ? passField.value.trim() : "";
-
-    if (user.toLowerCase() === "admin" && pass === "test") {
-      console.log("authentication successful -> redirecting");
-      window.location.assign("admin.html");
-    } else {
-      alert("Access Denied: Not authorized with your account.");
-    }
-  });
-                 });
+                                if (isLoggedIn && role === "admin") {
+                                    window.location.assign("admin.html");
+                                } else {
+                                    alert("Access Denied: Admins only.");
+                                }
+                            });
+                        });
                     </script>
                 </div>
             </header>
