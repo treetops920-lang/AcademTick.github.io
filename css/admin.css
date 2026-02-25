@@ -1,94 +1,94 @@
 /* =========================
-   admin.css (Adult Admin)
-   Orange-forward, clean, school-office vibe
+   admin.css (Matches main.css theme)
 ========================= */
-
-.admin-topbar{
-  /* Slight orange tint without screaming */
-  background:
-    radial-gradient(700px 220px at 15% 30%, rgba(240,88,40,0.14), transparent 60%),
-    rgba(255,255,255,0.72);
-  border-color: rgba(240,88,40,0.16);
+.logo {
+  height: 80px;
+  /* adjust size */
+  width: auto;
+  display: block;
+  object-fit: contain;
+  image-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  transform: translateZ(0);
 }
-
+/* Layout wrapper */
 .admin-wrap{
-  padding-top: 18px;
+  padding-top: 20px;
   padding-bottom: 40px;
 }
 
+/* Header */
 .admin-head{
   display:flex;
   align-items:flex-end;
   justify-content:space-between;
   gap: 16px;
-  margin: 18px 0 18px;
+  margin: 18px 0;
 }
 
 .admin-title{
-  font-size: 34px;
-  letter-spacing: 0.2px;
-  margin-top: 4px;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text);
 }
 
-.admin-actions{
-  display:flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
+/* KPI grid */
 .admin-kpis{
+  display:grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  margin-top: 10px;
+  gap: 16px;
+  margin-top: 16px;
 }
 
 @media (max-width: 980px){
-  .admin-head{ align-items:flex-start; flex-direction: column; }
-  .admin-kpis{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .admin-head{ flex-direction: column; align-items:flex-start; }
+  .admin-kpis{ grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 560px){
   .admin-kpis{ grid-template-columns: 1fr; }
 }
 
-/* KPI Cards */
+/* KPI cards styled like main panels */
 .kpi{
-  border-color: rgba(240,88,40,0.14);
-  background:
-    linear-gradient(180deg, rgba(255,255,255,0.96), rgba(255,255,255,0.90));
-  position: relative;
-  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 120ms ease, box-shadow 140ms ease;
 }
 
-.kpi::before{
-  content:"";
-  position:absolute;
-  inset: -40% -50%;
-  background: linear-gradient(120deg, transparent, rgba(240,88,40,0.10), transparent);
-  transform: rotate(10deg);
+.kpi:hover{
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
 }
 
 .kpi-label{
   font-size: 12px;
-  letter-spacing: 0.10em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--muted-2);
-  font-weight: 750;
+  color: var(--muted);
+  font-weight: 700;
 }
 
 .kpi-value{
-  font-size: 34px;
+  font-size: 32px;
   font-weight: 900;
   margin-top: 6px;
 }
 
 .kpi-sub{
-  margin-top: 2px;
+  margin-top: 4px;
   font-size: 13px;
+  color: var(--muted);
 }
 
 /* Tools grid */
 .admin-tools{
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  margin-top: 16px;
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 20px;
 }
 
 @media (max-width: 900px){
@@ -96,7 +96,17 @@
 }
 
 .tool{
-  border-color: rgba(240,88,40,0.12);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 120ms ease, box-shadow 140ms ease;
+}
+
+.tool:hover{
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
 }
 
 .tool-top{
@@ -106,14 +116,14 @@
 }
 
 .tool-icon{
-  width: 46px;
-  height: 46px;
-  border-radius: 14px;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
   display:grid;
   place-items:center;
-  font-size: 22px;
-  background: linear-gradient(135deg, rgba(240,88,40,0.18), rgba(232,192,104,0.16));
-  border: 1px solid rgba(240,88,40,0.14);
+  font-size: 20px;
+  background: rgba(240, 88, 40, 0.08);
+  border: 1px solid var(--border);
 }
 
 .tool h2{
@@ -123,20 +133,15 @@
 
 .tool p{
   margin: 6px 0 0;
+  color: var(--muted);
 }
 
-.tool-actions{
-  display:flex;
-  gap: 10px;
-  margin-top: 14px;
-  flex-wrap: wrap;
-}
-
-/* Lower layout */
+/* Lower panels */
 .admin-lower{
+  display:grid;
   grid-template-columns: 1.1fr 1.4fr;
-  margin-top: 16px;
-  align-items: start;
+  gap: 16px;
+  margin-top: 20px;
 }
 
 @media (max-width: 980px){
@@ -144,15 +149,11 @@
 }
 
 .admin-panel{
-  border-color: rgba(240,88,40,0.12);
-}
-
-.panel-head{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap: 12px;
-  margin-bottom: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: var(--shadow-sm);
 }
 
 /* Activity */
@@ -164,17 +165,17 @@
 
 .activity-item{
   display:grid;
-  grid-template-columns: 14px 1fr auto;
+  grid-template-columns: 12px 1fr auto;
   gap: 12px;
   align-items: start;
   padding: 12px;
   border-radius: 14px;
-  border: 1px solid rgba(229,231,235,0.9);
-  background: rgba(241,245,249,0.55);
+  border: 1px solid var(--border);
+  background: rgba(241,245,249,0.6);
 }
 
 .activity-title{
-  font-weight: 850;
+  font-weight: 800;
 }
 
 .dot{
@@ -182,19 +183,18 @@
   height: 10px;
   border-radius: 999px;
   margin-top: 6px;
-  background: rgba(240,88,40,0.9);
-  box-shadow: 0 0 0 4px rgba(240,88,40,0.14);
+  background: var(--primary);
 }
 
 /* Table polish */
 .admin-table th{
-  background: rgba(240,88,40,0.06);
+  background: rgba(0,0,0,0.03);
 }
 
 .btn-sm{
-  padding: 8px 10px;
+  padding: 8px 12px;
   border-radius: 12px;
-  font-weight: 750;
+  font-weight: 700;
 }
 
 /* Status pills */
@@ -204,19 +204,43 @@
   padding: 6px 10px;
   border-radius: 999px;
   font-size: 12px;
-  font-weight: 850;
+  font-weight: 800;
   border: 1px solid var(--border);
   background: rgba(241,245,249,0.7);
 }
 
 .pill-warn{
-  border-color: rgba(232,192,104,0.35);
   background: rgba(232,192,104,0.18);
   color: #6B4E00;
 }
 
 .pill-ok{
-  border-color: rgba(40,152,136,0.28);
   background: rgba(40,152,136,0.14);
   color: #0F3B36;
+}
+
+
+.topnav {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.topnav-link {
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 750;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.topnav-link:hover {
+  background: rgba(40, 152, 136, 0.10);
+  color: var(--text);
+}
+
+.topnav-link.active {
+  background: rgba(240, 88, 40, 0.12);
+  border: 1px solid rgba(240, 88, 40, 0.18);
+  color: var(--text);
 }
