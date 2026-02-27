@@ -1,43 +1,40 @@
-console.log("Submit button clicked");
+console.log("submit.js loaded");
 
-
-document.getElementById("ticketForm")
+document
+  .getElementById("ticketForm")
   .addEventListener("submit", submitTicket);
 
 function submitTicket(event) {
-    event.preventDefault();
-}
+  event.preventDefault();
 
-const username = document.getElementById("username").value;
-const location = document.getElementById("location").value;
-const category = document.getElementById("category").value;
-const urgency = document.getElementById("urgency").value;
-const description = document.getElementById("description").value;
+  console.log("Form submitted");
 
-const submitTime = Math.floor(Date.now() / 1000);
-
-const ticket = {
-    username: username,
-    location: location,
-    category: category,
-    urgency: urgency,
-    description: description,
-    submitTime: submitTime,
+  const ticket = {
+    title: document.getElementById("title").value,
+    description: document.getElementById("description").value,
+    priority: document.getElementById("priority").value,
+    category: document.getElementById("category").value,
+    building: document.getElementById("building").value,
+    room: document.getElementById("room").value,
+    requester: document.getElementById("requester").value,
+    submitTime: Math.floor(Date.now() / 1000),
     status: "pending"
-};
+  };
 
-fetch("/submit-ticket", {
+  console.log("Ticket object:", ticket);
+
+  fetch("/submit-ticket", {
     method: "POST",
     headers: {
-        "Content-Type": "application/json"
+      "Content-Type": "application/json"
     },
     body: JSON.stringify(ticket)
-
-    .then(res => res.json())
-    .then(data => {
-        console.log("Ticket submitted:", data);
-    })
-    .catch(err => {
-        console.error("Error submitting ticket:", err);
-    })
-})
+  })
+  .then(res => res.json())
+  .then(data => {
+    console.log("Ticket submitted:", data);
+  })
+  .catch(err => {
+    console.error("Error submitting ticket:", err);
+  });
+}
