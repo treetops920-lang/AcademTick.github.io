@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AcademTick • Resolve</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/resolve.css" />
+</head>
+
+<body>
+    <!-- Topbar -->
+    <header class="topbar">
+        <!-- Brand / Logo -->
+        <a href="index.html" class="brand">
+            <img src="image/AcademTick_-_logo-removebg-preview.png" alt="Academtick" class="logo" />
+        </a>
+
+        <!-- Optional: middle nav links (remove if you don't want it) -->
+        <nav class="topnav">
+            <a href="main.html" class="topnav-link">Dashboard</a>
+            <a href="all-tick.html" class="topnav-link">All Tickets</a>
+            <a href="my-tick.html" class="topnav-link active">My Tickets</a>
+            <a href="help.html" class="topnav-link">Help</a>
+            <a href="creat-tick.html" class="topnav-link">Create Ticket</a>
+            <a href="settings.html" class="topnav-link">Settings</a>
+        </nav>
+
+        <!-- Profile / Login area -->
+        <div class="profile">
+            <span class="profile-name">Jessica</span>
+
+            <button class="avatar-btn" id="avatarBtn" type="button" aria-haspopup="menu" aria-expanded="false">
+                <span class="avatar-initials">JJ</span>
+            </button>
+
+            <div class="profile-menu" id="profileMenu" role="menu" aria-label="Profile menu">
+                <a class="menu-item" href="profile.html" role="menuitem">My Profile</a>
+                <a class="menu-item" href="settings.html" role="menuitem">Settings</a>
+                <div class="menu-divider"></div>
+                <a class="menu-item danger" href="login.html" role="menuitem">Sign out</a>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="container">
+        <!-- Header / Title -->
+        <section class="resolve-head">
+            <div>
+                <span class="kicker">Ticket Resolution</span>
+                <h1 class="resolve-title">Resolve Ticket</h1>
+                <p class="lead">Close it out with notes, outcome, and (optional) follow-up. Keep it clear for
+                    future-you.</p>
+            </div>
+
+            <div class="resolve-meta card">
+                <div class="meta-row">
+                    <div class="meta-pill"><span class="meta-label">Ticket</span><span
+                            class="meta-value">get number</span></div>
+                    <div class="meta-pill"><span class="meta-label">Priority</span><span class="meta-value">get text</span>
+                    </div>
+                    <div class="meta-pill"><span class="meta-label">Status</span><span class="meta-value">get text</span>
+                    </div>
+                </div>
+                <div class="meta-row">
+                    <div class="meta-pill"><span class="meta-label">Student</span><span class="meta-value">get name</span>
+                    </div>
+                    <div class="meta-pill"><span class="meta-label">Teacher</span><span class="meta-value">get name</span></div>
+                    <div class="meta-pill"><span class="meta-label">Created</span><span class="meta-value">get date</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main layout -->
+        <section class="resolve-grid">
+            <!-- Left: Ticket summary -->
+            <article class="card resolve-summary">
+                <h2 class="section-title">Ticket Summary</h2>
+
+                <div class="summary-block">
+                    <div class="summary-label">Issue</div>
+                    <div class="summary-value">get issue</div>
+                </div>
+
+                <div class="summary-block">
+                    <div class="summary-label">Student message</div>
+                    <div class="summary-value muted">
+                        “get text”
+                    </div>
+                </div>
+
+                <div class="summary-block two-col">
+                    <div>
+                        <div class="summary-label">Category</div>
+                        <div class="summary-value muted">get category</div>
+                    </div>
+                    <div>
+                        <div class="summary-label">Location</div>
+                        <div class="summary-value muted">get location</div>
+                    </div>
+                </div>
+
+                <div class="summary-block">
+                    <div class="summary-label">Attachments</div>
+                    <div class="attachments">
+                        <a class="attachment" href="#" aria-label="Open attachment">photo_port.jpg</a>
+                        <a class="attachment" href="#" aria-label="Open attachment">charger_label.png</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Right: Resolution form -->
+            <article class="card resolve-form">
+                <h2 class="section-title">Resolution</h2>
+
+                <form id="resolveForm">
+                    <div class="field-row">
+                        <label class="field">
+                            <span class="field-label">Outcome</span>
+                            <select class="input" name="outcome" required>
+                                <option value="" selected disabled>Select an outcome…</option>
+                                <option>Fixed on-site</option>
+                                <option>Swapped device</option>
+                                <option>Sent to repair</option>
+                                <option>No issue found</option>
+                                <option>Needs parent/guardian</option>
+                                <option>Other</option>
+                            </select>
+                        </label>
+
+                        <label class="field">
+                            <span class="field-label">Close status</span>
+                            <select class="input" name="status" required>
+                                <option selected>Resolved</option>
+                                <option>Needs follow-up</option>
+                                <option>Escalated</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="field-row">
+                        <label class="field">
+                            <span class="field-label">Time spent</span>
+                            <select class="input" name="timeSpent">
+                                <option>5 min</option>
+                                <option>10 min</option>
+                                <option>15 min</option>
+                                <option>30 min</option>
+                                <option>45 min</option>
+                                <option>60+ min</option>
+                            </select>
+                        </label>
+
+                        <label class="field">
+                            <span class="field-label">Follow-up date (optional)</span>
+                            <input class="input" type="date" name="followUpDate" />
+                        </label>
+                    </div>
+
+                    <label class="field">
+                        <span class="field-label">Resolution notes</span>
+                        <textarea class="input textarea" name="notes" rows="6"
+                            placeholder="What you did, what worked, what to watch for next time…" required></textarea>
+                        <span class="field-hint">Tip: Write it so any tech could repeat it tomorrow.</span>
+                    </label>
+
+                    <label class="field checkline">
+                        <input type="checkbox" name="notifyTeacher" checked />
+                        <span>Notify teacher with summary</span>
+                    </label>
+
+                    <div class="resolve-actions">
+                        <a class="btn btn-ghost" href="dashboard.html">Cancel</a>
+                        <button class="btn btn-accent" type="button" id="saveDraftBtn">Save Draft</button>
+                        <button class="btn btn-primary" type="submit">Close Ticket</button>
+                    </div>
+
+                    <p class="tiny-note">
+                        Closing a ticket creates an audit trail (who/when/outcome). Keep it factual, not spicy.
+                    </p>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <script>
+        // Tiny UX: fake submit / draft for now
+        const form = document.getElementById("resolveForm");
+        const draftBtn = document.getElementById("saveDraftBtn");
+
+        draftBtn.addEventListener("click", () => {
+            alert("Draft saved (placeholder). Wire to MongoDB/API next.");
+        });
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            alert("Ticket closed (placeholder). Wire to MongoDB/API next.");
+        });
+    </script>
+</body>
+
+</html>

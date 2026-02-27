@@ -215,26 +215,53 @@ img{ display:block; max-width:100%; }
 
 .dot{ opacity: 0.6; }
 
-/* TickBot side */
+/* Center ONLY the main hero section (leave bottom sections alone) */
+.hero{
+  margin: 18px auto 0;                 /* centers the whole hero block */
+  width: min(980px, 100%);             /* controls how wide the main stuff is */
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 18px;
+  align-items: start;                  /* good for sticky */
+}
+
+/* Keep TickBot pinned right inside the hero */
 .hero-art{
-  display:grid;
-  justify-items: center;
-  gap: 12px;
+  justify-items: end;
+  position: sticky;
+  top: 86px;
+  align-self: start;
 }
 
-.bot-frame{
-  width: min(420px, 100%);
-  padding: 16px;
-  border-radius: 26px;
-  background: rgba(255,255,255,0.70);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-md);
+/* Mobile stays stacked/centered */
+@media (max-width: 900px){
+  .hero{
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  .hero-art{
+    position: static;
+    top: auto;
+    justify-items: center;
+  }
+}
+/* Keep the bot frame/bubble aligned right inside the column */
+.bot-frame,
+.speech{
+  justify-self: end;
 }
 
-.tickbot{
-  width: 100%;
-  height: auto;
-  transform: translateY(2px);
+/* On mobile, turn sticky off so it doesn't get weird */
+@media (max-width: 900px){
+  .hero-art{
+    position: static;
+    top: auto;
+    justify-items: center;
+  }
+  .bot-frame,
+  .speech{
+    justify-self: center;
+  }
 }
 
 /* Speech bubble */
