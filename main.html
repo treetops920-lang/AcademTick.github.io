@@ -248,7 +248,13 @@
                     <div class="divider"></div>
 
                     <div class="row" style="justify-content:flex-end;">
-                        <button class="btn btn-primary" type="button">View All Activity</button>
+                            <button class="btn btn-primary" type="button" id="viewAllBtn">
+                                View All Activity
+                            </button>
+                        </div>
+                        <script>document.getElementById("viewAllBtn").addEventListener("click", () => {
+                                window.location.href = "all-tick.html";
+                            });</script>
                     </div>
                 </article>
             </section>
