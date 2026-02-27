@@ -16,7 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.assign("main.html");
       return;
     }
-
+    if (user.toLowerCase() === "admin_kid" && pass === "TickBot") {
+      sessionStorage.setItem("isLoggedIn", "true");
+      sessionStorage.setItem("role", "admin");
+      window.location.assign("kids-dash.html");
+      return;
+    }
     // non-admin user example (optional)
     if (user && pass) {
       sessionStorage.setItem("isLoggedIn", "true");

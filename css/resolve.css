@@ -1,0 +1,313 @@
+
+/* Meta card should look like your standard .card */
+.resolve-meta{
+  padding: 16px;                 /* match card padding rhythm */
+}
+
+.meta-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.meta-row:last-child{ margin-bottom: 0; }
+
+/* Make meta pills mimic your mini-links style */
+.meta-pill{
+  flex: 1 1 150px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 10px;
+
+  padding: 10px 12px;
+  border-radius: 999px;
+  background: rgba(241,245,249,0.65);
+  border: 1px solid var(--border);
+}
+
+.meta-label{
+  font-weight: 950;
+  font-size: 11px;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.meta-value{
+  font-weight: 950;
+  font-size: 13px;
+  color: var(--text);
+}
+
+/* Main grid: same spacing as hero/why */
+.resolve-grid{
+  margin-top: 18px;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  align-items:start;
+}
+
+/* Section titles should feel like your card-title style */
+.section-title{
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: 950;
+}
+
+/* Summary blocks: same light divider feel */
+.summary-block{
+  padding: 12px 0;
+  border-top: 1px solid rgba(229,231,235,0.85);
+}
+.summary-block:first-of-type{
+  border-top: 0;
+  padding-top: 0;
+}
+
+.two-col{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.summary-label{
+  font-weight: 950;
+  font-size: 12px;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.summary-value{
+  font-weight: 900;
+  color: var(--text);
+}
+
+.muted{ color: var(--muted); }
+
+/* Attachments should look like mini-links */
+.attachments{
+  display:flex;
+  flex-wrap:wrap;
+  gap: 10px;
+}
+
+.attachment{
+  padding: 8px 10px;
+  border-radius: 999px;
+  background: rgba(241,245,249,0.65);
+  border: 1px solid var(--border);
+  font-weight: 900;
+}
+
+.attachment:hover{
+  border-color: rgba(40,152,136,0.35);
+}
+
+/* Form fields: match the page’s “soft glass” inputs */
+.field-row{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.field{
+  display:block;
+  margin-bottom: 12px;
+}
+
+.field-label{
+  display:block;
+  font-weight: 950;
+  font-size: 12px;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+/* Input styling aligned with your btn/card aesthetic */
+.input{
+  width:100%;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.90);
+  padding: 10px 12px;
+  font-family: var(--font);
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--text);
+  outline: none;
+  box-shadow: none;
+}
+
+.input:focus{
+  box-shadow: var(--ring);
+  border-color: rgba(40,152,136,0.40);
+}
+
+.textarea{
+  resize: vertical;
+  min-height: 140px;
+}
+
+.field-hint{
+  display:block;
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+/* Checkbox line: calm + clean */
+.checkline{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  margin-top: 4px;
+  font-weight: 800;
+  color: var(--muted);
+}
+
+.resolve-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.tiny-note{
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+
+
+.logo {
+  height: 80px;
+  /* adjust size */
+  width: auto;
+  display: block;
+  object-fit: contain;
+  image-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  transform: translateZ(0);
+}
+
+/* Sidebar brand row */
+.brand {
+  display: flex;
+  align-items: center;
+  padding: 20px 12px;
+}
+
+.topnav {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.topnav-link {
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 750;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.topnav-link:hover {
+  background: rgba(40, 152, 136, 0.10);
+  color: var(--text);
+}
+
+.topnav-link.active {
+  background: rgba(240, 88, 40, 0.12);
+  border: 1px solid rgba(240, 88, 40, 0.18);
+  color: var(--text);
+}
+
+/* =========================
+   Top-right profile (Google-ish)
+========================= */
+
+.profile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-name {
+  font-weight: 700;
+  color: var(--text);
+  font-size: 14px;
+  max-width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.avatar-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.75);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: box-shadow 140ms ease, border-color 140ms ease, transform 120ms ease;
+}
+
+.avatar-btn:hover {
+  border-color: rgba(40, 152, 136, 0.45);
+  box-shadow: var(--shadow-sm);
+}
+
+.avatar-btn:focus {
+  outline: none;
+  box-shadow: var(--ring);
+}
+
+.avatar-btn:active {
+  transform: translateY(1px);
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 999px;
+}
+
+/* Dropdown menu */
+.profile-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 10px);
+  width: 260px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  display: none;
+  z-index: 1000;
+}
+
+.profile-menu.open {
+  display: block;
+}
+
+.profile-menu-head {
+  right: 5em;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+
