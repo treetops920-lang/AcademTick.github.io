@@ -3,8 +3,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const userInput = document.getElementById("email");
   const passInput = document.getElementById("password");
 
-  // Safety check
-  if (!form) return;
+  // Debug: confirm the JS is actually running and elements exist
+  console.log("Login JS loaded");
+  console.log({ formFound: !!form, emailFound: !!userInput, passFound: !!passInput });
+
+  if (!form || !userInput || !passInput) {
+    console.error("Login elements not found. Check .login-form, #email, #password in your HTML.");
+    return;
+  }
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -12,25 +18,29 @@ document.addEventListener("DOMContentLoaded", () => {
     const user = userInput.value.trim();
     const pass = passInput.value.trim();
 
-    // ADMIN LOGIN
+    console.log("Attempt login:", { user, passLen: pass.length });
+
+    // ADMIN
     if (user === "admin" && pass === "test") {
       sessionStorage.setItem("isLoggedIn", "true");
       sessionStorage.setItem("role", "admin");
-      window.location.assign("main.html");
-      return;
-    }
-    if (user === "admin_kid" && pass === "TickBot") {
-      sessionStorage.setItem("isLoggedIn", "true");
-      sessionStorage.setItem("role", "kid-student");
-      window.location.assign("kids-dash.html");
+      window.location.href = "main.html";
       return;
     }
 
-    // Regular user (any non-empty login)
+    // KID ADMIN (goes to kids dashboard)
+    if (user === "admin_kid" && pass === "TickBot") {
+      sessionStorage.setItem("isLoggedIn", "true");
+      sessionStorage.setItem("role", "kid-student");
+      window.location.href = "./kids-dash.html";   // note the ./ helps relative paths
+      return;
+    }
+
+    // Regular user
     if (user && pass) {
       sessionStorage.setItem("isLoggedIn", "true");
       sessionStorage.setItem("role", "user");
-      window.location.assign("main.html");
+      window.location.href = "main.html";
       return;
     }
 
