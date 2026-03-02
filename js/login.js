@@ -13,10 +13,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const pass = passInput.value.trim();
 
     // ADMIN LOGIN
+    if (user === "admin" && pass === "test") {
+      sessionStorage.setItem("isLoggedIn", "true");
+      sessionStorage.setItem("role", "admin");
+      window.location.assign("main.html");
+      return;
+    }
     if (user === "admin_kid" && pass === "TickBot") {
       sessionStorage.setItem("isLoggedIn", "true");
       sessionStorage.setItem("role", "kid-student");
-      window.location.assign("kids-html.html");
+      window.location.assign("kids-dash.html");
       return;
     }
 
