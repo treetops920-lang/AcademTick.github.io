@@ -21,6 +21,7 @@
         <!-- Optional: middle nav links (remove if you don't want it) -->
         <nav class="topnav">
             <a href="main.html" class="topnav-link">Dashboard</a>
+            <a href="reslove.html" class="topnav-link">Resolve</a>
             <a href="all-tick.html" class="topnav-link">All Tickets</a>
             <a href="my-tick.html" class="topnav-link active">My Tickets</a>
             <a href="help.html" class="topnav-link">Help</a>
@@ -171,8 +172,8 @@
                 <article class="card">
                     <div class="card-header">
                         <div>
-                            <h2 style="font-size:18px;">Create a Ticket</h2>
-                            <p class="lead">Give enough detail so IT doesn’t have to summon you twice.</p>
+                            <h2 style="font-size:18px;">Create a Ticket reminders </h2>
+                       <p>(this isnt an actual ticket maker just a visual reminder)</p>
                         </div>
                         <span class="badge teal">New</span>
                     </div>
@@ -181,22 +182,13 @@
                         <div class="grid grid-2">
                             <div class="field">
                                 <label for="category">Category</label>
-                                <select id="category" name="category">
-                                    <option>Hardware</option>
-                                    <option>Software</option>
-                                    <option>Network / Wi-Fi</option>
-                                    <option>Account / Login</option>
-                                    <option>Classroom Tech</option>
+                                <p> catarogires are for the techs to have the ebst genral idea of the situation if you dont know the catagory give a guess</p>
                                 </select>
                             </div>
 
                             <div class="field">
                                 <label for="priority">Priority</label>
-                                <select id="priority" name="priority">
-                                    <option>Low</option>
-                                    <option>Medium</option>
-                                    <option>High</option>
-                                    <option>Urgent</option>
+                               <p> Priorities help IT prioritize tickets. If you're unsure, select "Medium". students are onlyy given low medium and high, staff have those and urgent, all tattle tickets are consideted minimum priotiry</p>
                                 </select>
                             </div>
                         </div>
@@ -204,7 +196,7 @@
                         <div class="field">
                             <label for="title">Title</label>
                             <input class="input" id="title" name="title" placeholder="e.g., Smartboard won’t turn on" />
-                            <div class="help">Short + descriptive helps triage faster.</div>
+                            <div class="help">Short + descriptive helps triage faster. keep to about 5 words</div>
                         </div>
 
                         <div class="field">
@@ -265,7 +257,11 @@
             <section class="card" aria-label="Ticket list">
                 <div class="card-header">
                     <div>
-                        <h2 style="font-size:18px;">Open Tickets</h2>
+
+                    <!--make open buttons for reslove, so that it can populate that tickets data-->
+                    
+                    
+                    <h2 style="font-size:18px;">Open Tickets</h2>
                         <p class="lead">Sorted by priority → newest updates.</p>
                     </div>
                     <div class="row">
