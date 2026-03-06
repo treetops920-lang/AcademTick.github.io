@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/resolve.css" />
 </head>
 
+<script src="./js/solve.js"></script>
+
 <body>
     <!-- Topbar -->
     <header class="topbar">
@@ -57,18 +59,23 @@
 
             <div class="resolve-meta card">
                 <div class="meta-row">
-                    <div class="meta-pill"><span class="meta-label">Ticket</span><span
-                            class="meta-value">get number</span></div>
-                    <div class="meta-pill"><span class="meta-label">Priority</span><span class="meta-value">get text</span>
+                    <div class="meta-pill"><span class="meta-label">Ticket</span><span class="meta-value">get
+                            number</span></div>
+                    <div class="meta-pill"><span class="meta-label">Priority</span><span class="meta-value">get
+                            text</span>
                     </div>
-                    <div class="meta-pill"><span class="meta-label">Status</span><span class="meta-value">get text</span>
+                    <div class="meta-pill"><span class="meta-label">Status</span><span class="meta-value">get
+                            text</span>
                     </div>
                 </div>
                 <div class="meta-row">
-                    <div class="meta-pill"><span class="meta-label">Student</span><span class="meta-value">get name</span>
+                    <div class="meta-pill"><span class="meta-label">Student</span><span class="meta-value">get
+                            name</span>
                     </div>
-                    <div class="meta-pill"><span class="meta-label">Teacher</span><span class="meta-value">get name</span></div>
-                    <div class="meta-pill"><span class="meta-label">Created</span><span class="meta-value">get date</span></div>
+                    <div class="meta-pill"><span class="meta-label">Teacher</span><span class="meta-value">get
+                            name</span></div>
+                    <div class="meta-pill"><span class="meta-label">Created</span><span class="meta-value">get
+                            date</span></div>
                 </div>
             </div>
         </section>
@@ -104,7 +111,7 @@
 
                 <div class="summary-block">
                     <div class="summary-label">Attachments</div>
-                     <!---dont acttually worry about this thatd be to much work, just a placeholder for now -->
+                    <!---dont acttually worry about this thatd be to much work, just a placeholder for now -->
                     <div class="attachments">
                     </div>
                 </div>
@@ -168,11 +175,14 @@
                     <div class="resolve-actions">
                         <a class="btn btn-ghost" href="dashboard.html">Cancel</a>
                         <button class="btn btn-accent" type="button" id="saveDraftBtn">Save Draft</button>
-                        <button class="btn btn-primary" type="submit">Close Ticket</button>
+                        <button class="btn btn-primary" type="button" id="closeTicketBtn">Close Ticket</button>
                     </div>
 
+                    <!-- line 178, or  "<button class="btn btn-primary" type="button"" type should be changed back to submit after testing  -->
+
                     <p class="tiny-note">
-                        Closing a ticket creates an audit trail (who/when/outcome). Keep it factual, falsafide records can led to issues upon audit.
+                        Closing a ticket creates an audit trail (who/when/outcome). Keep it factual, falsafide records
+                        can led to issues upon audit.
                     </p>
                 </form>
             </article>
