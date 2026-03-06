@@ -30,11 +30,29 @@ function submitTicket(event) {
     },
     body: JSON.stringify(ticket)
   })
-  .then(res => res.json())
-  .then(data => {
-    console.log("Ticket submitted:", data);
-  })
-  .catch(err => {
-    console.error("Error submitting ticket:", err);
-  });
+
+
+
+
+    /* 
+    TODO Bellow (after backend is finalized):
+    Expect JSON response from /submit-ticket
+  
+    .then(res => res.json())
+    .then(data => {
+      console.log("Ticket submitted:", data);
+    })
+  */
+
+
+    .then(res => {
+      console.log("Response status:", res.status);
+      return res.text();
+    })
+    .then(text => {
+      console.log("Raw response:", text);
+    })
+    .catch(err => {
+      console.error("Error submitting ticket:", err);
+    });
 }
