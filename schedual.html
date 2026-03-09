@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AcademTick | Counselor Scheduling</title>
+    <link rel="stylesheet" href="css/schedual.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>Schedule Time With Your <span class="accent">Counselor</span></h1>
+        <p>
+          Need help with classes, stress, friend drama, big feelings, or just figuring stuff out?
+          Pick a counselor, choose a reason, and grab an open time slot. Easy, clean, and way less scary than walking in and hoping for the best.
+        </p>
+        <div class="pill-row">
+          <a class="pill" href="main.html">Dashboard</a>
+        <a class="pill" href="help.html">Help</a>
+          <a class="pill" href="creat-tick.html">Create Ticket</a>
+        </div>
+      </div>
+
+      <div class="hero-side">
+        <div class="side-card">
+          <h2>How it works</h2>
+          <ul>
+            <li>Choose your counselor and reason.</li>
+            <li>Click an open time on the weekly grid.</li>
+            <li>Set a priority level.</li>
+            <li>Submit your request.</li>
+          </ul>
+        </div>
+        <div class="side-card">
+          <h3>Friendly reminder</h3>
+          <p>
+            This page is for school support scheduling. If something feels unsafe or urgent, a grown-up should be told right away instead of waiting on a time slot.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="layout">
+      <aside class="panel form-panel">
+        <h2 class="panel-title">Request Details</h2>
+        <p class="panel-subtitle">
+          Fill this out first, then click a time slot in the weekly schedule.
+        </p>
+
+        <form id="scheduleForm" class="field-grid">
+          <div class="field">
+            <label for="studentName">Student Name</label>
+            <input id="studentName" name="studentName" type="text" placeholder="Enter student name" required />
+          </div>
+
+          <div class="field">
+            <label for="counselorName">Counselor Name</label>
+            <select id="counselorName" name="counselorName" required>
+              <option value="">Choose a counselor</option>
+               <option>Mr. Afton (high)</option>
+              <option>Mr. Obama (middle)</option>
+              <option>Mr. Lincoln (middle)</option>
+             <option>Mr. Kennedy (high)</option>
+                <option>Mr. McTavish (high)</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="reason">Reason for Visit</label>
+            <select id="reason" name="reason" required>
+              <option value="">Choose a reason</option>
+              <option>Schedule / classes</option>
+              <option>Friendship issue</option>
+              <option>Stress / anxiety</option>
+              <option>Bullying concern</option>
+              <option>Family / home stress</option>
+              <option>Academic support</option>
+              <option>Check-in</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Priority</label>
+            <div class="priority-row">
+              <label class="priority-option low">
+                <input type="radio" name="priority" value="Low" checked />
+                <span>Low</span>
+              </label>
+              <label class="priority-option medium">
+                <input type="radio" name="priority" value="Medium" />
+                <span>Medium</span>
+              </label>
+              <label class="priority-option high">
+                <input type="radio" name="priority" value="High" />
+                <span>High</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="notes">Extra Notes</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Add any helpful details here..."></textarea>
+          </div>
+
+          <div class="btn-row">
+            <button type="submit" class="btn btn-primary">Submit Request</button>
+            <button type="button" id="resetBtn" class="btn btn-secondary">Clear Form</button>
+          </div>
+        </form>
+
+        <div class="note">
+          <strong>Selected slot:</strong>
+          <span id="chosenSlotText"> No time chosen yet.</span>
+        </div>
+      </aside>
+
+      <section class="panel schedule-panel">
+        <div class="schedule-topbar">
+          <div class="schedule-title-wrap">
+            <h2>Weekly Counselor Schedule</h2>
+            <p>Monday through Friday, 8:00 AM to 3:00 PM in 30-minute increments.</p>
+          </div>
+
+          <div class="legend">
+            <span class="legend-item"><span class="dot open"></span> Open</span>
+            <span class="legend-item"><span class="dot booked"></span> Unavailable</span>
+            <span class="legend-item"><span class="dot selected"></span> Selected</span>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table aria-label="Counselor weekly schedule">
+            <thead>
+              <tr>
+                <th id="cornerHeader">Counselor</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+              </tr>
+            </thead>
+            <tbody id="scheduleBody"></tbody>
+          </table>
+        </div>
+
+        <div class="selection-bar">
+          <p>
+            <strong>Heads up:</strong> Click any open box to choose your slot. Changing the counselor keeps your selected time but updates the corner label.
+          </p>
+          <p id="liveSummary">No appointment request ready yet.</p>
+        </div>
+      </section>
+    </section>
+
+    <section class="footer-tip">
+      <strong>Reminder:</strong> If youre counselor is meant to see you but isn't at school that day, even after you made the appointment 
+      they will move your time slot to the next avalible time and concerder the priority to be urgent due to the delay.
+    </section>
+  </main>
+
+  <script>
+    const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+    const scheduleBody = document.getElementById("scheduleBody");
+    const counselorSelect = document.getElementById("counselorName");
+    const cornerHeader = document.getElementById("cornerHeader");
+    const chosenSlotText = document.getElementById("chosenSlotText");
+    const liveSummary = document.getElementById("liveSummary");
+    const scheduleForm = document.getElementById("scheduleForm");
+    const resetBtn = document.getElementById("resetBtn");
+
+    let selectedSlot = null;
+
+    function formatTime(hour24, minutes) {
+      const suffix = hour24 >= 12 ? "PM" : "AM";
+      const hour12 = hour24 % 12 || 12;
+      const mins = String(minutes).padStart(2, "0");
+      return `${hour12}:${mins} ${suffix}`;
+    }
+
+    function generateTimes() {
+      const times = [];
+      for (let hour = 8; hour < 15; hour++) {
+        times.push(formatTime(hour, 0));
+        times.push(formatTime(hour, 30));
+      }
+      times.push(formatTime(15, 0));
+      return times;
+    }
+
+    const times = generateTimes();
+
+    const bookedSlots = new Set([
+      "Monday|10:00 AM",
+      "Monday|1:30 PM",
+      "Tuesday|8:30 AM",
+      "Tuesday|12:00 PM",
+      "Wednesday|9:30 AM",
+      "Wednesday|11:00 AM",
+      "Thursday|2:00 PM",
+      "Friday|10:30 AM",
+      "Friday|1:00 PM"
+    ]);
+
+    function buildTable() {
+      scheduleBody.innerHTML = "";
+
+      times.forEach((time) => {
+        const row = document.createElement("tr");
+
+        const timeHead = document.createElement("th");
+        timeHead.scope = "row";
+        timeHead.textContent = time;
+        row.appendChild(timeHead);
+
+        days.forEach((day) => {
+          const td = document.createElement("td");
+          const button = document.createElement("button");
+          const slotKey = `${day}|${time}`;
+          const isBooked = bookedSlots.has(slotKey);
+
+          button.type = "button";
+          button.className = `time-slot ${isBooked ? "booked" : "open"}`;
+          button.dataset.day = day;
+          button.dataset.time = time;
+          button.dataset.booked = isBooked;
+          button.innerHTML = isBooked
+            ? '<span class="tiny">Unavailable</span>'
+            : '<span class="tiny">Open</span>';
+
+          if (!isBooked) {
+            button.addEventListener("click", () => selectSlot(button));
+          } else {
+            button.disabled = true;
+          }
+
+          td.appendChild(button);
+          row.appendChild(td);
+        });
+
+        scheduleBody.appendChild(row);
+      });
+    }
+
+    function selectSlot(button) {
+      document.querySelectorAll(".time-slot.selected").forEach((slot) => {
+        slot.classList.remove("selected");
+        slot.classList.add("open");
+        slot.innerHTML = '<span class="tiny">Open</span>';
+      });
+
+      button.classList.remove("open");
+      button.classList.add("selected");
+      button.innerHTML = '<span class="tiny">Selected</span>';
+
+      selectedSlot = {
+        day: button.dataset.day,
+        time: button.dataset.time
+      };
+
+      chosenSlotText.textContent = ` ${selectedSlot.day} at ${selectedSlot.time}`;
+      updateSummary();
+    }
+
+    function updateCornerLabel() {
+      cornerHeader.textContent = counselorSelect.value || "Counselor";
+      updateSummary();
+    }
+
+    function updateSummary() {
+      const studentName = document.getElementById("studentName").value.trim();
+      const counselorName = counselorSelect.value;
+      const reason = document.getElementById("reason").value;
+      const priority = document.querySelector('input[name="priority"]:checked')?.value || "Low";
+
+      if (!studentName || !counselorName || !reason || !selectedSlot) {
+        liveSummary.textContent = "No appointment request ready yet.";
+        return;
+      }
+
+      liveSummary.textContent = `${studentName} is requesting ${selectedSlot.day} at ${selectedSlot.time} with ${counselorName} for ${reason} (${priority} priority).`;
+    }
+
+    counselorSelect.addEventListener("change", updateCornerLabel);
+    document.getElementById("studentName").addEventListener("input", updateSummary);
+    document.getElementById("reason").addEventListener("change", updateSummary);
+    document.querySelectorAll('input[name="priority"]').forEach((radio) => {
+      radio.addEventListener("change", updateSummary);
+    });
+
+    scheduleForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      if (!selectedSlot) {
+        alert("Please choose an open time slot first.");
+        return;
+      }
+
+      const formData = new FormData(scheduleForm);
+      const request = Object.fromEntries(formData.entries());
+      request.day = selectedSlot.day;
+      request.time = selectedSlot.time;
+
+      console.log("Counselor request submitted:", request);
+      alert(`Request submitted for ${request.studentName} with ${request.counselorName} on ${request.day} at ${request.time}.`);
+    });
+
+    resetBtn.addEventListener("click", () => {
+      scheduleForm.reset();
+      selectedSlot = null;
+      chosenSlotText.textContent = " No time chosen yet.";
+      cornerHeader.textContent = "Counselor";
+
+      document.querySelectorAll(".time-slot.selected").forEach((slot) => {
+        slot.classList.remove("selected");
+        slot.classList.add("open");
+        slot.innerHTML = '<span class="tiny">Open</span>';
+      });
+
+      updateSummary();
+    });
+
+    buildTable();
+  </script>
+</body>
+</html>

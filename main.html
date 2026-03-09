@@ -167,53 +167,22 @@
             <div class="spacer"></div>
 
             <!-- Create Ticket + Recent Activity -->
-            <section class="grid grid-2" aria-label="Ticket actions">
-                <!-- Create Ticket card -->
-                <article class="card">
-                    <div class="card-header">
-                        <div>
-                            <h2 style="font-size:18px;">Create a Ticket reminders </h2>
-                       <p>(this isnt an actual ticket maker just a visual reminder)</p>
-                        </div>
-                        <span class="badge teal">New</span>
-                    </div>
+            <section class="grid grid-2" aria-label="schedualing reminders">
 
-                    <form class="stack" style="gap:12px;">
-                        <div class="grid grid-2">
-                            <div class="field">
-                                <label for="category">Category</label>
-                                <p> catarogires are for the techs to have the ebst genral idea of the situation if you dont know the catagory give a guess</p>
-                                </select>
-                            </div>
-
-                            <div class="field">
-                                <label for="priority">Priority</label>
-                               <p> Priorities help IT prioritize tickets. If you're unsure, select "Medium". students are onlyy given low medium and high, staff have those and urgent, all tattle tickets are consideted minimum priotiry</p>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="field">
-                            <label for="title">Title</label>
-                            <input class="input" id="title" name="title" placeholder="e.g., Smartboard won’t turn on" />
-                            <div class="help">Short + descriptive helps triage faster. keep to about 5 words</div>
-                        </div>
-
-                        <div class="field">
-                            <label for="details">Details</label>
-                            <textarea id="details" name="details"
-                                placeholder="What happened? What have you tried? Room #, device tag, screenshots, etc."></textarea>
-                        </div>
-
-                        <div class="row" style="justify-content:space-between;">
-                            <span class="muted">Attachments: (placeholder)</span>
-                            <div class="row">
-                                <button class="btn btn-ghost" type="reset">Clear</button>
-                                <button class="btn btn-accent" type="button">Submit Ticket</button>
-                            </div>
-                        </div>
-                    </form>
+                <article class="dash-card">
+                    <h3>🗓 Schedule a Counselor Visit</h3>
+                    <p>
+                        Need help with classes, stress, friend issues, or just need someone to talk to?
+                        You can schedule time with a school counselor here. Pick a reason and choose
+                        an open time during the school week.
+                    </p>
+                    <br><br>
+                    <a href="counselor-scheduling.html" class="btn btn-primary">
+                        Schedule Appointment
+                    </a>
                 </article>
+
+
 
                 <!-- Recent Activity card -->
                 <article class="card">
@@ -240,103 +209,103 @@
                     <div class="divider"></div>
 
                     <div class="row" style="justify-content:flex-end;">
-                            <button class="btn btn-primary" type="button" id="viewAllBtn">
-                                View All Activity
-                            </button>
-                        </div>
-                        <script>document.getElementById("viewAllBtn").addEventListener("click", () => {
-                                window.location.href = "all-tick.html";
-                            });</script>
+                        <button class="btn btn-primary" type="button" id="viewAllBtn">
+                            View All Activity
+                        </button>
                     </div>
-                </article>
-            </section>
+                    <script>document.getElementById("viewAllBtn").addEventListener("click", () => {
+                            window.location.href = "all-tick.html";
+                        });</script>
+    </div>
+    </article>
+    </section>
 
-            <div class="spacer"></div>
+    <div class="spacer"></div>
 
-            <!-- Ticket table -->
-            <section class="card" aria-label="Ticket list">
-                <div class="card-header">
-                    <div>
+    <!-- Ticket table -->
+    <section class="card" aria-label="Ticket list">
+        <div class="card-header">
+            <div>
 
-                    <!--make open buttons for reslove, so that it can populate that tickets data-->
-                    
-                    
-                    <h2 style="font-size:18px;">Open Tickets</h2>
-                        <p class="lead">Sorted by priority → newest updates.</p>
-                    </div>
-                    <div class="row">
-                        <span class="badge orange">Open</span>
-                        <button class="btn btn-ghost" type="button">Filter</button>
-                        <button class="btn btn-ghost" type="button">Export</button>
-                    </div>
-                </div>
+                <!--make open buttons for reslove, so that it can populate that tickets data-->
 
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Title</th>
-                            <th>Category</th>
-                            <th>Priority</th>
-                            <th>Status</th>
-                            <th>Updated</th>
-                            <th style="text-align:right;">Action</th>
-                        </tr>
-                    </thead>
 
-                    <tbody>
-                        <tr>
-                            <td class="mono">#1051</td>
-                            <td>Wi-Fi dropping in MS wing</td>
-                            <td>Network</td>
-                            <td><span class="badge orange">High</span></td>
-                            <td><span class="badge teal">In Progress</span></td>
-                            <td>Today 10:12</td>
-                            <td style="text-align:right;">
-                                <button class="btn btn-ghost" type="button">Open</button>
-                            </td>
-                        </tr>
+                <h2 style="font-size:18px;">Open Tickets</h2>
+                <p class="lead">Sorted by priority → newest updates.</p>
+            </div>
+            <div class="row">
+                <span class="badge orange">Open</span>
+                <button class="btn btn-ghost" type="button">Filter</button>
+                <button class="btn btn-ghost" type="button">Export</button>
+            </div>
+        </div>
 
-                        <tr>
-                            <td class="mono">#1049</td>
-                            <td>Chromebook won’t charge</td>
-                            <td>Hardware</td>
-                            <td><span class="badge">Medium</span></td>
-                            <td><span class="badge orange">Open</span></td>
-                            <td>Yesterday 3:47</td>
-                            <td style="text-align:right;">
-                                <button class="btn btn-ghost" type="button">Open</button>
-                            </td>
-                        </tr>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Category</th>
+                    <th>Priority</th>
+                    <th>Status</th>
+                    <th>Updated</th>
+                    <th style="text-align:right;">Action</th>
+                </tr>
+            </thead>
 
-                        <tr>
-                            <td class="mono">#1048</td>
-                            <td>Smartboard not displaying HDMI</td>
-                            <td>Classroom Tech</td>
-                            <td><span class="badge orange">High</span></td>
-                            <td><span class="badge">Waiting</span></td>
-                            <td>Yesterday 1:09</td>
-                            <td style="text-align:right;">
-                                <button class="btn btn-ghost" type="button">Open</button>
-                            </td>
-                        </tr>
+            <tbody>
+                <tr>
+                    <td class="mono">#1051</td>
+                    <td>Wi-Fi dropping in MS wing</td>
+                    <td>Network</td>
+                    <td><span class="badge orange">High</span></td>
+                    <td><span class="badge teal">In Progress</span></td>
+                    <td>Today 10:12</td>
+                    <td style="text-align:right;">
+                        <button class="btn btn-ghost" type="button">Open</button>
+                    </td>
+                </tr>
 
-                        <tr>
-                            <td class="mono">#1042</td>
-                            <td>Password reset for teacher account</td>
-                            <td>Account</td>
-                            <td><span class="badge">Low</span></td>
-                            <td><span class="badge teal">Resolved</span></td>
-                            <td>Jan 31</td>
-                            <td style="text-align:right;">
-                                <button class="btn btn-ghost" type="button">View</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
+                <tr>
+                    <td class="mono">#1049</td>
+                    <td>Chromebook won’t charge</td>
+                    <td>Hardware</td>
+                    <td><span class="badge">Medium</span></td>
+                    <td><span class="badge orange">Open</span></td>
+                    <td>Yesterday 3:47</td>
+                    <td style="text-align:right;">
+                        <button class="btn btn-ghost" type="button">Open</button>
+                    </td>
+                </tr>
 
-        </main>
+                <tr>
+                    <td class="mono">#1048</td>
+                    <td>Smartboard not displaying HDMI</td>
+                    <td>Classroom Tech</td>
+                    <td><span class="badge orange">High</span></td>
+                    <td><span class="badge">Waiting</span></td>
+                    <td>Yesterday 1:09</td>
+                    <td style="text-align:right;">
+                        <button class="btn btn-ghost" type="button">Open</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="mono">#1042</td>
+                    <td>Password reset for teacher account</td>
+                    <td>Account</td>
+                    <td><span class="badge">Low</span></td>
+                    <td><span class="badge teal">Resolved</span></td>
+                    <td>Jan 31</td>
+                    <td style="text-align:right;">
+                        <button class="btn btn-ghost" type="button">View</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    </main>
     </div>
 
     <script>
