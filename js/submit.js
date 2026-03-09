@@ -23,6 +23,18 @@ function submitTicket(event) {
 
   console.log("Ticket object:", ticket);
 
+  /* TEMP DATABASE (until backend exists) */
+
+  let tickets = JSON.parse(localStorage.getItem("tickets")) || [];
+
+  tickets.push(ticket);
+
+  localStorage.setItem("tickets", JSON.stringify(tickets));
+
+  console.log("Saved tickets:", tickets);
+
+  console.log("Ticket object:", ticket);
+
   fetch("/submit-ticket", {
     method: "POST",
     headers: {
