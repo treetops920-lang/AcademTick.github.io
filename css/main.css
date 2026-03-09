@@ -1,5 +1,21 @@
 
+.dash-card{
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 18px;
+  box-shadow: var(--shadow-sm);
+  font-size: 18px;;
+}
 
+.dash-card h3{
+  margin: 0 0 8px;
+}
+
+.dash-card p{
+  color: var(--muted);
+  margin-bottom: 12px;
+}
 
 /* =========================
    Responsive: Mobile + Desktop (>=1366px Chromebook)

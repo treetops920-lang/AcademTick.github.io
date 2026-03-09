@@ -467,7 +467,7 @@
     "name": "Barack Obama",
     "age": 36,
     "grade": "Staff",
-    "building": "Elementary",
+    "building": "Middle",
     "email": "barack.obama@schoolstaff.org",
     "address": {
       "street": "1779 Riverside Ave",
@@ -483,7 +483,7 @@
     "name": "Abraham Lincoln",
     "age": 69,
     "grade": "Staff",
-    "building": "Elementary",
+    "building": "Middle",
     "email": "abraham.lincoln@schoolstaff.org",
     "address": {
       "street": "9774 Green Ln",
@@ -496,11 +496,27 @@
     }
   },
   {
-    "name": "Grover Cleveland",
+    "name": "William Afton",
     "age": 24,
     "grade": "Staff",
-    "building": "Elementary",
-    "email": "grover.cleveland@schoolstaff.org",
+    "building": "Middle",
+    "email": "William.Afton@schoolstaff.org",
+    "address": {
+      "street": "3682 N Strewerd Ln",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "userID": "1024",
+    "_id": {
+      "$oid": "ba3e799b9f735c3b00fe2750"
+    }
+  },
+  {
+    "name": "Johnny McTavish",
+    "age": 24,
+    "grade": "Staff",
+    "building": "High",
+    "email": "johnny.mctavish@schoolstaff.org",
     "address": {
       "street": "3682 N Strewerd Ln",
       "city": "Centerville",
