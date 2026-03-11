@@ -1,0 +1,26 @@
+{
+  "_id": { "$oid": "3002" },
+  "ticketID": "TT-0001",
+
+  "student": {
+    "studentID": "1002",
+    "name": "Matt Potter",
+    "grade": "1"
+  },
+
+  "assignedTo": {
+    "staffID": "1025",
+    "name": "Taylor Swift",
+    "role": "Teacher"
+  },
+
+  "type": "Tattle Ticket",
+  "priority": "Minimum",
+  "status": "Pending Teacher Review",
+
+  "reason": "Another student keeps taking my crayons",
+
+  "submittedAt": "2026-03-11T12:40:00Z",
+
+  "visibleToStudent": false
+}
