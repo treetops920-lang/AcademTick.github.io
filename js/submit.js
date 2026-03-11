@@ -34,7 +34,8 @@ function submitTicket(event) {
   console.log("Saved tickets:", tickets);
 
   console.log("Ticket object:", ticket);
-
+  
+/*
   fetch("/submit-ticket", {
     method: "POST",
     headers: {
@@ -54,7 +55,7 @@ function submitTicket(event) {
     .then(data => {
       console.log("Ticket submitted:", data);
     })
-  */
+  
 
 
     .then(res => {
@@ -67,4 +68,5 @@ function submitTicket(event) {
     .catch(err => {
       console.error("Error submitting ticket:", err);
     });
+    */
 }
