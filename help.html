@@ -26,17 +26,19 @@
       <a href="settings.html" class="topnav-link">Settings</a>
     </nav>
 
+
     <div class="profile">
       <span class="profile-name">Jessica</span>
-      <button class="avatar-btn" id="avatarBtn" type="button">
+
+      <button class="avatar-btn" id="avatarBtn" type="button" aria-haspopup="menu" aria-expanded="false">
         <span class="avatar-initials">JJ</span>
       </button>
 
-      <div class="profile-menu" id="profileMenu">
-        <a class="menu-item" href="profile.html">My Profile</a>
-        <a class="menu-item" href="settings.html">Settings</a>
+      <div class="profile-menu" id="profileMenu" role="menu" aria-label="Profile menu">
+        <a class="menu-item" href="profile.html" role="menuitem">My Profile</a>
+        <a class="menu-item" href="settings.html" role="menuitem">Settings</a>
         <div class="menu-divider"></div>
-        <a class="menu-item danger" href="login.html">Sign out</a>
+        <a class="menu-item danger" href="login.html" role="menuitem">Sign out</a>
       </div>
     </div>
   </header>
@@ -103,7 +105,8 @@
         <!-- Pop Card -->
         <article class="kb-card kb-pop-card" data-img="image/make-ticket-poster.png">
           <div class="kb-pop-inner">
-            <h3>Info on making a ticket (This poster is aimed towards middle and high schooll students, not staff or admin)</h3>
+            <h3>Info on making a ticket (This poster is aimed towards middle and high schooll students, not staff or
+              admin)</h3>
             <p>Click to open the full guide.</p>
           </div>
         </article>

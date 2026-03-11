@@ -78,55 +78,6 @@ body{
   color:var(--text);
 }
 
-/* Profile */
-.profile{
-  position:relative;
-  display:flex;
-  align-items:center;
-  gap:10px;
-}
-.profile-name{
-  font-weight:800;
-  font-size:14px;
-}
-.avatar-btn{
-  width:40px;
-  height:40px;
-  border-radius:999px;
-  border:1px solid var(--border);
-  background:#fff;
-  cursor:pointer;
-}
-.avatar-initials{
-  width:100%;
-  height:100%;
-  border-radius:999px;
-  display:grid;
-  place-items:center;
-  font-weight:900;
-  color:#fff;
-  background: linear-gradient(135deg, var(--teal), var(--orange));
-}
-.profile-menu{
-  position:absolute;
-  right:0;
-  top:calc(100% + 10px);
-  width:220px;
-  background:var(--surface);
-  border:1px solid var(--border);
-  border-radius:16px;
-  box-shadow:var(--shadow-md);
-  display:none;
-}
-.profile-menu.open{ display:block; }
-.menu-item{
-  padding:10px 12px;
-  display:block;
-  font-weight:700;
-}
-.menu-item:hover{ background: rgba(40,152,136,0.10); }
-.menu-divider{ height:1px; background:var(--border); }
-.menu-item.danger{ color:#B91C1C; }
 
 /* Layout */
 .container{
