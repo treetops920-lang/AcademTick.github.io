@@ -77,6 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const elementaryGrades = [
       "k",
       "kg",
+      "K",
       "kindergarten",
       "1",
       "2",
