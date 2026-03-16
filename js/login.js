@@ -3,47 +3,149 @@ document.addEventListener("DOMContentLoaded", () => {
   const userInput = document.getElementById("email");
   const passInput = document.getElementById("password");
 
-  // Debug: confirm the JS is actually running and elements exist
   console.log("Login JS loaded");
-  console.log({ formFound: !!form, emailFound: !!userInput, passFound: !!passInput });
+  console.log({
+    formFound: !!form,
+    emailFound: !!userInput,
+    passFound: !!passInput
+  });
 
   if (!form || !userInput || !passInput) {
     console.error("Login elements not found. Check .login-form, #email, #password in your HTML.");
     return;
   }
 
-  form.addEventListener("submit", (e) => {
+  function makeInitials(name) {
+    if (!name) return "?";
+
+    return name
+      .trim()
+      .split(/\s+/)
+      .map(word => word[0])
+      .join("")
+      .slice(0, 2)
+      .toUpperCase();
+  }
+
+  function saveSession(user, role) {
+    sessionStorage.setItem("isLoggedIn", "true");
+    sessionStorage.setItem("role", role);
+    sessionStorage.setItem("loggedInEmail", user.email || "");
+    sessionStorage.setItem("displayName", user.name || "User");
+    sessionStorage.setItem("userInitials", makeInitials(user.name || "User"));
+    sessionStorage.setItem("userData", JSON.stringify(user));
+  }
+
+  async function loadUsers() {
+    const files = [
+      { path: "students.json", role: "student" },
+      { path: "teachers.json", role: "teacher" },
+      { path: "administration.json", role: "admin" },
+      { path: "additional_staff (1).json", role: "staff" }
+    ];
+
+    let allUsers = [];
+
+    for (const file of files) {
+      try {
+        const response = await fetch(file.path);
+
+        if (!response.ok) {
+          console.warn(`Could not load ${file.path}`);
+          continue;
+        }
+
+        const data = await response.json();
+
+        const taggedUsers = data.map(user => ({
+          ...user,
+          loginRole: file.role
+        }));
+
+        allUsers = allUsers.concat(taggedUsers);
+      } catch (err) {
+        console.error(`Could not load ${file.path}:`, err);
+      }
+    }
+
+    return allUsers;
+  }
+
+  function isK5Student(user) {
+    const grade = (user.grade || "").toString().trim().toLowerCase();
+
+    const elementaryGrades = [
+      "k",
+      "kg",
+      "kindergarten",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ];
+
+    return elementaryGrades.includes(grade);
+  }
+
+  form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    const user = userInput.value.trim();
-    const pass = passInput.value.trim();
+    const email = userInput.value.trim().toLowerCase();
+    const password = passInput.value.trim();
 
-    console.log("Attempt login:", { user, passLen: pass.length });
+    console.log("Attempt login:", { email, passLen: password.length });
 
-    // ADMIN
-    if (user === "admin" && pass === "test") {
-      sessionStorage.setItem("isLoggedIn", "true");
-      sessionStorage.setItem("role", "admin");
+    // Special hardcoded admin
+    if (email === "admin" && password === "test") {
+      const adminUser = {
+        name: "Admin User",
+        email: "admin@academtick.local"
+      };
+
+      saveSession(adminUser, "admin");
       window.location.href = "main.html";
       return;
     }
 
-    // KID ADMIN (goes to kids dashboard)
-    if (user === "admin_kid" && pass === "TickBot") {
-      sessionStorage.setItem("isLoggedIn", "true");
-      sessionStorage.setItem("role", "kid-student");
-      window.location.href = "./kids-dash.html";   // note the ./ helps relative paths
+    // Special hardcoded kid admin
+    if (email === "admin_kid" && password === "TickBot") {
+      const kidAdminUser = {
+        name: "Kid Admin",
+        email: "admin_kid@academtick.local"
+      };
+
+      saveSession(kidAdminUser, "kid-student");
+      window.location.href = "kids-dash.html";
       return;
     }
 
-    // Regular user
-    if (user && pass) {
-      sessionStorage.setItem("isLoggedIn", "true");
-      sessionStorage.setItem("role", "user");
-      window.location.href = "main.html";
+    // Everyone in JSON files uses test1
+    if (password !== "test1") {
+      alert("Invalid email or password.");
       return;
     }
 
-    alert("Invalid login.");
+    const users = await loadUsers();
+
+    const matchedUser = users.find(user =>
+      (user.email || "").toLowerCase() === email
+    );
+
+    if (!matchedUser) {
+      alert("User not found.");
+      return;
+    }
+
+    saveSession(matchedUser, matchedUser.loginRole);
+
+    // K-5 students go to kids dashboard
+    if (matchedUser.loginRole === "student" && isK5Student(matchedUser)) {
+      window.location.href = "kids-dash.html";
+      return;
+    }
+
+    // Everyone else
+    window.location.href = "main.html";
   });
 });
