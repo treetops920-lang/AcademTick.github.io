@@ -1,994 +1,870 @@
 [
   {
+    "userID": "1063",
     "name": "Dylan Parker",
-    "age": 45,
+    "role": "staff",
     "grade": "Elective",
     "building": "Elementary",
+    "age": 45,
     "email": "dylan.parker@schoolstaff.org",
     "address": {
       "street": "4023 Wayne Rd",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1063",
-    "_id": {
-      "$oid": "d480de579dbbb57b30eb93ba"
     }
   },
   {
+    "userID": "1064",
     "name": "Renee Whitman",
-    "age": 37,
+    "role": "staff",
     "grade": "Elective",
     "building": "Elementary",
+    "age": 37,
     "email": "renee.whitman@schoolstaff.org",
     "address": {
       "street": "1503 Cherry Pl",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1064",
-    "_id": {
-      "$oid": "1e933a6c1026bfe1056556c5"
     }
   },
   {
+    "userID": "1065",
     "name": "Trevor Lawson",
-    "age": 53,
+    "role": "staff",
     "grade": "Elective",
     "building": "Elementary",
+    "age": 53,
     "email": "trevor.lawson@schoolstaff.org",
     "address": {
       "street": "2160 Crown Pl",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1065",
-    "_id": {
-      "$oid": "ca1c2b8f0a98cc7e1173a05b"
     }
   },
   {
+    "userID": "1066",
     "name": "Bianca Flores",
-    "age": 64,
+    "role": "staff",
     "grade": "Elective",
     "building": "Elementary",
+    "age": 64,
     "email": "bianca.flores@schoolstaff.org",
     "address": {
       "street": "2805 Market St",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1066",
-    "_id": {
-      "$oid": "874e6cb7c44ae77d68672ef0"
     }
   },
   {
+    "userID": "1067",
     "name": "Malcolm Price",
-    "age": 55,
+    "role": "staff",
     "grade": "Elective",
-    "building": "Middle",
+    "building": "Middle School",
+    "age": 55,
     "email": "malcolm.price@schoolstaff.org",
     "address": {
       "street": "3570 Cedar St",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1067",
-    "_id": {
-      "$oid": "c8e7c85fae280fc4548fac64"
     }
   },
   {
+    "userID": "1068",
     "name": "Jenna O’Neill",
-    "age": 70,
+    "role": "staff",
     "grade": "Elective",
-    "building": "Middle",
+    "building": "Middle School",
+    "age": 70,
     "email": "jenna.oneill@schoolstaff.org",
     "address": {
       "street": "3395 Valley View Ln",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1068",
-    "_id": {
-      "$oid": "53c08a2a2ce93082b4b089a9"
     }
   },
   {
+    "userID": "1069",
     "name": "Luis Ramirez",
-    "age": 41,
+    "role": "staff",
     "grade": "Elective",
-    "building": "Middle",
+    "building": "Middle School",
+    "age": 41,
     "email": "luis.ramirez@schoolstaff.org",
     "address": {
       "street": "6218 Maple St",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1069",
-    "_id": {
-      "$oid": "78071d81f99aafec8a975943"
     }
   },
   {
+    "userID": "1070",
     "name": "Kendra Simmons",
-    "age": 55,
+    "role": "staff",
     "grade": "Elective",
-    "building": "Middle",
+    "building": "Middle School",
+    "age": 55,
     "email": "kendra.simmons@schoolstaff.org",
     "address": {
       "street": "4161 N Strewerd Ln",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1070",
-    "_id": {
-      "$oid": "a8307b28de79e5c9464d3ac7"
     }
   },
   {
+    "userID": "1071",
     "name": "Oliver Grant",
-    "age": 26,
+    "role": "staff",
     "grade": "Elective",
-    "building": "Middle",
+    "building": "Middle School",
+    "age": 26,
     "email": "oliver.grant@schoolstaff.org",
     "address": {
       "street": "9738 Cedar St",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1071",
-    "_id": {
-      "$oid": "fa027b6759c4af4e775dc591"
     }
   },
   {
+    "userID": "1072",
     "name": "Tasha Reynolds",
-    "age": 36,
+    "role": "staff",
     "grade": "Elective",
     "building": "High School",
+    "age": 36,
     "email": "tasha.reynolds@schoolstaff.org",
     "address": {
       "street": "217 Smith Blvd",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1072",
-    "_id": {
-      "$oid": "7499bea9cfceced2157338c4"
     }
   },
   {
+    "userID": "1073",
     "name": "Noah Bennett",
-    "age": 67,
+    "role": "staff",
     "grade": "Elective",
     "building": "High School",
+    "age": 67,
     "email": "noah.bennett@schoolstaff.org",
     "address": {
       "street": "3850 Smith Blvd",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1073",
-    "_id": {
-      "$oid": "75e31c4862b0ded740acae98"
     }
   },
   {
+    "userID": "1074",
     "name": "Camille Dupont",
-    "age": 24,
+    "role": "staff",
     "grade": "Elective",
     "building": "High School",
+    "age": 24,
     "email": "camille.dupont@schoolstaff.org",
     "address": {
       "street": "8523 N Strewerd Ln",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1074",
-    "_id": {
-      "$oid": "7d0392a8f4b97951e7b1160b"
     }
   },
   {
+    "userID": "1075",
     "name": "Isaiah Morgan",
-    "age": 39,
+    "role": "staff",
     "grade": "Elective",
     "building": "High School",
+    "age": 39,
     "email": "isaiah.morgan@schoolstaff.org",
     "address": {
       "street": "3610 Cedar St",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1075",
-    "_id": {
-      "$oid": "ce76c21bb7987a779287fbcb"
     }
   },
   {
+    "userID": "1076",
     "name": "Felicia Turner",
-    "age": 30,
+    "role": "staff",
     "grade": "Elective",
     "building": "High School",
+    "age": 30,
     "email": "felicia.turner@schoolstaff.org",
     "address": {
       "street": "9540 Oak Rd",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1076",
-    "_id": {
-      "$oid": "cac81767b0dc8176a771a175"
     }
   },
   {
+    "userID": "1077",
     "name": "Aaron Klein",
-    "age": 37,
+    "role": "staff",
     "grade": "Elective",
     "building": "High School",
+    "age": 37,
     "email": "aaron.klein@schoolstaff.org",
     "address": {
       "street": "6769 Plains Ave",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1077",
-    "_id": {
-      "$oid": "f6fa25e5e18daac4b0b897cb"
     }
   },
   {
+    "userID": "1078",
     "name": "Monica Vasquez",
-    "age": 28,
+    "role": "staff",
     "grade": "Elective",
     "building": "High School",
+    "age": 28,
     "email": "monica.vasquez@schoolstaff.org",
     "address": {
       "street": "7162 Ivy Dr",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1078",
-    "_id": {
-      "$oid": "1c559cbb7cd2aba31fdc7c6b"
     }
   },
   {
+    "userID": "1079",
     "name": "Caleb Foster",
-    "age": 49,
+    "role": "staff",
     "grade": "Elective",
     "building": "High School",
+    "age": 49,
     "email": "caleb.foster@schoolstaff.org",
     "address": {
       "street": "987 Riverside Ave",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1079",
-    "_id": {
-      "$oid": "5ec8187b1483c4dbda2e54e7"
     }
   },
   {
+    "userID": "1080",
     "name": "Yvonne Chen",
-    "age": 63,
+    "role": "staff",
     "grade": "Elective",
     "building": "High School",
+    "age": 63,
     "email": "yvonne.chen@schoolstaff.org",
     "address": {
       "street": "1093 10th St",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1080",
-    "_id": {
-      "$oid": "39f28fcf512cae2542792750"
     }
   },
   {
+    "userID": "1081",
     "name": "Spencer Wright",
-    "age": 68,
+    "role": "staff",
     "grade": "Elective",
     "building": "High School",
+    "age": 68,
     "email": "spencer.wright@schoolstaff.org",
     "address": {
       "street": "4173 Plains Ave",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1081",
-    "_id": {
-      "$oid": "dcc2dc94e73fcc242b76e71a"
     }
   },
   {
+    "userID": "1054",
     "name": "Avery Collins",
-    "age": 26,
+    "role": "staff",
     "grade": "SPED",
     "building": "Elementary",
+    "age": 26,
     "email": "avery.collins@schoolstaff.org",
     "address": {
       "street": "9863 Maple St",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1054",
-    "_id": {
-      "$oid": "bc0496fdacac841406e5fac9"
     }
   },
   {
+    "userID": "1055",
     "name": "Marcus Reed",
-    "age": 55,
+    "role": "staff",
     "grade": "SPED",
     "building": "Elementary",
+    "age": 55,
     "email": "marcus.reed@schoolstaff.org",
     "address": {
       "street": "288 Riverside Ave",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1055",
-    "_id": {
-      "$oid": "f1f6cd798a7e0febd48163ba"
     }
   },
   {
+    "userID": "1056",
     "name": "Lila Thompson",
-    "age": 68,
+    "role": "staff",
     "grade": "SPED",
     "building": "Elementary",
+    "age": 68,
     "email": "lila.thompson@schoolstaff.org",
     "address": {
       "street": "8897 Market St",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1056",
-    "_id": {
-      "$oid": "1cfe1ad605bc9262ee8c9cf4"
     }
   },
   {
+    "userID": "1057",
     "name": "Jordan Alvarez",
-    "age": 63,
+    "role": "staff",
     "grade": "SPED",
-    "building": "Middle",
+    "building": "Middle School",
+    "age": 63,
     "email": "jordan.alvarez@schoolstaff.org",
     "address": {
       "street": "4908 Green Ln",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1057",
-    "_id": {
-      "$oid": "d964ad66fbc7d715b0f0879d"
     }
   },
   {
+    "userID": "1058",
     "name": "Natalia Brooks",
-    "age": 32,
+    "role": "staff",
     "grade": "SPED",
-    "building": "Middle",
+    "building": "Middle School",
+    "age": 32,
     "email": "natalia.brooks@schoolstaff.org",
     "address": {
       "street": "4415 Pine Ave",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1058",
-    "_id": {
-      "$oid": "022fea9f97e444076a14b385"
     }
   },
   {
+    "userID": "1059",
     "name": "Ethan Caldwell",
-    "age": 70,
+    "role": "staff",
     "grade": "SPED",
-    "building": "Middle",
+    "building": "Middle School",
+    "age": 70,
     "email": "ethan.caldwell@schoolstaff.org",
     "address": {
       "street": "1843 Springfield Rd",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1059",
-    "_id": {
-      "$oid": "ecaed3a4e679b8421636bea8"
     }
   },
   {
+    "userID": "1060",
     "name": "Priya Patel",
-    "age": 41,
+    "role": "staff",
     "grade": "SPED",
     "building": "High School",
+    "age": 41,
     "email": "priya.patel@schoolstaff.org",
     "address": {
       "street": "3358 Crown Pl",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1060",
-    "_id": {
-      "$oid": "45988a6db80d671218aa20bb"
     }
   },
   {
+    "userID": "1061",
     "name": "Connor Hayes",
-    "age": 45,
+    "role": "staff",
     "grade": "SPED",
     "building": "High School",
+    "age": 45,
     "email": "connor.hayes@schoolstaff.org",
     "address": {
       "street": "8789 Main St",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1061",
-    "_id": {
-      "$oid": "de8cc2717c5a38df5f005682"
     }
   },
   {
+    "userID": "1062",
     "name": "Sofia Martinez",
-    "age": 60,
+    "role": "staff",
     "grade": "SPED",
     "building": "High School",
+    "age": 60,
     "email": "sofia.martinez@schoolstaff.org",
     "address": {
       "street": "419 Cross Rd",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1062",
-    "_id": {
-      "$oid": "ca4ea0748d28077a0bf009b5"
     }
   },
   {
+    "userID": "1021",
     "name": "John Kennedy",
-    "age": 62,
+    "role": "staff",
     "grade": "Staff",
     "building": "Elementary",
+    "age": 62,
     "email": "john.kennedy@schoolstaff.org",
     "address": {
       "street": "4606 N Strewerd Ln",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1021",
-    "_id": {
-      "$oid": "6addea7ef587c3de9cc2adb2"
     }
   },
   {
+    "userID": "1022",
     "name": "Barack Obama",
-    "age": 36,
+    "role": "staff",
     "grade": "Staff",
-    "building": "Middle",
+    "building": "Middle School",
+    "age": 36,
     "email": "barack.obama@schoolstaff.org",
     "address": {
       "street": "1779 Riverside Ave",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1022",
-    "_id": {
-      "$oid": "1edda48a97387d73b3d1f1c4"
     }
   },
   {
+    "userID": "1023",
     "name": "Abraham Lincoln",
-    "age": 69,
+    "role": "staff",
     "grade": "Staff",
-    "building": "Middle",
+    "building": "Middle School",
+    "age": 69,
     "email": "abraham.lincoln@schoolstaff.org",
     "address": {
       "street": "9774 Green Ln",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1023",
-    "_id": {
-      "$oid": "8ad3e06b50331796e88d951a"
     }
   },
   {
+    "userID": "1024",
     "name": "William Afton",
-    "age": 24,
+    "role": "staff",
     "grade": "Staff",
-    "building": "Middle",
-    "email": "William.Afton@schoolstaff.org",
+    "building": "Middle School",
+    "age": 24,
+    "email": "william.afton@schoolstaff.org",
     "address": {
       "street": "3682 N Strewerd Ln",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1024",
-    "_id": {
-      "$oid": "ba3e799b9f735c3b00fe2750"
     }
   },
   {
+    "userID": "1082",
     "name": "Johnny McTavish",
-    "age": 24,
+    "role": "staff",
     "grade": "Staff",
-    "building": "High",
+    "building": "High School",
+    "age": 24,
     "email": "johnny.mctavish@schoolstaff.org",
     "address": {
       "street": "3682 N Strewerd Ln",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1024",
-    "_id": {
-      "$oid": "ba3e799b9f735c3b00fe2750"
     }
   },
   {
+    "userID": "1025",
     "name": "Taylor Swift",
-    "age": 54,
+    "role": "staff",
     "grade": "Staff",
     "building": "Elementary",
+    "age": 54,
     "email": "taylor.swift@schoolstaff.org",
     "address": {
       "street": "534 Cedar St",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1025",
-    "_id": {
-      "$oid": "cd9bcec7351971c46d147c26"
     }
   },
   {
+    "userID": "1026",
     "name": "Freddy Mercury",
-    "age": 34,
+    "role": "staff",
     "grade": "Staff",
     "building": "Elementary",
+    "age": 34,
     "email": "freddy.mercury@schoolstaff.org",
     "address": {
       "street": "9028 Green Ln",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1026",
-    "_id": {
-      "$oid": "c919aacf6b98db6c6688fc73"
     }
   },
   {
+    "userID": "1027",
     "name": "Elton John",
-    "age": 36,
+    "role": "staff",
     "grade": "Staff",
     "building": "Elementary",
+    "age": 36,
     "email": "elton.john@schoolstaff.org",
     "address": {
       "street": "9754 Market St",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1027",
-    "_id": {
-      "$oid": "64496b91cbed54f6626a68ef"
     }
   },
   {
+    "userID": "1028",
     "name": "Bob Marley",
-    "age": 22,
+    "role": "staff",
     "grade": "Staff",
     "building": "Elementary",
+    "age": 22,
     "email": "bob.marley@schoolstaff.org",
     "address": {
       "street": "7024 Orange Rd",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1028",
-    "_id": {
-      "$oid": "174557960537ec76dbb9faa7"
     }
   },
   {
+    "userID": "1029",
     "name": "Marilyn Monroe",
-    "age": 39,
+    "role": "staff",
     "grade": "Staff",
-    "building": "Middle",
+    "building": "Middle School",
+    "age": 39,
     "email": "marilyn.monroe@schoolstaff.org",
     "address": {
       "street": "3627 Orange Rd",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1029",
-    "_id": {
-      "$oid": "f0f7bbcc2f2375cb4c0c5658"
     }
   },
   {
+    "userID": "1030",
     "name": "Kurt Cobain",
-    "age": 28,
+    "role": "staff",
     "grade": "Staff",
-    "building": "Middle",
+    "building": "Middle School",
+    "age": 28,
     "email": "kurt.cobain@schoolstaff.org",
     "address": {
       "street": "6324 Cross Rd",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1030",
-    "_id": {
-      "$oid": "ae4e78bf8c65e27fa73cb987"
     }
   },
   {
+    "userID": "1031",
     "name": "Bob Dylan",
-    "age": 44,
+    "role": "staff",
     "grade": "Staff",
-    "building": "Middle",
+    "building": "Middle School",
+    "age": 44,
     "email": "bob.dylan@schoolstaff.org",
     "address": {
       "street": "9991 Market St",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1031",
-    "_id": {
-      "$oid": "9385a9e35fdd5b0495f8c245"
     }
   },
   {
+    "userID": "1032",
     "name": "Jennifer Lopaz",
-    "age": 24,
+    "role": "staff",
     "grade": "Staff",
-    "building": "Middle",
+    "building": "Middle School",
+    "age": 24,
     "email": "jennifer.lopaz@schoolstaff.org",
     "address": {
       "street": "7627 Cedar St",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1032",
-    "_id": {
-      "$oid": "bb80338d20687d827520f50b"
     }
   },
   {
+    "userID": "1033",
     "name": "Bruce Jenner",
-    "age": 29,
+    "role": "staff",
     "grade": "Staff",
-    "building": "Middle",
+    "building": "Middle School",
+    "age": 29,
     "email": "bruce.jenner@schoolstaff.org",
     "address": {
       "street": "1391 Cedar St",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1033",
-    "_id": {
-      "$oid": "bf38c54e692752770f706e8f"
     }
   },
   {
+    "userID": "1034",
     "name": "Vin Diesel",
-    "age": 40,
+    "role": "staff",
     "grade": "Staff",
-    "building": "Middle",
+    "building": "Middle School",
+    "age": 40,
     "email": "vin.diesel@schoolstaff.org",
     "address": {
       "street": "6025 Washington Blvd",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1034",
-    "_id": {
-      "$oid": "184b6bdeeba16eac62a024ee"
     }
   },
   {
+    "userID": "1035",
     "name": "Chuck Larre",
-    "age": 34,
+    "role": "staff",
     "grade": "Staff",
-    "building": "Middle",
+    "building": "Middle School",
+    "age": 34,
     "email": "chuck.larre@schoolstaff.org",
     "address": {
       "street": "1239 Wayne Rd",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1035",
-    "_id": {
-      "$oid": "92e6cb3d3cda7d8849e783c7"
     }
   },
   {
+    "userID": "1036",
     "name": "Clint Eastwood",
-    "age": 64,
+    "role": "staff",
     "grade": "Staff",
-    "building": "Middle",
+    "building": "Middle School",
+    "age": 64,
     "email": "clint.eastwood@schoolstaff.org",
     "address": {
       "street": "4841 Smith Blvd",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1036",
-    "_id": {
-      "$oid": "9863efc84106b28d6f50ee25"
     }
   },
   {
+    "userID": "1037",
     "name": "Miley Cyrus",
-    "age": 36,
+    "role": "staff",
     "grade": "Staff",
-    "building": "Middle",
+    "building": "Middle School",
+    "age": 36,
     "email": "miley.cyrus@schoolstaff.org",
     "address": {
       "street": "6327 Market St",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1037",
-    "_id": {
-      "$oid": "6b9eeff3d24a5fa54cf2d1db"
     }
   },
   {
+    "userID": "1038",
     "name": "Paul Macarthey",
-    "age": 51,
+    "role": "staff",
     "grade": "Staff",
     "building": "High School",
+    "age": 51,
     "email": "paul.macarthey@schoolstaff.org",
     "address": {
       "street": "6077 Round Rd",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1038",
-    "_id": {
-      "$oid": "816a213ec7cf085351d093b6"
     }
   },
   {
+    "userID": "1039",
     "name": "Selena Gomaz",
-    "age": 45,
+    "role": "staff",
     "grade": "Staff",
     "building": "High School",
+    "age": 45,
     "email": "selena.gomaz@schoolstaff.org",
     "address": {
       "street": "3532 Riverside Ave",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1039",
-    "_id": {
-      "$oid": "088d326b7a32e88f5ab93151"
     }
   },
   {
+    "userID": "1040",
     "name": "Sarah Parker",
-    "age": 39,
+    "role": "staff",
     "grade": "Staff",
     "building": "High School",
+    "age": 39,
     "email": "sarah.parker@schoolstaff.org",
     "address": {
       "street": "1269 Jefferson Dr",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1040",
-    "_id": {
-      "$oid": "b0bc33e25845a99da1c0a136"
     }
   },
   {
+    "userID": "1041",
     "name": "Emma Stone",
-    "age": 62,
+    "role": "staff",
     "grade": "Staff",
     "building": "High School",
+    "age": 62,
     "email": "emma.stone@schoolstaff.org",
     "address": {
       "street": "8851 Cherry Pl",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1041",
-    "_id": {
-      "$oid": "0de69f8fb91966b05ad9c812"
     }
   },
   {
+    "userID": "1042",
     "name": "Beyonce Knowles",
-    "age": 37,
+    "role": "staff",
     "grade": "Staff",
     "building": "High School",
+    "age": 37,
     "email": "beyonce.knowles@schoolstaff.org",
     "address": {
       "street": "7673 10th St",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1042",
-    "_id": {
-      "$oid": "fbb4f315c24fb678167d27e9"
     }
   },
   {
+    "userID": "1043",
     "name": "Jim Carrey",
-    "age": 39,
+    "role": "staff",
     "grade": "Staff",
     "building": "High School",
+    "age": 39,
     "email": "jim.carrey@schoolstaff.org",
     "address": {
       "street": "9225 N Strewerd Ln",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1043",
-    "_id": {
-      "$oid": "3df52ca058fb14fec13b64d2"
     }
   },
   {
+    "userID": "1046",
     "name": "Emma Watson",
-    "age": 26,
+    "role": "staff",
     "grade": "Staff",
     "building": "High School",
+    "age": 26,
     "email": "emma.watson@schoolstaff.org",
     "address": {
       "street": "5255 Plains Ave",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1046",
-    "_id": {
-      "$oid": "bd1bffea1de07fcb94011ac2"
     }
   },
   {
+    "userID": "1047",
     "name": "Hugh Jackman",
-    "age": 63,
+    "role": "staff",
     "grade": "Staff",
     "building": "High School",
+    "age": 63,
     "email": "hugh.jackman@schoolstaff.org",
     "address": {
       "street": "7617 Crown Pl",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1047",
-    "_id": {
-      "$oid": "ecd16c5b2c75a0cfc3586cb7"
     }
   },
   {
+    "userID": "1048",
     "name": "Kris Jenner",
-    "age": 38,
+    "role": "staff",
     "grade": "Staff",
     "building": "High School",
+    "age": 38,
     "email": "kris.jenner@schoolstaff.org",
     "address": {
       "street": "9297 Cedar St",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1048",
-    "_id": {
-      "$oid": "a066cb5583309e944008f086"
     }
   },
   {
+    "userID": "1049",
     "name": "Operah Winfrey",
-    "age": 38,
+    "role": "staff",
     "grade": "Staff",
     "building": "High School",
+    "age": 38,
     "email": "operah.winfrey@schoolstaff.org",
     "address": {
       "street": "9677 Green Ln",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1049",
-    "_id": {
-      "$oid": "838dad93a828c11d596ac409"
     }
   },
   {
+    "userID": "1050",
     "name": "Walt Disney",
-    "age": 59,
+    "role": "staff",
     "grade": "Staff",
     "building": "High School",
+    "age": 59,
     "email": "walt.disney@schoolstaff.org",
     "address": {
       "street": "6030 N Strewerd Ln",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1050",
-    "_id": {
-      "$oid": "2fc13364ba69a6bed5b65dd0"
     }
   },
   {
+    "userID": "1051",
     "name": "Bruce Lee",
-    "age": 30,
+    "role": "staff",
     "grade": "Staff",
     "building": "High School",
+    "age": 30,
     "email": "bruce.lee@schoolstaff.org",
     "address": {
       "street": "8185 Smith Blvd",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1051",
-    "_id": {
-      "$oid": "8fcc61c3169894b41f529406"
     }
   },
   {
+    "userID": "1044",
     "name": "Jackie Chan",
-    "age": 65,
+    "role": "staff",
     "grade": "Staff",
     "building": "Elementary/Middle",
+    "age": 65,
     "email": "jackie.chan@schoolstaff.org",
     "address": {
       "street": "1016 N Strewerd Ln",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1044",
-    "_id": {
-      "$oid": "878a5de1d3db955e38378fa1"
     }
   },
   {
+    "userID": "1045",
     "name": "Carrie Underwood",
-    "age": 24,
+    "role": "staff",
     "grade": "Staff",
     "building": "High School",
+    "age": 24,
     "email": "carrie.underwood@schoolstaff.org",
     "address": {
       "street": "6672 Market St",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1045",
-    "_id": {
-      "$oid": "a8c79ee50ee4f050cb93cff0"
     }
   },
   {
+    "userID": "1052",
     "name": "Tom Cruise",
-    "age": 70,
+    "role": "staff",
     "grade": "Staff",
     "building": "Elementary/Middle",
+    "age": 70,
     "email": "tom.cruise@schoolstaff.org",
     "address": {
       "street": "1896 Crown Pl",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1052",
-    "_id": {
-      "$oid": "cb5987635f5ace61a4e47210"
     }
   },
   {
+    "userID": "1053",
     "name": "Markiska Hargitay",
-    "age": 62,
+    "role": "staff",
     "grade": "Staff",
     "building": "High School",
+    "age": 62,
     "email": "markiska.hargitay@schoolstaff.org",
     "address": {
       "street": "7016 Jefferson Dr",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1053",
-    "_id": {
-      "$oid": "506c87d2c596dfc164748763"
     }
   }
 ]

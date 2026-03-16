@@ -1,0 +1,2402 @@
+[
+  {
+    "name": "Emma Miller",
+    "role": "student",
+    "grade": "K",
+    "building": "Elementary",
+    "age": 5,
+    "email": "emma.miller@school.org",
+    "address": {
+      "street": "240 E Franklin St",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "David Miller",
+      "Sarah Miller"
+    ],
+    "teachers": [
+      "Jackie Thompson"
+    ]
+  },
+  {
+    "name": "Noah Wilson",
+    "role": "student",
+    "grade": "K",
+    "building": "Elementary",
+    "age": 5,
+    "email": "noah.wilson@school.org",
+    "address": {
+      "street": "78 N Main St",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "James Wilson",
+      "Linda Wilson"
+    ],
+    "teachers": [
+      "Jackie Thompson"
+    ]
+  },
+  {
+    "name": "Olivia Brown",
+    "role": "student",
+    "grade": "K",
+    "building": "Elementary",
+    "age": 6,
+    "email": "olivia.brown@school.org",
+    "address": {
+      "street": "111 Virginia Ave",
+      "city": "Centerville",
+      "zip": "45458"
+    },
+    "Parents": [
+      "Michael Brown",
+      "Patricia Brown"
+    ],
+    "teachers": [
+      "Jackie Thompson"
+    ]
+  },
+  {
+    "name": "Liam Davis",
+    "role": "student",
+    "grade": "K",
+    "building": "Elementary",
+    "age": 5,
+    "email": "liam.davis@school.org",
+    "address": {
+      "street": "6450 Marshall Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Robert Davis",
+      "Jennifer Davis"
+    ],
+    "teachers": [
+      "Jackie Thompson"
+    ]
+  },
+  {
+    "name": "Ava Garcia",
+    "role": "student",
+    "grade": "K",
+    "building": "Elementary",
+    "age": 5,
+    "email": "ava.garcia@school.org",
+    "address": {
+      "street": "100 W Spring Valley Rd",
+      "city": "Centerville",
+      "zip": "45458"
+    },
+    "Parents": [
+      "Joseph Garcia",
+      "Maria Garcia"
+    ],
+    "teachers": [
+      "Jackie Thompson"
+    ]
+  },
+  {
+    "name": "Lucas Rodriguez",
+    "role": "student",
+    "grade": "K",
+    "building": "Elementary",
+    "age": 6,
+    "email": "lucas.rodriguez@school.org",
+    "address": {
+      "street": "95 Linden Dr",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "John Rodriguez",
+      "Susan Rodriguez"
+    ],
+    "teachers": [
+      "Jackie Thompson"
+    ]
+  },
+  {
+    "name": "Sophia Martinez",
+    "role": "student",
+    "grade": "K",
+    "building": "Elementary",
+    "age": 5,
+    "email": "sophia.martinez@school.org",
+    "address": {
+      "street": "1023 S Main St",
+      "city": "Centerville",
+      "zip": "45458"
+    },
+    "Parents": [
+      "William Martinez",
+      "Barbara Martinez"
+    ],
+    "teachers": [
+      "Jackie Thompson"
+    ]
+  },
+  {
+    "name": "Mason Hernandez",
+    "role": "student",
+    "grade": "K",
+    "building": "Elementary",
+    "age": 5,
+    "email": "mason.hernandez@school.org",
+    "address": {
+      "street": "105 Virginia Ave",
+      "city": "Centerville",
+      "zip": "45458"
+    },
+    "Parents": [
+      "Richard Hernandez",
+      "Elizabeth Hernandez"
+    ],
+    "teachers": [
+      "Jackie Thompson"
+    ]
+  },
+  {
+    "name": "Isabella Lopez",
+    "role": "student",
+    "grade": "K",
+    "building": "Elementary",
+    "age": 6,
+    "email": "isabella.lopez@school.org",
+    "address": {
+      "street": "5767 Marshall Rd",
+      "city": "Centerville",
+      "zip": "45429"
+    },
+    "Parents": [
+      "Thomas Lopez",
+      "Margaret Lopez"
+    ],
+    "teachers": [
+      "Jackie Thompson"
+    ]
+  },
+  {
+    "name": "Ethan Gonzalez",
+    "role": "student",
+    "grade": "K",
+    "building": "Elementary",
+    "age": 5,
+    "email": "ethan.gonzalez@school.org",
+    "address": {
+      "street": "401 Normandy Ridge Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Christopher Gonzalez",
+      "Dorothy Gonzalez"
+    ],
+    "teachers": [
+      "Jackie Thompson"
+    ]
+  },
+  {
+    "name": "Mia Wilson",
+    "role": "student",
+    "grade": "1",
+    "building": "Elementary",
+    "age": 6,
+    "email": "mia.wilson@school.org",
+    "address": {
+      "street": "210 Virginia Ave",
+      "city": "Centerville",
+      "zip": "45458"
+    },
+    "Parents": [
+      "Daniel Wilson",
+      "Nancy Wilson"
+    ],
+    "teachers": [
+      "Matt Potter"
+    ]
+  },
+  {
+    "name": "James Anderson",
+    "role": "student",
+    "grade": "1",
+    "building": "Elementary",
+    "age": 7,
+    "email": "james.anderson@school.org",
+    "address": {
+      "street": "88 Whipp Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Matthew Anderson",
+      "Karen Anderson"
+    ],
+    "teachers": [
+      "Matt Potter"
+    ]
+  },
+  {
+    "name": "Charlotte Thomas",
+    "role": "student",
+    "grade": "1",
+    "building": "Elementary",
+    "age": 6,
+    "email": "charlotte.thomas@school.org",
+    "address": {
+      "street": "150 North Main St",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Anthony Thomas",
+      "Betty Thomas"
+    ],
+    "teachers": [
+      "Matt Potter"
+    ]
+  },
+  {
+    "name": "Benjamin Taylor",
+    "role": "student",
+    "grade": "1",
+    "building": "Elementary",
+    "age": 6,
+    "email": "benjamin.taylor@school.org",
+    "address": {
+      "street": "550 Sheehan Rd",
+      "city": "Centerville",
+      "zip": "45458"
+    },
+    "Parents": [
+      "Donald Taylor",
+      "Helen Taylor"
+    ],
+    "teachers": [
+      "Matt Potter"
+    ]
+  },
+  {
+    "name": "Amelia Moore",
+    "role": "student",
+    "grade": "1",
+    "building": "Elementary",
+    "age": 7,
+    "email": "amelia.moore@school.org",
+    "address": {
+      "street": "920 Paragon Rd",
+      "city": "Centerville",
+      "zip": "45458"
+    },
+    "Parents": [
+      "Mark Moore",
+      "Sandra Moore"
+    ],
+    "teachers": [
+      "Matt Potter"
+    ]
+  },
+  {
+    "name": "Oliver Jackson",
+    "role": "student",
+    "grade": "1",
+    "building": "Elementary",
+    "age": 6,
+    "email": "oliver.jackson@school.org",
+    "address": {
+      "street": "120 W Franklin St",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Paul Jackson",
+      "Donna Jackson"
+    ],
+    "teachers": [
+      "Matt Potter"
+    ]
+  },
+  {
+    "name": "Evelyn Martin",
+    "role": "student",
+    "grade": "1",
+    "building": "Elementary",
+    "age": 6,
+    "email": "evelyn.martin@school.org",
+    "address": {
+      "street": "305 East Franklin St",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Steven Martin",
+      "Carol Martin"
+    ],
+    "teachers": [
+      "Matt Potter"
+    ]
+  },
+  {
+    "name": "Elijah Lee",
+    "role": "student",
+    "grade": "1",
+    "building": "Elementary",
+    "age": 7,
+    "email": "elijah.lee@school.org",
+    "address": {
+      "street": "800 S Suburban Road",
+      "city": "Centerville",
+      "zip": "45458"
+    },
+    "Parents": [
+      "George Lee",
+      "Ruth Lee"
+    ],
+    "teachers": [
+      "Matt Potter"
+    ]
+  },
+  {
+    "name": "Harper Perez",
+    "role": "student",
+    "grade": "1",
+    "building": "Elementary",
+    "age": 6,
+    "email": "harper.perez@school.org",
+    "address": {
+      "street": "45 Linden Dr",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Kenneth Perez",
+      "Sharon Perez"
+    ],
+    "teachers": [
+      "Matt Potter"
+    ]
+  },
+  {
+    "name": "Aiden Thompson",
+    "role": "student",
+    "grade": "1",
+    "building": "Elementary",
+    "age": 6,
+    "email": "aiden.thompson@school.org",
+    "address": {
+      "street": "110 Virginia Ave",
+      "city": "Centerville",
+      "zip": "45458"
+    },
+    "Parents": [
+      "Edward Thompson",
+      "Michelle Thompson"
+    ],
+    "teachers": [
+      "Matt Potter"
+    ]
+  },
+  {
+    "name": "Scarlett White",
+    "role": "student",
+    "grade": "2",
+    "building": "Elementary",
+    "age": 7,
+    "email": "scarlett.white@school.org",
+    "address": {
+      "street": "50 High St",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Brian White",
+      "Laura White"
+    ],
+    "teachers": [
+      "Matt Grenshaw"
+    ]
+  },
+  {
+    "name": "Alexander Harris",
+    "role": "student",
+    "grade": "2",
+    "building": "Elementary",
+    "age": 8,
+    "email": "alexander.harris@school.org",
+    "address": {
+      "street": "99 Virginia Ave",
+      "city": "Centerville",
+      "zip": "45458"
+    },
+    "Parents": [
+      "Ronald Harris",
+      "Sarah Harris"
+    ],
+    "teachers": [
+      "Matt Grenshaw"
+    ]
+  },
+  {
+    "name": "Victoria Clark",
+    "role": "student",
+    "grade": "2",
+    "building": "Elementary",
+    "age": 7,
+    "email": "victoria.clark@school.org",
+    "address": {
+      "street": "200 W Spring Valley Rd",
+      "city": "Centerville",
+      "zip": "45458"
+    },
+    "Parents": [
+      "Timothy Clark",
+      "Kimberly Clark"
+    ],
+    "teachers": [
+      "Matt Grenshaw"
+    ]
+  },
+  {
+    "name": "Jack Lewis",
+    "role": "student",
+    "grade": "2",
+    "building": "Elementary",
+    "age": 7,
+    "email": "jack.lewis@school.org",
+    "address": {
+      "street": "75 Normandy Ridge Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Jason Lewis",
+      "Deborah Lewis"
+    ],
+    "teachers": [
+      "Matt Grenshaw"
+    ]
+  },
+  {
+    "name": "Luna Robinson",
+    "role": "student",
+    "grade": "2",
+    "building": "Elementary",
+    "age": 8,
+    "email": "luna.robinson@school.org",
+    "address": {
+      "street": "850 Sheehan Rd",
+      "city": "Centerville",
+      "zip": "45458"
+    },
+    "Parents": [
+      "Jeffrey Robinson",
+      "Jessica Robinson"
+    ],
+    "teachers": [
+      "Matt Grenshaw"
+    ]
+  },
+  {
+    "name": "Wyatt Walker",
+    "role": "student",
+    "grade": "2",
+    "building": "Elementary",
+    "age": 7,
+    "email": "wyatt.walker@school.org",
+    "address": {
+      "street": "140 North Main St",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Ryan Walker",
+      "Shirley Walker"
+    ],
+    "teachers": [
+      "Matt Grenshaw"
+    ]
+  },
+  {
+    "name": "Grace Young",
+    "role": "student",
+    "grade": "2",
+    "building": "Elementary",
+    "age": 7,
+    "email": "grace.young@school.org",
+    "address": {
+      "street": "600 Marshall Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Jacob Young",
+      "Cynthia Young"
+    ],
+    "teachers": [
+      "Matt Grenshaw"
+    ]
+  },
+  {
+    "name": "Sebastian King",
+    "role": "student",
+    "grade": "2",
+    "building": "Elementary",
+    "age": 8,
+    "email": "sebastian.king@school.org",
+    "address": {
+      "street": "102 Virginia Ave",
+      "city": "Centerville",
+      "zip": "45458"
+    },
+    "Parents": [
+      "Gary King",
+      "Angela King"
+    ],
+    "teachers": [
+      "Matt Grenshaw"
+    ]
+  },
+  {
+    "name": "Zoe Wright",
+    "role": "student",
+    "grade": "2",
+    "building": "Elementary",
+    "age": 7,
+    "email": "zoe.wright@school.org",
+    "address": {
+      "street": "115 Virginia Ave",
+      "city": "Centerville",
+      "zip": "45458"
+    },
+    "Parents": [
+      "Nicholas Wright",
+      "Melissa Wright"
+    ],
+    "teachers": [
+      "Matt Grenshaw"
+    ]
+  },
+  {
+    "name": "Carter Scott",
+    "role": "student",
+    "grade": "2",
+    "building": "Elementary",
+    "age": 7,
+    "email": "carter.scott@school.org",
+    "address": {
+      "street": "330 E Franklin St",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Eric Scott",
+      "Brenda Scott"
+    ],
+    "teachers": [
+      "Matt Grenshaw"
+    ]
+  },
+  {
+    "name": "Lily Nguyen",
+    "role": "student",
+    "grade": "3",
+    "building": "Elementary",
+    "age": 8,
+    "email": "lily.nguyen@school.org",
+    "address": {
+      "street": "40 High St",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Scott Nguyen",
+      "Amy Nguyen"
+    ],
+    "teachers": [
+      "Matt Hopper"
+    ]
+  },
+  {
+    "name": "Henry Hill",
+    "role": "student",
+    "grade": "3",
+    "building": "Elementary",
+    "age": 9,
+    "email": "henry.hill@school.org",
+    "address": {
+      "street": "90 Virginia Ave",
+      "city": "Centerville",
+      "zip": "45458"
+    },
+    "Parents": [
+      "Stephen Hill",
+      "Anna Hill"
+    ],
+    "teachers": [
+      "Matt Hopper"
+    ]
+  },
+  {
+    "name": "Layla Adams",
+    "role": "student",
+    "grade": "3",
+    "building": "Elementary",
+    "age": 8,
+    "email": "layla.adams@school.org",
+    "address": {
+      "street": "215 W Spring Valley Rd",
+      "city": "Centerville",
+      "zip": "45458"
+    },
+    "Parents": [
+      "Andrew Adams",
+      "Rebecca Adams"
+    ],
+    "teachers": [
+      "Matt Hopper"
+    ]
+  },
+  {
+    "name": "Owen Campbell",
+    "role": "student",
+    "grade": "3",
+    "building": "Elementary",
+    "age": 8,
+    "email": "owen.campbell@school.org",
+    "address": {
+      "street": "80 Normandy Ridge Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Larry Campbell",
+      "Virginia Campbell"
+    ],
+    "teachers": [
+      "Matt Hopper"
+    ]
+  },
+  {
+    "name": "Chloe Mitchell",
+    "role": "student",
+    "grade": "3",
+    "building": "Elementary",
+    "age": 9,
+    "email": "chloe.mitchell@school.org",
+    "address": {
+      "street": "900 Sheehan Rd",
+      "city": "Centerville",
+      "zip": "45458"
+    },
+    "Parents": [
+      "Gregory Mitchell",
+      "Kathleen Mitchell"
+    ],
+    "teachers": [
+      "Matt Hopper"
+    ]
+  },
+  {
+    "name": "Leo Roberts",
+    "role": "student",
+    "grade": "3",
+    "building": "Elementary",
+    "age": 8,
+    "email": "leo.roberts@school.org",
+    "address": {
+      "street": "150 North Main St",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Joshua Roberts",
+      "Pamela Roberts"
+    ],
+    "teachers": [
+      "Matt Hopper"
+    ]
+  },
+  {
+    "name": "Aria Carter",
+    "role": "student",
+    "grade": "3",
+    "building": "Elementary",
+    "age": 8,
+    "email": "aria.carter@school.org",
+    "address": {
+      "street": "650 Marshall Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Jerry Carter",
+      "Martha Carter"
+    ],
+    "teachers": [
+      "Matt Hopper"
+    ]
+  },
+  {
+    "name": "Julian Phillips",
+    "role": "student",
+    "grade": "3",
+    "building": "Elementary",
+    "age": 9,
+    "email": "julian.phillips@school.org",
+    "address": {
+      "street": "108 Virginia Ave",
+      "city": "Centerville",
+      "zip": "45458"
+    },
+    "Parents": [
+      "Dennis Phillips",
+      "Debra Phillips"
+    ],
+    "teachers": [
+      "Matt Hopper"
+    ]
+  },
+  {
+    "name": "Ellie Evans",
+    "role": "student",
+    "grade": "3",
+    "building": "Elementary",
+    "age": 8,
+    "email": "ellie.evans@school.org",
+    "address": {
+      "street": "125 Virginia Ave",
+      "city": "Centerville",
+      "zip": "45458"
+    },
+    "Parents": [
+      "Walter Evans",
+      "Amanda Evans"
+    ],
+    "teachers": [
+      "Matt Hopper"
+    ]
+  },
+  {
+    "name": "Mateo Turner",
+    "role": "student",
+    "grade": "3",
+    "building": "Elementary",
+    "age": 8,
+    "email": "mateo.turner@school.org",
+    "address": {
+      "street": "350 E Franklin St",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Peter Turner",
+      "Stephanie Turner"
+    ],
+    "teachers": [
+      "Matt Hopper"
+    ]
+  },
+  {
+    "name": "Hazel Torres",
+    "role": "student",
+    "grade": "4",
+    "building": "Elementary",
+    "age": 9,
+    "email": "hazel.torres@school.org",
+    "address": {
+      "street": "30 High St",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Patrick Torres",
+      "Carolyn Torres"
+    ],
+    "teachers": [
+      "Charles Darwnine"
+    ]
+  },
+  {
+    "name": "Levi Parker",
+    "role": "student",
+    "grade": "4",
+    "building": "Elementary",
+    "age": 10,
+    "email": "levi.parker@school.org",
+    "address": {
+      "street": "85 Virginia Ave",
+      "city": "Centerville",
+      "zip": "45458"
+    },
+    "Parents": [
+      "Harold Parker",
+      "Christine Parker"
+    ],
+    "teachers": [
+      "Charles Darwnine"
+    ]
+  },
+  {
+    "name": "Mila Collins",
+    "role": "student",
+    "grade": "4",
+    "building": "Elementary",
+    "age": 9,
+    "email": "mila.collins@school.org",
+    "address": {
+      "street": "230 W Spring Valley Rd",
+      "city": "Centerville",
+      "zip": "45458"
+    },
+    "Parents": [
+      "Douglas Collins",
+      "Marie Collins"
+    ],
+    "teachers": [
+      "Charles Darwnine"
+    ]
+  },
+  {
+    "name": "Isaac Edwards",
+    "role": "student",
+    "grade": "4",
+    "building": "Elementary",
+    "age": 9,
+    "email": "isaac.edwards@school.org",
+    "address": {
+      "street": "85 Normandy Ridge Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Henry Edwards",
+      "Janet Edwards"
+    ],
+    "teachers": [
+      "Charles Darwnine"
+    ]
+  },
+  {
+    "name": "Nora Stewart",
+    "role": "student",
+    "grade": "4",
+    "building": "Elementary",
+    "age": 10,
+    "email": "nora.stewart@school.org",
+    "address": {
+      "street": "950 Sheehan Rd",
+      "city": "Centerville",
+      "zip": "45458"
+    },
+    "Parents": [
+      "Carl Stewart",
+      "Catherine Stewart"
+    ],
+    "teachers": [
+      "Charles Darwnine"
+    ]
+  },
+  {
+    "name": "Lincoln Morris",
+    "role": "student",
+    "grade": "4",
+    "building": "Elementary",
+    "age": 9,
+    "email": "lincoln.morris@school.org",
+    "address": {
+      "street": "160 North Main St",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Arthur Morris",
+      "Frances Morris"
+    ],
+    "teachers": [
+      "Charles Darwnine"
+    ]
+  },
+  {
+    "name": "Willow Nguyen",
+    "role": "student",
+    "grade": "4",
+    "building": "Elementary",
+    "age": 9,
+    "email": "willow.nguyen@school.org",
+    "address": {
+      "street": "700 Marshall Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Ryan Nguyen",
+      "Ann Nguyen"
+    ],
+    "teachers": [
+      "Charles Darwnine"
+    ]
+  },
+  {
+    "name": "Miles Murphy",
+    "role": "student",
+    "grade": "4",
+    "building": "Elementary",
+    "age": 10,
+    "email": "miles.murphy@school.org",
+    "address": {
+      "street": "112 Virginia Ave",
+      "city": "Centerville",
+      "zip": "45458"
+    },
+    "Parents": [
+      "Joe Murphy",
+      "Alice Murphy"
+    ],
+    "teachers": [
+      "Charles Darwnine"
+    ]
+  },
+  {
+    "name": "Stella Cook",
+    "role": "student",
+    "grade": "4",
+    "building": "Elementary",
+    "age": 9,
+    "email": "stella.cook@school.org",
+    "address": {
+      "street": "135 Virginia Ave",
+      "city": "Centerville",
+      "zip": "45458"
+    },
+    "Parents": [
+      "Juan Cook",
+      "Jean Cook"
+    ],
+    "teachers": [
+      "Charles Darwnine"
+    ]
+  },
+  {
+    "name": "Hudson Rogers",
+    "role": "student",
+    "grade": "4",
+    "building": "Elementary",
+    "age": 9,
+    "email": "hudson.rogers@school.org",
+    "address": {
+      "street": "370 E Franklin St",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Albert Rogers",
+      "Kathryn Rogers"
+    ],
+    "teachers": [
+      "Charles Darwnine"
+    ]
+  },
+  {
+    "name": "Lucy Morgan",
+    "role": "student",
+    "grade": "5",
+    "building": "Elementary",
+    "age": 10,
+    "email": "lucy.morgan@school.org",
+    "address": {
+      "street": "20 High St",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Justin Morgan",
+      "Joan Morgan"
+    ],
+    "teachers": [
+      "Whoopie Goldberg"
+    ]
+  },
+  {
+    "name": "Grayson Peterson",
+    "role": "student",
+    "grade": "5",
+    "building": "Elementary",
+    "age": 11,
+    "email": "grayson.peterson@school.org",
+    "address": {
+      "street": "80 Virginia Ave",
+      "city": "Centerville",
+      "zip": "45458"
+    },
+    "Parents": [
+      "Terry Peterson",
+      "Mildred Peterson"
+    ],
+    "teachers": [
+      "Whoopie Goldberg"
+    ]
+  },
+  {
+    "name": "Paisley Cooper",
+    "role": "student",
+    "grade": "5",
+    "building": "Elementary",
+    "age": 10,
+    "email": "paisley.cooper@school.org",
+    "address": {
+      "street": "245 W Spring Valley Rd",
+      "city": "Centerville",
+      "zip": "45458"
+    },
+    "Parents": [
+      "Gerald Cooper",
+      "Cheryl Peterson"
+    ],
+    "teachers": [
+      "Whoopie Goldberg"
+    ]
+  },
+  {
+    "name": "Everett Reed",
+    "role": "student",
+    "grade": "5",
+    "building": "Elementary",
+    "age": 10,
+    "email": "everett.reed@school.org",
+    "address": {
+      "street": "90 Normandy Ridge Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Keith Reed",
+      "Theresa Reed"
+    ],
+    "teachers": [
+      "Whoopie Goldberg"
+    ]
+  },
+  {
+    "name": "Violet Bailey",
+    "role": "student",
+    "grade": "5",
+    "building": "Elementary",
+    "age": 11,
+    "email": "violet.bailey@school.org",
+    "address": {
+      "street": "1000 Sheehan Rd",
+      "city": "Centerville",
+      "zip": "45458"
+    },
+    "Parents": [
+      "Samuel Bailey",
+      "Janice Bailey"
+    ],
+    "teachers": [
+      "Whoopie Goldberg"
+    ]
+  },
+  {
+    "name": "Brooks Bell",
+    "role": "student",
+    "grade": "5",
+    "building": "Elementary",
+    "age": 10,
+    "email": "brooks.bell@school.org",
+    "address": {
+      "street": "170 North Main St",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Willie Bell",
+      "Beverly Bell"
+    ],
+    "teachers": [
+      "Whoopie Goldberg"
+    ]
+  },
+  {
+    "name": "Audrey Kelly",
+    "role": "student",
+    "grade": "5",
+    "building": "Elementary",
+    "age": 10,
+    "email": "audrey.kelly@school.org",
+    "address": {
+      "street": "750 Marshall Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Ralph Kelly",
+      "Denise Kelly"
+    ],
+    "teachers": [
+      "Whoopie Goldberg"
+    ]
+  },
+  {
+    "name": "Jace Ward",
+    "role": "student",
+    "grade": "5",
+    "building": "Elementary",
+    "age": 11,
+    "email": "jace.ward@school.org",
+    "address": {
+      "street": "118 Virginia Ave",
+      "city": "Centerville",
+      "zip": "45458"
+    },
+    "Parents": [
+      "Lawrence Ward",
+      "Tammy Ward"
+    ],
+    "teachers": [
+      "Whoopie Goldberg"
+    ]
+  },
+  {
+    "name": "Eliana Cox",
+    "role": "student",
+    "grade": "5",
+    "building": "Elementary",
+    "age": 10,
+    "email": "eliana.cox@school.org",
+    "address": {
+      "street": "145 Virginia Ave",
+      "city": "Centerville",
+      "zip": "45458"
+    },
+    "Parents": [
+      "Roy Cox",
+      "Irene Cox"
+    ],
+    "teachers": [
+      "Whoopie Goldberg"
+    ]
+  },
+  {
+    "name": "Mateo Howard",
+    "role": "student",
+    "grade": "5",
+    "building": "Elementary",
+    "age": 10,
+    "email": "mateo.howard@school.org",
+    "address": {
+      "street": "400 E Franklin St",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Joe Howard",
+      "Jane Howard"
+    ],
+    "teachers": [
+      "Whoopie Goldberg"
+    ]
+  },
+  {
+    "name": "Saige Fuentes",
+    "role": "student",
+    "grade": "6",
+    "building": "Middle School",
+    "age": 11,
+    "email": "saige.fuentes@school.org",
+    "address": {
+      "street": "1594 Mapleton Dr",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Maria Fuentes",
+      "Carlos Fuentes"
+    ],
+    "teachers": [
+      "Alexander Hamilton"
+    ]
+  },
+  {
+    "name": "Bowen Higgins",
+    "role": "student",
+    "grade": "6",
+    "building": "Middle School",
+    "age": 12,
+    "email": "bowen.higgins@school.org",
+    "address": {
+      "street": "1953 Baldwin Dr",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Sarah Higgins",
+      "Mark Higgins"
+    ],
+    "teachers": [
+      "Alexander Hamilton"
+    ]
+  },
+  {
+    "name": "Leighton Kramer",
+    "role": "student",
+    "grade": "6",
+    "building": "Middle School",
+    "age": 11,
+    "email": "leighton.kramer@school.org",
+    "address": {
+      "street": "85 Poinciana Dr",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Emma Kramer",
+      "John Kramer"
+    ],
+    "teachers": [
+      "Alexander Hamilton"
+    ]
+  },
+  {
+    "name": "Kylan Gentry",
+    "role": "student",
+    "grade": "6",
+    "building": "Middle School",
+    "age": 11,
+    "email": "kylan.gentry@school.org",
+    "address": {
+      "street": "6521 Staverton Dr",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Linda Gentry",
+      "Robert Gentry"
+    ],
+    "teachers": [
+      "Alexander Hamilton"
+    ]
+  },
+  {
+    "name": "Amelie Griffith",
+    "role": "student",
+    "grade": "6",
+    "building": "Middle School",
+    "age": 12,
+    "email": "amelie.griffith@school.org",
+    "address": {
+      "street": "7128 Hartcrest Ln",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Nancy Griffith",
+      "Steve Griffith"
+    ],
+    "teachers": [
+      "Alexander Hamilton"
+    ]
+  },
+  {
+    "name": "Franklin Sierra",
+    "role": "student",
+    "grade": "6",
+    "building": "Middle School",
+    "age": 11,
+    "email": "franklin.sierra@school.org",
+    "address": {
+      "street": "7622 Pelbrook Farm Dr",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Julia Sierra",
+      "Luis Sierra"
+    ],
+    "teachers": [
+      "Alexander Hamilton"
+    ]
+  },
+  {
+    "name": "Marceline Avila",
+    "role": "student",
+    "grade": "6",
+    "building": "Middle School",
+    "age": 11,
+    "email": "marceline.avila@school.org",
+    "address": {
+      "street": "400 E Franklin St",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Rosa Avila",
+      "Antonio Avila"
+    ],
+    "teachers": [
+      "Alexander Hamilton"
+    ]
+  },
+  {
+    "name": "Jaylen Blackwell",
+    "role": "student",
+    "grade": "6",
+    "building": "Middle School",
+    "age": 12,
+    "email": "jaylen.blackwell@school.org",
+    "address": {
+      "street": "9644 Bridlewood Trl",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Betty Blackwell",
+      "Paul Blackwell"
+    ],
+    "teachers": [
+      "Alexander Hamilton"
+    ]
+  },
+  {
+    "name": "Saoirse Conrad",
+    "role": "student",
+    "grade": "6",
+    "building": "Middle School",
+    "age": 11,
+    "email": "saoirse.conrad@school.org",
+    "address": {
+      "street": "9175 Bunnell Hill Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Alice Conrad",
+      "Tom Conrad"
+    ],
+    "teachers": [
+      "Alexander Hamilton"
+    ]
+  },
+  {
+    "name": "Dilan Wolf",
+    "role": "student",
+    "grade": "6",
+    "building": "Middle School",
+    "age": 11,
+    "email": "dilan.wolf@school.org",
+    "address": {
+      "street": "225 S Main St",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Helen Wolf",
+      "David Wolf"
+    ],
+    "teachers": [
+      "Alexander Hamilton"
+    ]
+  },
+  {
+    "name": "Jolene Fox",
+    "role": "student",
+    "grade": "6",
+    "building": "Middle School",
+    "age": 12,
+    "email": "jolene.fox@school.org",
+    "address": {
+      "street": "9048 Bedford Ct",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Sandra Fox",
+      "George Fox"
+    ],
+    "teachers": [
+      "Alexander Hamilton"
+    ]
+  },
+  {
+    "name": "Antonio Crosby",
+    "role": "student",
+    "grade": "6",
+    "building": "Middle School",
+    "age": 11,
+    "email": "antonio.crosby@school.org",
+    "address": {
+      "street": "10500 Wallingsford Cir",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Karen Crosby",
+      "Joe Crosby"
+    ],
+    "teachers": [
+      "Alexander Hamilton"
+    ]
+  },
+  {
+    "name": "Keily Meza",
+    "role": "student",
+    "grade": "6",
+    "building": "Middle School",
+    "age": 11,
+    "email": "keily.meza@school.org",
+    "address": {
+      "street": "9139 Indian Springs Ct",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Martha Meza",
+      "Frank Meza"
+    ],
+    "teachers": [
+      "Alexander Hamilton"
+    ]
+  },
+  {
+    "name": "Lucian Lee",
+    "role": "student",
+    "grade": "6",
+    "building": "Middle School",
+    "age": 11,
+    "email": "lucian.lee@school.org",
+    "address": {
+      "street": "123 Main St",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Amy Lee",
+      "James Lee"
+    ],
+    "teachers": [
+      "Peggy Schuyler"
+    ]
+  },
+  {
+    "name": "Scarlett Dickson",
+    "role": "student",
+    "grade": "6",
+    "building": "Middle School",
+    "age": 12,
+    "email": "scarlett.dickson@school.org",
+    "address": {
+      "street": "456 Oak Dr",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Laura Dickson",
+      "Peter Dickson"
+    ],
+    "teachers": [
+      "Peggy Schuyler"
+    ]
+  },
+  {
+    "name": "Maxton Gill",
+    "role": "student",
+    "grade": "6",
+    "building": "Middle School",
+    "age": 11,
+    "email": "maxton.gill@school.org",
+    "address": {
+      "street": "789 Pine Ct",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Diane Gill",
+      "Gary Gill"
+    ],
+    "teachers": [
+      "Peggy Schuyler"
+    ]
+  },
+  {
+    "name": "Jordan Dickerson",
+    "role": "student",
+    "grade": "6",
+    "building": "Middle School",
+    "age": 11,
+    "email": "jordan.dickerson@school.org",
+    "address": {
+      "street": "101 Maple Ln",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Susan Dickerson",
+      "Larry Dickerson"
+    ],
+    "teachers": [
+      "Peggy Schuyler"
+    ]
+  },
+  {
+    "name": "Flynn Goodman",
+    "role": "student",
+    "grade": "6",
+    "building": "Middle School",
+    "age": 12,
+    "email": "flynn.goodman@school.org",
+    "address": {
+      "street": "202 Birch Blvd",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Ruth Goodman",
+      "Jerry Goodman"
+    ],
+    "teachers": [
+      "Peggy Schuyler"
+    ]
+  },
+  {
+    "name": "Carolina Frederick",
+    "role": "student",
+    "grade": "6",
+    "building": "Middle School",
+    "age": 11,
+    "email": "carolina.frederick@school.org",
+    "address": {
+      "street": "303 Cedar Way",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Janet Frederick",
+      "Dan Frederick"
+    ],
+    "teachers": [
+      "Peggy Schuyler"
+    ]
+  },
+  {
+    "name": "Kase Sawyer",
+    "role": "student",
+    "grade": "6",
+    "building": "Middle School",
+    "age": 11,
+    "email": "kase.sawyer@school.org",
+    "address": {
+      "street": "404 Elm St",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Carol Sawyer",
+      "Bill Sawyer"
+    ],
+    "teachers": [
+      "Peggy Schuyler"
+    ]
+  },
+  {
+    "name": "Marina Yu",
+    "role": "student",
+    "grade": "6",
+    "building": "Middle School",
+    "age": 12,
+    "email": "marina.yu@school.org",
+    "address": {
+      "street": "505 Willow Ter",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Lois Yu",
+      "Fred Yu"
+    ],
+    "teachers": [
+      "Peggy Schuyler"
+    ]
+  },
+  {
+    "name": "Bryant Beard",
+    "role": "student",
+    "grade": "6",
+    "building": "Middle School",
+    "age": 11,
+    "email": "bryant.beard@school.org",
+    "address": {
+      "street": "606 Aspen Pl",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Anne Beard",
+      "Sam Beard"
+    ],
+    "teachers": [
+      "Peggy Schuyler"
+    ]
+  },
+  {
+    "name": "Ezra Doyle",
+    "role": "student",
+    "grade": "6",
+    "building": "Middle School",
+    "age": 11,
+    "email": "ezra.doyle@school.org",
+    "address": {
+      "street": "707 Cherry Dr",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Rose Doyle",
+      "Mike Doyle"
+    ],
+    "teachers": [
+      "Peggy Schuyler"
+    ]
+  },
+  {
+    "name": "Kashton Green",
+    "role": "student",
+    "grade": "6",
+    "building": "Middle School",
+    "age": 12,
+    "email": "kashton.green@school.org",
+    "address": {
+      "street": "808 Hickory Dr",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Joyce Green",
+      "Ray Green"
+    ],
+    "teachers": [
+      "Peggy Schuyler"
+    ]
+  },
+  {
+    "name": "Zoe Durham",
+    "role": "student",
+    "grade": "6",
+    "building": "Middle School",
+    "age": 11,
+    "email": "zoe.durham@school.org",
+    "address": {
+      "street": "909 Walnut Ln",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Marie Durham",
+      "Ken Durham"
+    ],
+    "teachers": [
+      "Peggy Schuyler"
+    ]
+  },
+  {
+    "name": "Alivia Rocha",
+    "role": "student",
+    "grade": "7",
+    "building": "Middle School",
+    "age": 12,
+    "email": "alivia.rocha@school.org",
+    "address": {
+      "street": "210 Watkins Glen Dr",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Lori Rocha",
+      "Paul Rocha"
+    ],
+    "teachers": [
+      "Billy Bob"
+    ]
+  },
+  {
+    "name": "Dax Houston",
+    "role": "student",
+    "grade": "7",
+    "building": "Middle School",
+    "age": 13,
+    "email": "dax.houston@school.org",
+    "address": {
+      "street": "7616 Paragon Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Kim Houston",
+      "Jeff Houston"
+    ],
+    "teachers": [
+      "Billy Bob"
+    ]
+  },
+  {
+    "name": "Lainey O’Donnell",
+    "role": "student",
+    "grade": "7",
+    "building": "Middle School",
+    "age": 12,
+    "email": "lainey.odonnell@school.org",
+    "address": {
+      "street": "1480 Whipp Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Erin O’Donnell",
+      "Chris O’Donnell"
+    ],
+    "teachers": [
+      "Billy Bob"
+    ]
+  },
+  {
+    "name": "Kellan Mccall",
+    "role": "student",
+    "grade": "7",
+    "building": "Middle School",
+    "age": 12,
+    "email": "kellan.mccall@school.org",
+    "address": {
+      "street": "5800 Marshall Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Tina Mccall",
+      "Greg Mccall"
+    ],
+    "teachers": [
+      "Billy Bob"
+    ]
+  },
+  {
+    "name": "Haisley Vance",
+    "role": "student",
+    "grade": "7",
+    "building": "Middle School",
+    "age": 13,
+    "email": "haisley.vance@school.org",
+    "address": {
+      "street": "9300 Atchison Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Pam Vance",
+      "Ben Vance"
+    ],
+    "teachers": [
+      "Billy Bob"
+    ]
+  },
+  {
+    "name": "Casen Petty",
+    "role": "student",
+    "grade": "7",
+    "building": "Middle School",
+    "age": 12,
+    "email": "casen.petty@school.org",
+    "address": {
+      "street": "241 E Alex Bell Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Beth Petty",
+      "Rick Petty"
+    ],
+    "teachers": [
+      "Billy Bob"
+    ]
+  },
+  {
+    "name": "Araya Mckenzie",
+    "role": "student",
+    "grade": "7",
+    "building": "Middle School",
+    "age": 12,
+    "email": "araya.mckenzie@school.org",
+    "address": {
+      "street": "1000 Miamisburg Centerville Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Jen Mckenzie",
+      "Scott Mckenzie"
+    ],
+    "teachers": [
+      "Billy Bob"
+    ]
+  },
+  {
+    "name": "Scottie Huang",
+    "role": "student",
+    "grade": "7",
+    "building": "Middle School",
+    "age": 13,
+    "email": "scottie.huang@school.org",
+    "address": {
+      "street": "55 Woodbury Dr",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "May Huang",
+      "Li Huang"
+    ],
+    "teachers": [
+      "Billy Bob"
+    ]
+  },
+  {
+    "name": "Etta Melendez",
+    "role": "student",
+    "grade": "7",
+    "building": "Middle School",
+    "age": 12,
+    "email": "etta.melendez@school.org",
+    "address": {
+      "street": "6200 Clyo Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Ana Melendez",
+      "Jose Melendez"
+    ],
+    "teachers": [
+      "Billy Bob"
+    ]
+  },
+  {
+    "name": "Reign Richmond",
+    "role": "student",
+    "grade": "7",
+    "building": "Middle School",
+    "age": 12,
+    "email": "reign.richmond@school.org",
+    "address": {
+      "street": "1150 S Main St",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Sue Richmond",
+      "Will Richmond"
+    ],
+    "teachers": [
+      "Billy Bob"
+    ]
+  },
+  {
+    "name": "Zev Pineda",
+    "role": "student",
+    "grade": "7",
+    "building": "Middle School",
+    "age": 13,
+    "email": "zev.pineda@school.org",
+    "address": {
+      "street": "8100 Social Row Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Eva Pineda",
+      "Luis Pineda"
+    ],
+    "teachers": [
+      "Billy Bob"
+    ]
+  },
+  {
+    "name": "Nalani Rivers",
+    "role": "student",
+    "grade": "7",
+    "building": "Middle School",
+    "age": 12,
+    "email": "nalani.rivers@school.org",
+    "address": {
+      "street": "700 Sheldon Dr",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Mia Rivers",
+      "Ray Rivers"
+    ],
+    "teachers": [
+      "Billy Bob"
+    ]
+  },
+  {
+    "name": "Vance Bullock",
+    "role": "student",
+    "grade": "7",
+    "building": "Middle School",
+    "age": 12,
+    "email": "vance.bullock@school.org",
+    "address": {
+      "street": "1200 Nutt Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Kay Bullock",
+      "Ian Bullock"
+    ],
+    "teachers": [
+      "Billy Bob"
+    ]
+  },
+  {
+    "name": "Sloan Shepard",
+    "role": "student",
+    "grade": "7",
+    "building": "Middle School",
+    "age": 12,
+    "email": "sloan.shepard@school.org",
+    "address": {
+      "street": "5000 Lamme Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Val Shepard",
+      "Don Shepard"
+    ],
+    "teachers": [
+      "Ray Nieport"
+    ]
+  },
+  {
+    "name": "Koa Valentine",
+    "role": "student",
+    "grade": "7",
+    "building": "Middle School",
+    "age": 13,
+    "email": "koa.valentine@school.org",
+    "address": {
+      "street": "888 Ashbury Ct",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Joy Valentine",
+      "Al Valentine"
+    ],
+    "teachers": [
+      "Ray Nieport"
+    ]
+  },
+  {
+    "name": "Zendaya Marks",
+    "role": "student",
+    "grade": "7",
+    "building": "Middle School",
+    "age": 12,
+    "email": "zendaya.marks@school.org",
+    "address": {
+      "street": "442 Highview Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Fay Marks",
+      "Leo Marks"
+    ],
+    "teachers": [
+      "Ray Nieport"
+    ]
+  },
+  {
+    "name": "Kylo Preston",
+    "role": "student",
+    "grade": "7",
+    "building": "Middle School",
+    "age": 12,
+    "email": "kylo.preston@school.org",
+    "address": {
+      "street": "190 Virginia Ave",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Gia Preston",
+      "Tim Preston"
+    ],
+    "teachers": [
+      "Ray Nieport"
+    ]
+  },
+  {
+    "name": "Indie Mcgrath",
+    "role": "student",
+    "grade": "7",
+    "building": "Middle School",
+    "age": 13,
+    "email": "indie.mcgrath@school.org",
+    "address": {
+      "street": "7070 Yankee St",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Liv Mcgrath",
+      "Joe Mcgrath"
+    ],
+    "teachers": [
+      "Ray Nieport"
+    ]
+  },
+  {
+    "name": "Truett Ballard",
+    "role": "student",
+    "grade": "7",
+    "building": "Middle School",
+    "age": 12,
+    "email": "truett.ballard@school.org",
+    "address": {
+      "street": "515 Spring Valley Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Pat Ballard",
+      "Dan Ballard"
+    ],
+    "teachers": [
+      "Ray Nieport"
+    ]
+  },
+  {
+    "name": "Stormie Giles",
+    "role": "student",
+    "grade": "7",
+    "building": "Middle School",
+    "age": 12,
+    "email": "stormie.giles@school.org",
+    "address": {
+      "street": "200 Pleasant Hill",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Meg Giles",
+      "Ron Giles"
+    ],
+    "teachers": [
+      "Ray Nieport"
+    ]
+  },
+  {
+    "name": "Mordechai Colon",
+    "role": "student",
+    "grade": "7",
+    "building": "Middle School",
+    "age": 13,
+    "email": "mordechai.colon@school.org",
+    "address": {
+      "street": "340 Iron Gate Park",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Luz Colon",
+      "Gil Colon"
+    ],
+    "teachers": [
+      "Ray Nieport"
+    ]
+  },
+  {
+    "name": "Paloma Blankenship",
+    "role": "student",
+    "grade": "7",
+    "building": "Middle School",
+    "age": 12,
+    "email": "paloma.blankenship@school.org",
+    "address": {
+      "street": "99 Village Dr",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Bea Blankenship",
+      "Art Blankenship"
+    ],
+    "teachers": [
+      "Ray Nieport"
+    ]
+  },
+  {
+    "name": "Caspian Small",
+    "role": "student",
+    "grade": "7",
+    "building": "Middle School",
+    "age": 12,
+    "email": "caspian.small@school.org",
+    "address": {
+      "street": "555 Southbury Dr",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Zoe Small",
+      "Ned Small"
+    ],
+    "teachers": [
+      "Ray Nieport"
+    ]
+  },
+  {
+    "name": "Rhea Villegas",
+    "role": "student",
+    "grade": "7",
+    "building": "Middle School",
+    "age": 13,
+    "email": "rhea.villegas@school.org",
+    "address": {
+      "street": "101 Kingswood Dr",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Iva Villegas",
+      "Sid Villegas"
+    ],
+    "teachers": [
+      "Ray Nieport"
+    ]
+  },
+  {
+    "name": "Kaysen Randall",
+    "role": "student",
+    "grade": "7",
+    "building": "Middle School",
+    "age": 12,
+    "email": "kaysen.randall@school.org",
+    "address": {
+      "street": "880 Centerville Creek",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Jan Randall",
+      "Lee Randall"
+    ],
+    "teachers": [
+      "Ray Nieport"
+    ]
+  },
+  {
+    "name": "Kallie Rocha",
+    "role": "student",
+    "grade": "8",
+    "building": "Middle School",
+    "age": 13,
+    "email": "kallie.rocha@school.org",
+    "address": {
+      "street": "210 Watkins Glen Dr",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Lori Rocha",
+      "Paul Rocha"
+    ],
+    "teachers": [
+      "Chris Hemsworth"
+    ]
+  },
+  {
+    "name": "Bria Skinner",
+    "role": "student",
+    "grade": "9",
+    "building": "High School",
+    "age": 14,
+    "email": "bria.skinner@school.org",
+    "address": {
+      "street": "7250 Bigger Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Holly Skinner",
+      "Mark Skinner"
+    ],
+    "teachers": [
+      "Zac Efron"
+    ]
+  },
+  {
+    "name": "Zaire Huffman",
+    "role": "student",
+    "grade": "9",
+    "building": "High School",
+    "age": 15,
+    "email": "zaire.huffman@school.org",
+    "address": {
+      "street": "218 Northpark Dr",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Lana Huffman",
+      "Jeff Huffman"
+    ],
+    "teachers": [
+      "Zac Efron"
+    ]
+  },
+  {
+    "name": "Maliah Lowery",
+    "role": "student",
+    "grade": "9",
+    "building": "High School",
+    "age": 14,
+    "email": "maliah.lowery@school.org",
+    "address": {
+      "street": "9417 Ashbury Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Cara Lowery",
+      "Paul Lowery"
+    ],
+    "teachers": [
+      "Zac Efron"
+    ]
+  },
+  {
+    "name": "Karsen Valentine",
+    "role": "student",
+    "grade": "9",
+    "building": "High School",
+    "age": 14,
+    "email": "karsen.valentine@school.org",
+    "address": {
+      "street": "1056 Miamisburg Centerville Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Joy Valentine",
+      "Al Valentine"
+    ],
+    "teachers": [
+      "Zac Efron"
+    ]
+  },
+  {
+    "name": "Oaklee Mcgrath",
+    "role": "student",
+    "grade": "9",
+    "building": "High School",
+    "age": 15,
+    "email": "oaklee.mcgrath@school.org",
+    "address": {
+      "street": "7072 Yankee St",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Liv Mcgrath",
+      "Joe Mcgrath"
+    ],
+    "teachers": [
+      "Zac Efron"
+    ]
+  },
+  {
+    "name": "Arianne Vance",
+    "role": "student",
+    "grade": "9",
+    "building": "High School",
+    "age": 14,
+    "email": "arianne.vance@school.org",
+    "address": {
+      "street": "9302 Atchison Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Pam Vance",
+      "Ben Vance"
+    ],
+    "teachers": [
+      "Kendrick Lamar"
+    ]
+  },
+  {
+    "name": "Thalia Vance",
+    "role": "student",
+    "grade": "10",
+    "building": "High School",
+    "age": 15,
+    "email": "thalia.vance@school.org",
+    "address": {
+      "street": "9302 Atchison Rd",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Pam Vance",
+      "Ben Vance"
+    ],
+    "teachers": [
+      "Jaquavion Maxwell the Third"
+    ]
+  },
+  {
+    "name": "Jadiel Santana",
+    "role": "student",
+    "grade": "11",
+    "building": "High School",
+    "age": 16,
+    "email": "jadiel.santana@school.org",
+    "address": {
+      "street": "210 Watkins Glen Dr",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Lori Santana",
+      "Paul Santana"
+    ],
+    "teachers": [
+      "Keanu Reeves"
+    ]
+  },
+  {
+    "name": "Lyric Santana",
+    "role": "student",
+    "grade": "12",
+    "building": "High School",
+    "age": 17,
+    "email": "lyric.santana@school.org",
+    "address": {
+      "street": "210 Watkins Glen Dr",
+      "city": "Centerville",
+      "zip": "45459"
+    },
+    "Parents": [
+      "Lori Santana",
+      "Paul Santana"
+    ],
+    "teachers": [
+      "Katty Perry"
+    ]
+  }
+]

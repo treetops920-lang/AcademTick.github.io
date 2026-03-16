@@ -1,322 +1,262 @@
 [
   {
     "name": "Jackie Thompson",
-    "age": 28,
+    "role": "teacher",
     "grade": "K",
     "building": "Elementary",
+    "age": 28,
     "email": "jackie.thompson@schoolstaff.org",
     "address": {
       "street": "123 Main St",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1001",
-    "_id": {
-      "$oid": "f366077d21f1bb5649b85cf6"
     }
   },
   {
     "name": "Matt Potter",
-    "age": 32,
+    "role": "teacher",
     "grade": "1",
     "building": "Elementary",
+    "age": 32,
     "email": "matt.potter@schoolstaff.org",
     "address": {
       "street": "9187 Wayne Rd",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1002",
-    "_id": {
-      "$oid": "d56b91426253511fd66945b9"
     }
   },
   {
     "name": "Matt Grenshaw",
-    "age": 43,
+    "role": "teacher",
     "grade": "2",
     "building": "Elementary",
+    "age": 43,
     "email": "matt.grenshaw@schoolstaff.org",
     "address": {
       "street": "368 Smith Blvd",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1003",
-    "_id": {
-      "$oid": "ee88e23461f4a65955951f2b"
     }
   },
   {
     "name": "Matt Hopper",
-    "age": 50,
+    "role": "teacher",
     "grade": "3",
     "building": "Elementary",
+    "age": 50,
     "email": "matt.hopper@schoolstaff.org",
     "address": {
       "street": "196 Cross Rd",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1004",
-    "_id": {
-      "$oid": "f5a5727f2fc8f3197510e3d1"
     }
   },
   {
     "name": "Charles Darwnine",
-    "age": 63,
+    "role": "teacher",
     "grade": "4",
     "building": "Elementary",
+    "age": 63,
     "email": "charles.darwnine@schoolstaff.org",
     "address": {
       "street": "9278 Wayne Rd",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1005",
-    "_id": {
-      "$oid": "1a07fa50e6a81cf8290f7cd8"
     }
   },
   {
     "name": "Whoopie Goldberg",
-    "age": 29,
+    "role": "teacher",
     "grade": "5",
     "building": "Elementary",
+    "age": 29,
     "email": "whoopie.goldberg@schoolstaff.org",
     "address": {
       "street": "349 Crown Pl",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1006",
-    "_id": {
-      "$oid": "ae37b68ca62dfc54c9c22ccc"
     }
   },
   {
     "name": "Alexander Hamaltion",
-    "age": 32,
+    "role": "teacher",
     "grade": "6",
     "building": "Middle School",
+    "age": 32,
     "email": "alexander.hamaltion@schoolstaff.org",
     "address": {
       "street": "173 Round Rd",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1007",
-    "_id": {
-      "$oid": "6ac15f79aea7168b3e830fab"
     }
   },
   {
     "name": "Peggy Skyler",
-    "age": 29,
+    "role": "teacher",
     "grade": "6",
     "building": "Middle School",
+    "age": 29,
     "email": "peggy.skyler@schoolstaff.org",
     "address": {
       "street": "139 Round Rd",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1008",
-    "_id": {
-      "$oid": "e5e39c9ca1d859314031d68a"
     }
   },
   {
     "name": "Billy Bob",
-    "age": 32,
+    "role": "teacher",
     "grade": "7",
     "building": "Middle School",
+    "age": 32,
     "email": "billy.bob@schoolstaff.org",
     "address": {
       "street": "173 Plains Ave",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1009",
-    "_id": {
-      "$oid": "820c155ca09fa82d0ab5a217"
     }
   },
   {
     "name": "Ray Nieport",
-    "age": 26,
+    "role": "teacher",
     "grade": "7",
     "building": "Middle School",
+    "age": 26,
     "email": "ray.nieport@schoolstaff.org",
     "address": {
       "street": "1934 Crown Pl",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1010",
-    "_id": {
-      "$oid": "927b0c3c8d7710daaa483cb6"
     }
   },
   {
     "name": "Chris Hemsworth",
-    "age": 32,
+    "role": "teacher",
     "grade": "8",
     "building": "Middle School",
+    "age": 32,
     "email": "chris.hemsworth@schoolstaff.org",
     "address": {
       "street": "3293 N Strewerd Ln",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1011",
-    "_id": {
-      "$oid": "a40eb588cf57555857ccbd0f"
     }
   },
   {
     "name": "Tom Holland",
-    "age": 30,
+    "role": "teacher",
     "grade": "8",
     "building": "Middle School",
+    "age": 30,
     "email": "tom.holland@schoolstaff.org",
     "address": {
       "street": "1438 Market St",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1012",
-    "_id": {
-      "$oid": "d3b3ff87d6a9efa937db04f0"
     }
   },
   {
     "name": "Zac Effron",
-    "age": 32,
+    "role": "teacher",
     "grade": "9",
     "building": "High School",
+    "age": 32,
     "email": "zac.effron@schoolstaff.org",
     "address": {
       "street": "485 Ceader St",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1013",
-    "_id": {
-      "$oid": "3ab9e8a63ea48661ad3ec98b"
     }
   },
   {
     "name": "Kendrick Lamar",
-    "age": 48,
+    "role": "teacher",
     "grade": "9",
     "building": "High School",
+    "age": 48,
     "email": "kendrick.lamar@schoolstaff.org",
     "address": {
       "street": "138 Main St",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1014",
-    "_id": {
-      "$oid": "620a0e5f095faf22a59baef0"
     }
   },
   {
     "name": "Jaquavion Maxwell the Third",
-    "age": 68,
+    "role": "teacher",
     "grade": "10",
     "building": "High School",
+    "age": 68,
     "email": "jaquavion.maxwell@schoolstaff.org",
     "address": {
       "street": "465 Orange Rd",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1015",
-    "_id": {
-      "$oid": "4a2302a7e5ef201e0543dd6b"
     }
   },
   {
     "name": "Madonna Ciccone",
-    "age": 53,
+    "role": "teacher",
     "grade": "10",
     "building": "High School",
+    "age": 53,
     "email": "madonna.ciccone@schoolstaff.org",
     "address": {
       "street": "4378 Ivy Dr",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1016",
-    "_id": {
-      "$oid": "3deb80bd088cfd1d74fd6654"
     }
   },
   {
     "name": "Keanu Reeves",
-    "age": 35,
+    "role": "teacher",
     "grade": "11",
     "building": "High School",
+    "age": 35,
     "email": "keanu.reeves@schoolstaff.org",
     "address": {
       "street": "758 10th St",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1017",
-    "_id": {
-      "$oid": "608207bc860580e17242c779"
     }
   },
   {
     "name": "Mark Fishbach",
-    "age": 51,
+    "role": "teacher",
     "grade": "11",
     "building": "High School",
+    "age": 51,
     "email": "mark.fishbach@schoolstaff.org",
     "address": {
       "street": "8464 Green Ln",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1018",
-    "_id": {
-      "$oid": "f6a2f594fd9887a07fbca2f2"
     }
   },
   {
     "name": "Katty Perry",
-    "age": 31,
+    "role": "teacher",
     "grade": "12",
     "building": "High School",
+    "age": 31,
     "email": "katty.perry@schoolstaff.org",
     "address": {
       "street": "5493 Orange Rd",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1019",
-    "_id": {
-      "$oid": "460966252a2d0a250b18cd25"
     }
   },
   {
     "name": "Will Byers",
-    "age": 69,
+    "role": "teacher",
     "grade": "12",
     "building": "High School",
+    "age": 69,
     "email": "will.byers@schoolstaff.org",
     "address": {
       "street": "5493 Orange Rd",
       "city": "Centerville",
       "zip": "45459"
-    },
-    "userID": "1020",
-    "_id": {
-      "$oid": "54f5a688fd7bb52f06789beb"
     }
   }
 ]
