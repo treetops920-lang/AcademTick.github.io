@@ -38,10 +38,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function loadUsers() {
     const files = [
-      { path: "students.json", role: "student" },
-      { path: "teachers.json", role: "teacher" },
-      { path: "administration.json", role: "admin" },
-      { path: "additional_staff (1).json", role: "staff" }
+      { path: "json/students_clean.json", role: "student" },
+      { path: "json/teachers_clean.json", role: "teacher" },
+      { path: "json/administration_clean.json", role: "admin" },
+      { path: "json/additional_staff_clean.json", role: "staff" }
     ];
 
     let allUsers = [];
