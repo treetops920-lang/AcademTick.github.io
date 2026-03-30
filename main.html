@@ -181,133 +181,125 @@
                         Schedule Appointment
                     </a>
                 </article>
-
-
-
-                <!-- Recent Activity card -->
                 <article class="card">
                     <div class="card-header">
                         <div>
-                            <h2 style="font-size:18px;">Recent Activity</h2>
-                            <p class="lead">Latest updates across tickets you touched.</p>
+                            <h2 style="font-size:18px;">Quick Status</h2>
+                            <p class="lead">A fast look at tickets plus one helpful tip.</p>
                         </div>
                         <span class="badge">Live</span>
                     </div>
 
-                    <div class="stack" style="gap:12px;">
-                        <div class="alert success">
-                            <div><strong>Ticket #1042</strong> was marked resolved.</div>
-                        </div>
-                        <div class="alert warning">
-                            <div><strong>Ticket #1048</strong> needs more info (room number missing).</div>
-                        </div>
-                        <div class="alert">
-                            <div><strong>Ticket #1051</strong> assigned to you (Wi-Fi outage, MS wing).</div>
-                        </div>
+                    <div class="stack" style="gap:12px;" id="quickStats">
+                        <div class="alert">Loading stats...</div>
                     </div>
 
                     <div class="divider"></div>
 
                     <div class="row" style="justify-content:flex-end;">
                         <button class="btn btn-primary" type="button" id="viewAllBtn">
-                            View All Activity
+                            View All Tickets
                         </button>
                     </div>
-                    <script>document.getElementById("viewAllBtn").addEventListener("click", () => {
+
+                    <script>
+                        fetch("/tickets")
+                            .then(res => res.json())
+                            .then(tickets => {
+                                const container = document.getElementById("quickStats");
+
+                                if (!container) return;
+
+                                if (!tickets.length) {
+                                    container.innerHTML = `
+            <div class="alert">No tickets yet 👀</div>
+            <div class="alert success">Everything is suspiciously calm right now.</div>
+            <div class="alert">💡 Tip: Add room numbers so tickets get handled faster.</div>
+          `;
+                                    return;
+                                }
+
+                                const open = tickets.filter(t => t.status === "pending").length;
+                                const done = tickets.filter(t => t.status === "done").length;
+
+                                container.innerHTML = `
+          <div class="alert warning">
+            <div><strong>${open}</strong> tickets still need attention.</div>
+          </div>
+
+          <div class="alert success">
+            <div><strong>${done}</strong> tickets have been completed.</div>
+          </div>
+
+          <div class="alert">
+            <div><strong>Tip:</strong> Adding a room number makes it way easier to find the problem fast.</div>
+          </div>
+        `;
+                            })
+                            .catch(() => {
+                                const container = document.getElementById("quickStats");
+                                if (!container) return;
+
+                                container.innerHTML = `
+          <div class="alert warning">
+            <div>Could not load live ticket stats right now.</div>
+          </div>
+
+          <div class="alert">
+            <div><strong>Tip:</strong> Adding a room number makes it way easier to find the problem fast.</div>
+          </div>
+        `;
+                            });
+
+                        document.getElementById("viewAllBtn").addEventListener("click", () => {
                             window.location.href = "all-tick.html";
-                        });</script>
-    </div>
-    </article>
-    </section>
+                        });
+                    </script>
+                </article>
+            </section>
 
-    <div class="spacer"></div>
+            <div class="spacer"></div>
 
-    <!-- Ticket table -->
-    <section class="card" aria-label="Ticket list">
-        <div class="card-header">
-            <div>
+            <!-- Ticket table -->
+            <section class="card" aria-label="Ticket list">
+                <div class="card-header">
+                    <div>
 
-                <!--make open buttons for reslove, so that it can populate that tickets data-->
+                        <!--make open buttons for reslove, so that it can populate that tickets data-->
 
 
-                <h2 style="font-size:18px;">Open Tickets</h2>
-                <p class="lead">Sorted by priority → newest updates.</p>
-            </div>
-            <div class="row">
-                <span class="badge orange">Open</span>
-                <button class="btn btn-ghost" type="button">Filter</button>
-                <button class="btn btn-ghost" type="button">Export</button>
-            </div>
-        </div>
+                        <h2 style="font-size:18px;">Open Tickets</h2>
+                        <p class="lead">Sorted by priority → newest updates.</p>
+                    </div>
+                    <div class="row">
+                        <span class="badge orange">Open</span>
+                        <button class="btn btn-ghost" type="button">Filter</button>
+                        <button class="btn btn-ghost" type="button">Export</button>
+                    </div>
+                </div>
 
-        <input type="file" id="uploadTickets" accept=".json">
+                <input type="file" id="uploadTickets" accept=".json">
 
-        <table class="table" id="ticketTableBody">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Title</th>
-                    <th>Category</th>
-                    <th>Priority</th>
-                    <th>Status</th>
-                    <th>Updated</th>
-                    <th style="text-align:right;">Action</th>
-                </tr>
-            </thead>
+                <table class="table" id="ticketTableBody">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Priority</th>
+                            <th>Status</th>
+                            <th>Updated</th>
+                            <th style="text-align:right;">Action</th>
+                        </tr>
+                    </thead>
 
-            <tbody>
-                <tr>
-                    <td class="mono">#1051</td>
-                    <td>Wi-Fi dropping in MS wing</td>
-                    <td>Network</td>
-                    <td><span class="badge orange">High</span></td>
-                    <td><span class="badge teal">In Progress</span></td>
-                    <td>Today 10:12</td>
-                    <td style="text-align:right;">
-                        <button class="btn btn-ghost" type="button">Open</button>
-                    </td>
-                </tr>
+                    <tbody>
 
-                <tr>
-                    <td class="mono">#1049</td>
-                    <td>Chromebook won’t charge</td>
-                    <td>Hardware</td>
-                    <td><span class="badge">Medium</span></td>
-                    <td><span class="badge orange">Open</span></td>
-                    <td>Yesterday 3:47</td>
-                    <td style="text-align:right;">
-                        <button class="btn btn-ghost" type="button">Open</button>
-                    </td>
-                </tr>
+                    </tbody>
+                </table>
+            </section>
 
-                <tr>
-                    <td class="mono">#1048</td>
-                    <td>Smartboard not displaying HDMI</td>
-                    <td>Classroom Tech</td>
-                    <td><span class="badge orange">High</span></td>
-                    <td><span class="badge">Waiting</span></td>
-                    <td>Yesterday 1:09</td>
-                    <td style="text-align:right;">
-                        <button class="btn btn-ghost" type="button">Open</button>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="mono">#1042</td>
-                    <td>Password reset for teacher account</td>
-                    <td>Account</td>
-                    <td><span class="badge">Low</span></td>
-                    <td><span class="badge teal">Resolved</span></td>
-                    <td>Jan 31</td>
-                    <td style="text-align:right;">
-                        <button class="btn btn-ghost" type="button">View</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    </main>
+        </main>
     </div>
 
     <script>
