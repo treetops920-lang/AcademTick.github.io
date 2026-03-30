@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Smartboard not working",
+    "category": "Hardware",
+    "priority": "High",
+    "status": "Pending",
+    "submitTime": 1773251231
+  },
+  {
+    "title": "WiFi down",
+    "category": "Network",
+    "priority": "Urgent",
+    "status": "Closed",
+    "submitTime": 1773259999
+  }
+]
