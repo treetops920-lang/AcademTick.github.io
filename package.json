@@ -1,0 +1,24 @@
+{
+  "name": "academtick",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/treetops920-lang/AcademTick.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/treetops920-lang/AcademTick.github.io/issues"
+  },
+  "homepage": "https://github.com/treetops920-lang/AcademTick.github.io#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
