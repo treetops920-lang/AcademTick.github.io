@@ -22,11 +22,11 @@
         <nav class="topnav">
             <a href="main.html" class="topnav-link">Dashboard</a>
             <a href="reslove.html" class="topnav-link">Resolve</a>
-           
+
             <a href="my-tick.html" class="topnav-link">My Tickets</a>
             <a href="help.html" class="topnav-link">Help</a>
             <a href="creat-tick.html" class="topnav-link">Create Ticket</a>
-          
+
         </nav>
 
         <!-- Profile / Login area -->
@@ -240,7 +240,9 @@
             </div>
         </div>
 
-        <table class="table">
+        <input type="file" id="uploadTickets" accept=".json">
+
+        <table class="table" id="ticketTableBody">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -329,7 +331,8 @@
         });
     </script>
 
-<script src="js/user-session.js"></script>
+    <script src="js/user-session.js"></script>
+    <script src="./js/dashboard.js"></script>
 </body>
 
 </html>
