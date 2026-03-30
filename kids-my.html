@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AcademTick | My Tickets</title>
+
+  <link rel="stylesheet" href="css/kids-base.css" />
+  <link rel="stylesheet" href="css/kids-my.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <a href="kids-dash.html" class="brand">
+      <img src="image/AcademTick_-_logo-removebg-preview.png" alt="Academtick" class="logo" />
+    </a>
+
+    <div class="profile">
+      <span class="profile-name">Jessica</span>
+      <button class="avatar-btn" type="button">
+        <span class="avatar-initials">JJ</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="kid-head card">
+      <h1>My Tickets</h1>
+      <p>Here are the things you already asked for help with.</p>
+    </section>
+
+    <section class="tickets-wrap">
+
+      <article class="ticket-card open">
+        <div class="ticket-top">
+          <div class="ticket-icon" aria-hidden="true">📝</div>
+          <div>
+            <h2>Chromebook won’t connect</h2>
+            <p class="ticket-meta">Ticket #1042 • Sent today</p>
+          </div>
+          <span class="status-pill open">Open</span>
+        </div>
+
+        <div class="ticket-body">
+          <p><strong>Problem:</strong> My Chromebook will not join the Wi-Fi.</p>
+          <p><strong>Room:</strong> 112</p>
+          <p><strong>Priority:</strong> Normal</p>
+        </div>
+      </article>
+
+      <article class="ticket-card progress">
+        <div class="ticket-top">
+          <div class="ticket-icon" aria-hidden="true">🛠️</div>
+          <div>
+            <h2>Headphones are broken</h2>
+            <p class="ticket-meta">Ticket #1038 • Sent yesterday</p>
+          </div>
+          <span class="status-pill progress">In Progress</span>
+        </div>
+
+        <div class="ticket-body">
+          <p><strong>Problem:</strong> One side of my headphones does not work.</p>
+          <p><strong>Room:</strong> 108</p>
+          <p><strong>Priority:</strong> Low</p>
+        </div>
+      </article>
+
+      <article class="ticket-card done">
+        <div class="ticket-top">
+          <div class="ticket-icon" aria-hidden="true">✅</div>
+          <div>
+            <h2>Smartboard was frozen</h2>
+            <p class="ticket-meta">Ticket #1029 • Sent 2 days ago</p>
+          </div>
+          <span class="status-pill done">Done</span>
+        </div>
+
+        <div class="ticket-body">
+          <p><strong>Problem:</strong> The Smartboard would not move pages.</p>
+          <p><strong>Room:</strong> 114</p>
+          <p><strong>Priority:</strong> Normal</p>
+        </div>
+      </article>
+
+      <article class="empty-card">
+        <div class="empty-icon">📬</div>
+        <h3>No more tickets right now!</h3>
+        <p>You’re all caught up. That is suspiciously responsible.</p>
+        <a class="kid-btn" href="create-ticket.html">Make a New Ticket</a>
+      </article>
+
+    </section>
+
+    <div class="tickbot-area">
+      <img class="guy" src="image/tickbot-point.png" alt="TickBot">
+      <div class="tickbot-bubble">You can check your ticket status here!</div>
+    </div>
+
+  </main>
+
+</body>
+</html>
