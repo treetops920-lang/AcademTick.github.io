@@ -70,9 +70,26 @@ function displayTickets(tickets) {
       <td>${ticket.priority || "N/A"}</td>
       <td>${ticket.status || "N/A"}</td>
       <td>${ticket.submitTime ? new Date(ticket.submitTime * 1000).toLocaleString() : "N/A"}</td>
-      <td><button>Open</button></td>
+      <td><button class="open-btn" data-index="${index}">Open</button></td>
     `;
 
     tableBody.appendChild(row);
+  });
+  const buttons = document.querySelectorAll(".open-btn");
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+
+      const index = btn.getAttribute("data-index");
+      const selectedTicket = tickets[index];
+
+      console.log("Selected ticket:", selectedTicket);
+
+      // save selected ticket
+      localStorage.setItem("selectedTicket", JSON.stringify(selectedTicket));
+
+      // go to resolve page
+      window.location.href = "reslove.html";
+    });
   });
 }
