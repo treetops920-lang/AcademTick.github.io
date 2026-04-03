@@ -35,7 +35,9 @@ function submitTicket(event) {
 
   console.log("Ticket object:", ticket);
 
-  document.getElementById("downloadTicketsBtn")
+  
+
+  /* document.getElementById("downloadTicketsBtn")
     .addEventListener("click", () => {
 
       let tickets = JSON.parse(localStorage.getItem("tickets")) || [];
@@ -52,7 +54,8 @@ function submitTicket(event) {
       link.click();
 
     });
-
+*/
+/* upove if=s chat gpt code*/
   /*
     fetch("/submit-ticket", {
       method: "POST",
