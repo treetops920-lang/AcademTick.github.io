@@ -7,8 +7,6 @@ document
 function submitTicket(event) {
   event.preventDefault();
 
-  console.log("Form submitted");
-
   const ticket = {
     title: document.getElementById("title").value,
     description: document.getElementById("description").value,
@@ -21,21 +19,32 @@ function submitTicket(event) {
     status: "pending"
   };
 
-  console.log("Ticket object:", ticket);
+  // ✅ THIS replaces localStorage
+  fetch("/tickets", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(ticket)
+  })
+    .then(res => res.json())
+    .then(data => {
+      console.log("Saved to server:", data);
+    })
+    .catch(err => {
+      console.error("Error:", err);
+    });
+}
 
-  /* TEMP DATABASE (until backend exists) */
+/* TEMP DATABASE (until backend exists) */
 
-  let tickets = JSON.parse(localStorage.getItem("tickets")) || [];
 
-  tickets.push(ticket);
 
-  localStorage.setItem("tickets", JSON.stringify(tickets));
+console.log("Saved tickets:", tickets);
 
-  console.log("Saved tickets:", tickets);
+console.log("Ticket object:", ticket);
 
-  console.log("Ticket object:", ticket);
 
-  
 
   /* document.getElementById("downloadTicketsBtn")
     .addEventListener("click", () => {
@@ -90,4 +99,3 @@ function submitTicket(event) {
         console.error("Error submitting ticket:", err);
       });
       */
-}
