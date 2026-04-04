@@ -13,16 +13,15 @@ document.addEventListener("DOMContentLoaded", () => {
   // -------------------------
   // 1. TRY LOAD DEFAULT JSON
   // -------------------------
-  fetch("./js/ticketHistory.json")
+  fetch("/tickets")
     .then(res => res.json())
     .then(data => {
-      console.log("Loaded default tickets:", data);
+      console.log("Loaded from server:", data);
       displayTickets(data);
     })
     .catch(err => {
-      console.log("Fetch failed (normal on file://)");
+      console.error("Error loading tickets:", err);
     });
-
   // -------------------------
   // 2. HANDLE FILE UPLOAD
   // -------------------------
