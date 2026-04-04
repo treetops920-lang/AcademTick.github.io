@@ -5,7 +5,7 @@ const path = require("path");
 const app = express();
 const PORT = 3000;
 
-const ticketsPath = path.join(__dirname, "data", "tickets.json");
+const ticketsPath = "C:/Users/gagli/OneDrive/Documents/GitHub/AcademTick.github.io/json/tickets.json";
 
 app.use(express.json());
 app.use(express.static(__dirname));
