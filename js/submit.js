@@ -16,11 +16,10 @@ function submitTicket(event) {
     room: document.getElementById("room").value,
     requester: document.getElementById("requester").value,
     submitTime: Math.floor(Date.now() / 1000),
-    status: "pending"
+    status: "Pending"
   };
 
-  // ✅ THIS replaces localStorage
-  fetch("/tickets", {
+  fetch("/submit-ticket", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -29,73 +28,80 @@ function submitTicket(event) {
   })
     .then(res => res.json())
     .then(data => {
-      console.log("Saved to server:", data);
+      console.log("Saved:", data);
+      alert("Ticket created!");
+
+      // optional: clear form
+      document.getElementById("ticketForm").reset();
     })
     .catch(err => {
       console.error("Error:", err);
     });
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("ticketForm");
+
+  form.addEventListener("submit", submitTicket);
+});
+
 /* TEMP DATABASE (until backend exists) */
 
 
 
-console.log("Saved tickets:", tickets);
-
-console.log("Ticket object:", ticket);
 
 
 
-  /* document.getElementById("downloadTicketsBtn")
-    .addEventListener("click", () => {
+/* document.getElementById("downloadTicketsBtn")
+  .addEventListener("click", () => {
 
-      let tickets = JSON.parse(localStorage.getItem("tickets")) || [];
+    let tickets = JSON.parse(localStorage.getItem("tickets")) || [];
 
-      const data = JSON.stringify(tickets, null, 2);
+    const data = JSON.stringify(tickets, null, 2);
 
-      const blob = new Blob([data], { type: "application/json" });
+    const blob = new Blob([data], { type: "application/json" });
 
-      const link = document.createElement("a");
+    const link = document.createElement("a");
 
-      link.href = URL.createObjectURL(blob);
-      link.download = "tickets.json";
+    link.href = URL.createObjectURL(blob);
+    link.download = "tickets.json";
 
-      link.click();
+    link.click();
 
-    });
+  });
 */
 /* upove if=s chat gpt code*/
-  /*
-    fetch("/submit-ticket", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(ticket)
+/*
+  fetch("/submit-ticket", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(ticket)
+  })
+ 
+ 
+ 
+ 
+    /* 
+    TODO Bellow (after backend is finalized):
+    Expect JSON response from /submit-ticket
+  
+    .then(res => res.json())
+    .then(data => {
+      console.log("Ticket submitted:", data);
     })
   
-  
-  
-  
-      /* 
-      TODO Bellow (after backend is finalized):
-      Expect JSON response from /submit-ticket
-    
-      .then(res => res.json())
-      .then(data => {
-        console.log("Ticket submitted:", data);
-      })
-    
-  
-  
-      .then(res => {
-        console.log("Response status:", res.status);
-        return res.text();
-      })
-      .then(text => {
-        console.log("Raw response:", text);
-      })
-      .catch(err => {
-        console.error("Error submitting ticket:", err);
-      });
-      */
+ 
+ 
+    .then(res => {
+      console.log("Response status:", res.status);
+      return res.text();
+    })
+    .then(text => {
+      console.log("Raw response:", text);
+    })
+    .catch(err => {
+      console.error("Error submitting ticket:", err);
+    });
+    */
